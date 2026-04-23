@@ -1,0 +1,5076 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- for without menu -->
+
+	<definition name="baseLayout" template="/common/pages/tiles/baseLayouts1.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="" />
+		<!-- <put-attribute name="menu" value="/common/pages/tiles/apm_menu.jsp"/> -->
+		<!-- <put-attribute name="menu" value=""/> -->
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+	
+	
+	
+
+	<definition name="blankLayout" template="/common/pages/tiles/blankLayouts.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="" />
+		<!-- <put-attribute name="menu" value="/common/pages/tiles/apm_menu.jsp"/> -->
+		<!-- <put-attribute name="menu" value=""/> -->
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<definition name="mainbaseLayout" template="/common/pages/tiles/mainbaseLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/mainbaseheader.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- for dashboard and top menu -->
+
+	<definition name="baseLayouts" template="/common/pages/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="/common/pages/tiles/apm_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<!-- for week dashboard and left side menu -->
+
+	<definition name="baseLayouts2" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/BaseHeader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/apm_menu2.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<definition name="baseLayouts4" template="/common/pages/tiles/baseLayouts4.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/BaseHeader1.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<definition name="baseLayout3" template="/common/pages/tiles/baseLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="menu" value="/common/pages/tiles/BaseHeader.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<definition name="ipdLayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/ipdbaseheader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/ipdmenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<definition name="voucherLayout2" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/voucherbaseheader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/vmenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+<definition name="voucherLayout" template="/common/pages/tiles/voucherlayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/vouchernewheader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/vouchersidemenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/voucherBody.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- Accounts Layout -->
+	<definition name="accountsLayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/accountsHeader.jsp" />
+		<put-attribute name="menu"
+			value="/common/pages/tiles/account_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+
+	<!-- for Payroll menu -->
+
+	<definition name="payrollLayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/payrollHeader.jsp" />
+		<put-attribute name="menu" value="/payroll/pages/payrollMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- for Inventory -->
+	<definition name="inventoryLayout" template="/inventory/pages/inventoryLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/inventoryHeader.jsp" />
+		<!-- <put-attribute name="menu" value="/inventory/pages/inventoryMenu.jsp" /> -->
+		<put-attribute name="menu" value="/common/pages/tiles/manasinventoryMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+	
+	<!-- for Inventory Report -->
+	<definition name="inventoryReportLayout" template="/inventory/pages/inventoryReportLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/inventoryHeader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/manasinventoryMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<definition name="pharmacyLayout" template="/pharmacy/pages/pharmacyLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/pharmacy/pages/pharmacyHeader.jsp" />
+		<!-- <put-attribute name="menu" value="/pharmacy/pages/pharmacyMenu.jsp" />  -->
+		<put-attribute name="menu" value="/common/pages/tiles/manaspharmacyMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+	
+	<!-- for without menu -->
+	<definition name="pharmacyLayoutReport" template="/common/pages/tiles/pharmacyReportLayout.jsp">
+		<put-attribute name="title" value="YUVICARE" />
+		<put-attribute name="header" value="" />
+		<!-- <put-attribute name="menu" value="/common/pages/tiles/apm_menu.jsp"/> -->
+		<!-- <put-attribute name="menu" value=""/> -->
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<definition name="bloodbankLayout" template="/inventory/pages/inventoryLayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/bloodbankHeader.jsp" />
+		<put-attribute name="menu" value="/bloodbank/pages/bloodbankMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<definition name="bloodbankLayout2" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/bloodbankHeader.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+	
+	
+<definition name="tpaLayout" template="/common/pages/tiles/tpabaselayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="menu"
+			value="/common/pages/tiles/tpa_menu.jsp" />
+		<put-attribute name="header" value="/common/pages/tiles/tpa_header.jsp" />
+			
+		
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- for House Keeping -->
+	<definition name="housekeepinglayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/housekeepingHeader.jsp" />
+		<put-attribute name="menu" value="/common/pages/housekeepingMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- for Dietary -->
+	<definition name="dietarylayout" template="/common/pages/tiles/baseLayouts1.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/dietary/pages/dietaryHeader.jsp" />
+		<put-attribute name="menu" value="/dietary/pages/dietaryMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+	<!-- for Cafeteria -->
+	<definition name="cafeterialayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/cafeteria/pages/cafeteriaHeader.jsp" />
+		<put-attribute name="menu" value="/cafeteria/pages/cafeteriaMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<!-- Account Reconsilation -->
+
+	<definition name="reconsilationLayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/accounts/pages/reconcilationHeader.jsp" />
+		<put-attribute name="menu"
+			value="/accounts/pages/reconcilationMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+
+	<!-- Bank Deposite -->
+	<definition name="bankdepositeLayout" template="/common/pages/tiles/baseLayouts2.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/accounts/pages/bankdepositeHeader.jsp" />
+		<put-attribute name="menu"
+			value="/accounts/pages/bankdepositeMenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/Body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+	</definition>
+
+
+	<definition name="sessionExpire" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/sessionExpire.jsp" />
+	</definition>
+
+	<definition name="apmerror" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/apmerror.jsp" />
+	</definition>
+
+	<definition name="abtus" extends="baseLayout">
+
+		<put-attribute name="body" value="/common/pages/aboutus.jsp" />
+	</definition>
+
+
+
+	<definition name="homepage" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/homepage.jsp" />
+	</definition>
+
+	<definition name="invalidtoken" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/invalid_token.jsp" />
+	</definition>
+
+
+	<definition name="inputlogin" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/login1.jsp" />
+	</definition>
+
+	<definition name="logout" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/loggedout.jsp" />
+	</definition>
+
+	<definition name="esclogout" extends="baseLayout3">
+		<put-attribute name="menu"
+			value="/common/pages/tiles/BaseHeader2.jsp" />
+		<put-attribute name="body" value="/common/pages/loggedout.jsp" />
+	</definition>
+
+
+
+
+
+
+
+
+
+	<!--Appointment Mapping -->
+
+
+	<definition name="ocrpt" extends="baseLayout">
+		<put-attribute name="body" value="/appointment/pages/ocrpt.jsp" />
+	</definition>
+
+	<definition name="ahead" extends="baseLayout">
+		<put-attribute name="body" value="/appointment/pages/ahead.jsp" />
+	</definition>
+
+	<definition name="tb" extends="baseLayout">
+		<put-attribute name="body" value="/appointment/pages/tb.jsp" />
+	</definition>
+
+
+	<definition name="appointment" extends="baseLayout">
+		<put-attribute name="body" value="/appointment/pages/appointment.jsp" />
+	</definition>
+
+	<definition name="ledger" extends="baseLayout">
+		<put-attribute name="body" value="/appointment/pages/ledger.jsp" />
+	</definition>
+
+	<definition name="viewledrport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/viewledrport.jsp" />
+	</definition>
+
+	<definition name="diarymanagement" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/diarymanagement.jsp" />
+	</definition>
+
+	<definition name="rotamanagement" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/rotamanagement.jsp" />
+	</definition>
+
+
+	<definition name="practicemanagerlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/practiceManagerList.jsp" />
+	</definition>
+
+
+	<definition name="addpracticemanager" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/addPracticemanager.jsp" />
+	</definition>
+
+
+	<definition name="editpracticemanager" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editPracticeManager.jsp" />
+	</definition>
+
+	<definition name="inputclinic" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/addClinic.jsp" />
+	</definition>
+
+
+
+	<definition name="editAdminClinic" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editAdminClinicRegistration.jsp" />
+	</definition>
+
+	<definition name="clinicregistration" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/clinicList.jsp" />
+	</definition>
+
+	<definition name="editclinicregistration" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editCliniclist.jsp" />
+	</definition>
+
+	<definition name="adduserprofile" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/addNewUserprofile.jsp" />
+	</definition>
+
+	<definition name="addcasualty" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/addcasualty.jsp" />
+	</definition>
+
+	<definition name="editcasualty" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editcasualty.jsp" />
+	</definition>
+
+	<definition name="casualtylist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/casualtylist.jsp" />
+	</definition>
+
+
+	<definition name="edituserprofile" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editUserprofile.jsp" />
+	</definition>
+
+	<definition name="userprofilelist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/userProfileList.jsp" />
+	</definition>
+
+	<definition name="practitionerProfile" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/practitionerProfile.jsp" />
+	</definition>
+
+	<definition name="inputclinic" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/addClinic.jsp" />
+	</definition>
+
+	<definition name="notavailableslot" extends="baseLayouts2">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/notAvailableslot.jsp" />
+	</definition>
+
+	<!-- <definition name="mobweek" extends="baseLayouts2">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/mobWeekUsers.jsp" />
+	</definition> -->
+<!-- <definition name="mobweek" extends="baseLayouts2">
+
+		<put-attribute name="body" value="/diarymanagement/pages/newopd.jsp" />
+	</definition> -->
+	<!--<definition name="display" extends="baseLayouts4">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/allDairyUsers.jsp" />
+	</definition> --> 
+	
+<definition name="display" extends="baseLayouts4">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/newopd.jsp" />
+	</definition>
+	<definition name="printdashpoard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printDashboard.jsp" />
+	</definition>
+
+	<definition name="printdashpoard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printDashboard.jsp" />
+	</definition>
+
+
+
+
+
+	<definition name="finderList" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/finder.jsp" />
+	</definition>
+
+	<!-- <definition name="finderList" extends="baseLayout"> <put-attribute 
+		name="body" value="/mis/pages/index.jsp" /> </definition> -->
+
+	<definition name="allUserSlot" extends="baseLayouts2">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/allDairyUsers.jsp" />
+	</definition>
+
+	<definition name="staffdb" extends="baseLayouts2">
+		<put-attribute name="body" value="/staffdb/pages/staffdb.jsp" />
+	</definition>
+
+<!-- 	<definition name="otdb" extends="baseLayouts2">
+		<put-attribute name="body" value="/staffdb/pages/otdb.jsp" />
+	</definition>  -->
+
+	<definition name="dayUsers" extends="baseLayouts2">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/dayUsers.jsp" />
+	</definition>
+
+	<!-- <definition name="newopd" extends="baseLayouts2">
+
+		<put-attribute name="body" value="/diarymanagement/pages/newopd.jsp" />
+	</definition> -->
+
+	<definition name="maindashboard" extends="mainbaseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/maindashboard.jsp" />
+	</definition>
+
+	<definition name="printprisc" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printPriscription.jsp" />
+	</definition>
+
+	<definition name="block" extends="baseLayout">
+		<put-attribute name="title" value=" " />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/blockpage.jsp" />
+	</definition>
+
+	<definition name="allPatientList" extends="baseLayout">
+		<put-attribute name="title" value=" " />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/allClient.jsp" />
+	</definition>
+
+	<definition name="addtreatmentepisode" extends="baseLayout">
+		<put-attribute name="title" value="Add Treatment Episode" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/treatmentEpisode/pages/addTreatmentEpisode.jsp" />
+	</definition>
+
+	<definition name="addManage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addPatientPage.jsp" />
+	</definition>
+
+
+	<definition name="addPatient" extends="baseLayout">
+		<put-attribute name="title" value="Add Patients" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addPatient.jsp" />
+	</definition>
+
+	<definition name="dnaCharge" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/dnaChargeList.jsp" />
+	</definition>
+
+	<definition name="addDnaCharge" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/addDNACharge.jsp" />
+	</definition>
+
+	<definition name="editDNA" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editDNACharge.jsp" />
+	</definition>
+
+
+	<!-- Appointment Type List -->
+
+	<definition name="appointmentTypeList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/appointmentTypeList.jsp" />
+	</definition>
+	<definition name="addAppointmentTypePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/addAppointmentType.jsp" />
+	</definition>
+
+	<definition name="editAppointmentTypePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/editAppointmentType.jsp" />
+	</definition>
+
+
+	<!-- Client module -->
+	<definition name="editClientPage" extends="baseLayout">
+
+		<put-attribute name="body"
+			value="/diarymanagement/pages/editPatient.jsp" />
+	</definition>
+	<definition name="editPatientPage" extends="baseLayout">
+		<put-attribute name="title" value="Edit Patients" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/editPatient.jsp" />
+	</definition>
+
+
+	<!-- complete appointment -->
+	<definition name="completeApmt" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/completeApmt.jsp" />
+	</definition>
+
+
+	<definition name="paynow" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/paynow.jsp" />
+	</definition>
+
+	<definition name="createinvoice" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/createInvoice.jsp" />
+	</definition>
+
+
+
+
+	<definition name="cashDesk" extends="baseLayout">
+		<put-attribute name="title" value="Appointment Completed" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/codeDesk.jsp" />
+	</definition>
+
+
+	<definition name="completeApmtInvoicePreview" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/completeApmtInvoicePreview.jsp" />
+	</definition>
+
+	<definition name="pendingChargesPage" extends="baseLayout">
+
+		<put-attribute name="body"
+			value="/diarymanagement/pages/pendingCharges.jsp" />
+	</definition>
+
+
+	<!-- Appointment Diary User report -->
+
+	<definition name="apmtDiaryReportreport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/appointmentDairyReport.jsp" />
+	</definition>
+	<definition name="reportPreview" extends="baseLayout">
+		<put-attribute name="title" value="Appointment Diary Report" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/reportPreview.jsp" />
+	</definition>
+
+	<definition name="walkInAndPreBooked" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/walkInAndPreBookedReport.jsp" />
+	</definition>
+
+	<!--Accounts -->
+
+	<definition name="debitcharge" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/debitcharge.jsp" />
+	</definition>
+
+	<definition name="otdebitcharge" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/otdebitcharge.jsp" />
+	</definition>
+
+	<definition name="creditcharge" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/creditcharge.jsp" />
+	</definition>
+
+	<definition name="creditlist" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/creditList.jsp" />
+	</definition>
+
+	<definition name="chargesraiseinvoice" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/chargeRaiseInvoice.jsp" />
+	</definition>
+
+	<definition name="raisesubmitinvoicecharges" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/chargeSubmitInvoice.jsp" />
+	</definition>
+
+	<definition name="cashdesk" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/cashdesk.jsp" />
+	</definition>
+
+	<definition name="accounts" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/accounts.jsp" />
+	</definition>
+
+	<definition name="payment" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/payment.jsp" />
+	</definition>
+
+	<definition name="raiseinvoice" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/raiseinvoice.jsp" />
+	</definition>
+
+	<definition name="raisesubmitinvoice" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/submitInvoice.jsp" />
+	</definition>
+
+	<definition name="invoice" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/invoice.jsp" />
+	</definition>
+
+
+	<definition name="showpreview" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/printPreview.jsp" />
+	</definition>
+
+   <definition name="showpreview1" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/printPreviewsram.jsp" />
+	</definition>
+	<definition name="printpreview" extends="baseLayout">
+		<put-attribute name="title" value="Print Preview" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body" value="/accounts/pages/printPreview.jsp" />
+	</definition>
+
+
+	<!-- Third Party --> <!-- Unnati Module -->
+
+	<definition name="allThirdPartyPage" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/thirdParty.jsp" />
+	</definition>
+	<definition name="addThirdPartyDetailPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/addThirdParty.jsp" />
+	</definition>
+
+	<definition name="editThirdPartyDetailPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/editThirdParty.jsp" />
+	</definition>
+	<definition name="sucessthirdpartyPAge" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/sucess.jsp" />
+	</definition>
+
+	<definition name="typeList" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/typeList.jsp" />
+	</definition>
+	<definition name="addType" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/addType.jsp" />
+	</definition>
+	<definition name="editTypePage" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/editType.jsp" />
+	</definition>
+
+
+	<definition name="addThirdPartyDetailDataPage" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/addNewTp.jsp" />
+	</definition>
+	<definition name="showDoctorSurgeryData" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/editDoctorSurgery.jsp" />
+	</definition>
+
+	<!-- third Party end -->
+
+	<!-- Client module -->
+
+	<definition name="thirdPartyLogPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/clientThirdPartyCharge.jsp" />
+	</definition>
+	<definition name="updateThirdPartyDetailsPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/updateThirdPartyDetailsPageSucess.jsp" />
+	</definition>
+	<definition name="createClientChargePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/createClientCharge.jsp" />
+	</definition>
+	<definition name="managePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/manageClient.jsp" />
+	</definition>
+	<definition name="viewProfileOfClient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/viewProfileOfClient.jsp" />
+	</definition>
+	<definition name="printProfileofClient" extends="baseLayout">
+		<put-attribute name="title" value="Print Preview" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printProfileofClient.jsp" />
+	</definition>
+
+	<definition name="addCompleteInfo" extends="baseLayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addPatientManage.jsp" />
+	</definition>
+	<!-- Not Availabale slot -->
+
+
+
+
+	<!-- Treatment Episode -->
+	<definition name="showTreatmentEpisode" extends="baseLayout">
+		<put-attribute name="body"
+			value="/treatmentEpisode/pages/showTreatmentEpisode.jsp" />
+	</definition>
+
+	<definition name="editTreatmentEpisodePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/treatmentEpisode/pages/editTreatmentEpisode.jsp" />
+	</definition>
+
+	<definition name="addTreatmentPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/treatmentEpisode/pages/addTreatmentEpisode.jsp" />
+	</definition>
+
+
+
+	<!-- Master -->
+
+	<definition name="newChargeTypeList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/allNewChargeTypeList.jsp"></put-attribute>
+	</definition>
+	<definition name="addNewChargeType" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addNewChargeType.jsp"></put-attribute>
+	</definition>
+	<definition name="editNewChargeType" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNewChargeType.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="occupationPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/occupationList.jsp" />
+	</definition>
+	<definition name="addOccupationPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addOccupation.jsp" />
+	</definition>
+	<definition name="editOccupationPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editOccupation.jsp" />
+	</definition>
+
+
+	<definition name="discplineList" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/discplineList.jsp" />
+	</definition>
+	<definition name="addDiscplineList" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addDiscplineList.jsp" />
+	</definition>
+	<definition name="editDiscplineList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editDiscplineList.jsp" />
+	</definition>
+
+
+	<definition name="jobTitlePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/jobTitleList.jsp" />
+	</definition>
+	<definition name="addJobTitlePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addJobTitle.jsp" />
+	</definition>
+	<definition name="editJobTitlePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editJobTitle.jsp" />
+	</definition>
+	<definition name="referencePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/referenceList.jsp" />
+	</definition>
+	<definition name="addReferencePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addReference.jsp" />
+	</definition>
+	<definition name="editReferencePage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editReference.jsp" />
+	</definition>
+
+	<!-- MASTER END -->
+
+	<definition name="clientLogPageSucess" extends="baseLayout">
+		<put-attribute name="body" value="/log/pages/clientLog.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="allocationlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/allocationlist.jsp"></put-attribute>
+	</definition>
+
+	<definition name="showaltlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/showaltlist.jsp"></put-attribute>
+	</definition>
+
+
+
+	<definition name="outstandingInvoiceList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/outstandingInvoiceList.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="showOutstandingReportPage" extends="accountsLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/outstandingReport.jsp"></put-attribute>
+	</definition>
+
+
+
+	<definition name="actionListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/oustandingActionList.jsp"></put-attribute>
+	</definition>
+
+	<definition name="viewStatement" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/viewStatement.jsp" />
+	</definition>
+
+	<definition name="detailstatement" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/detailstatement.jsp" />
+	</definition>
+
+	<definition name="prntchargedetail" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/prntchargedetail.jsp" />
+	</definition>
+
+	<definition name="pnrntsubchargedetail" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/pnrntsubchargedetail.jsp" />
+	</definition>
+
+
+
+	<definition name="otdetails" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/otdetails.jsp" />
+	</definition>
+
+
+
+	<definition name="showChargesAccountProcessingPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/chargesAccountProcessing.jsp" />
+	</definition>
+
+	<definition name="hosprevnue" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/hosprevnue.jsp" />
+	</definition>
+
+
+	<definition name="paymentProcessingPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/processingPayment.jsp" />
+	</definition>
+
+	<definition name="modifyinvoice" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/modifyInvoice.jsp" />
+	</definition>
+
+	<definition name="printstatement" extends="baseLayout">
+		<put-attribute name="title" value="Print Acoount Statement" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body" value="/accounts/pages/printstatement.jsp" />
+	</definition>
+
+	<definition name="printreport" extends="baseLayout">
+		<put-attribute name="title" value="Print Acoount Statement" />
+		<put-attribute name="header" value=" " />
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="footer" value=" " />
+		<put-attribute name="body" value="/accounts/pages/createReport.jsp" />
+	</definition>
+
+	<definition name="createReport" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/createReport.jsp" />
+	</definition>
+
+	<!-- Medical Records -->
+	<definition name="allMedicalRecords" extends="baseLayout">
+		<put-attribute name="body"
+			value="/medical/records/pages/medicalRecords.jsp" />
+	</definition>
+	<definition name="addMedicalRecord" extends="baseLayout">
+		<put-attribute name="body"
+			value="/medical/records/pages/addMedicalRecord.jsp" />
+	</definition>
+	<definition name="editPageMedicalRecord" extends="baseLayout">
+		<put-attribute name="body"
+			value="/medical/records/pages/editMedicalRecord.jsp" />
+	</definition>
+
+
+	<!--Medical Report Mapping -->
+
+	<definition name="careport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/careport.jsp" />
+	</definition>
+
+	<definition name="estimate" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/estimate.jsp" />
+	</definition>
+
+	<definition name="PendingPaymentReports" extends="baseLayout">
+		<put-attribute name="body"
+			value="/medical/reports/pages/clientsPendingPayment.jsp" />
+	</definition>
+
+	<!--Emr Mapping -->
+
+	<definition name="emrview" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/emrView.jsp" />
+	</definition>
+
+	 <!-- <definition name="emrDetailsPage" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/emr.jsp" />
+	</definition> -->
+
+	<definition name="listot" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/listot.jsp" />
+	</definition>
+
+	<definition name="printconsnote" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/printconsnote.jsp" />
+	</definition>
+
+	<definition name="pacsreport" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/pacsreport.jsp" />
+	</definition>
+
+
+	<!--Tools Mapping -->
+
+	<definition name="notification" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/notification.jsp" />
+	</definition>
+
+	<definition name="inputnotification" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/inputnotification.jsp" />
+	</definition>
+
+	<definition name="templatePage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/emailTemplate.jsp" />
+	</definition>
+
+	<definition name="addTemplatePage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/addEmailTemplate.jsp" />
+	</definition>
+
+	<definition name="editEmailTemplatePage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/editEmailTemplate.jsp" />
+	</definition>
+
+	<definition name="previewEmailTemplatePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/tools/pages/previewEmailTemplate.jsp" />
+	</definition>
+
+	<definition name="tpReferalPage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/tpReferal.jsp" />
+	</definition>
+
+	<definition name="previewTPReferalPage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/previewTpReferal.jsp" />
+	</definition>
+
+	<definition name="checkEmailSendPage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/checkMailSend.jsp" />
+	</definition>
+
+	<definition name="addEmailConfigurePage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/addEmailConfigure.jsp" />
+	</definition>
+
+	<definition name="editEmailConfigurePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/tools/pages/editEmailConfigure.jsp" />
+	</definition>
+
+	<!-- <definition name="changeEmailPwdPage" extends="baseLayout"> <put-attribute 
+		name="body" value="/tools/pages/changeEmailPwd.jsp"/> </definition> -->
+
+
+
+	<!-- Cash Desk Mapping -->
+
+	<definition name="cashDeskListPage" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/cashdeskList.jsp" />
+	</definition>
+
+	<definition name="addCashdeskPage" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/addCashdesk.jsp" />
+	</definition>
+
+	<definition name="editCashDesk" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/editCashdesk.jsp" />
+	</definition>
+
+	<!-- specialization Mapping -->
+
+	<definition name="specializationListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/specializationList.jsp" />
+	</definition>
+
+	<definition name="addSpecializationPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addSpecialization.jsp" />
+	</definition>
+
+	<definition name="editSpecializationPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editSpecialization.jsp" />
+	</definition>
+
+	<!-- treatmentType Mapping -->
+
+	<definition name="treatmentTypeListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/treatmentTypeList.jsp" />
+	</definition>
+
+	<definition name="addTreatmentType" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addtreatmentType.jsp" />
+	</definition>
+
+	<definition name="editTreatmentType" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editTreatmentType.jsp" />
+	</definition>
+
+
+	<!-- sourceOfIntro Mapping -->
+
+	<definition name="sourceOfIntroListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/sourceOfIntroList.jsp" />
+	</definition>
+
+	<definition name="addSourceOfIntro" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addSourceOfIntro.jsp" />
+	</definition>
+
+	<definition name="editSourceOfIntro" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editSourceOfIntro.jsp" />
+	</definition>
+
+	<!-- GP Mapping -->
+
+	<definition name="gpListPage" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/gpList.jsp" />
+	</definition>
+
+	<definition name="addGP" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/addGP.jsp" />
+	</definition>
+
+	<definition name="editGP" extends="baseLayout">
+		<put-attribute name="body" value="/thirdParties/pages/editGP.jsp" />
+	</definition>
+
+	<!-- Commission Mapping -->
+
+	<definition name="prctcmsnrept" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/userCommission.jsp" />
+	</definition>
+
+	<definition name="commissionPage" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/practionershare.jsp" />
+	</definition>
+
+	<definition name="rptoutstanding" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/rptoutstanding.jsp" />
+	</definition>
+
+	<definition name="newpts" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/newpts.jsp" />
+	</definition>
+
+	<definition name="dnaotsreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/dnaotsreport.jsp" />
+	</definition>
+
+	<definition name="totalptsseen" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/totalptsseen.jsp" />
+	</definition>
+
+
+
+	<!-- Start of Instant messaging -->
+	<definition name="allMailsSucess" extends="baseLayout">
+		<put-attribute name="body"
+			value="/instantMessage/pages/instantMessage.jsp" />
+	</definition>
+
+	<definition name="printLetterPage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/printLetter.jsp" />
+	</definition>
+
+	<!-- End of Instant messaging -->
+
+	<!-- Start of Declaration -->
+	<definition name="declarationListPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/declarationlist.jsp" />
+	</definition>
+	<definition name="addDeclarationPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addDeclaration.jsp" />
+	</definition>
+	<definition name="editDeclarationPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editDeclaration.jsp" />
+	</definition>
+
+
+	<!-- End of Declaration -->
+
+
+
+	<!-- Clinic view Profile -->
+	<definition name="viewProfileOfClinic" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/viewClinicProfile.jsp" />
+	</definition>
+	<definition name="locationList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/locationList.jsp" />
+	</definition>
+	<definition name="viewLocationPreofile" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/viewLocation.jsp" />
+	</definition>
+	<definition name="editClinicLocationPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/editLocation.jsp" />
+	</definition>
+
+
+	<!-- End Clinic Profile -->
+
+	<!-- REset Password Start -->
+
+	<definition name="forgotPasswordPage" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/forgotPassword.jsp" />
+	</definition>
+	<definition name="linkSendSucess" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/linkSendSucess.jsp" />
+	</definition>
+	<definition name="resetPasswordPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/common/pages/resetPasswordPage.jsp" />
+	</definition>
+	<definition name="modifiedSucess" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/modifiedSucess.jsp" />
+	</definition>
+
+	<definition name="changePasswordPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/common/pages/changePasswordPage.jsp" />
+	</definition>
+
+
+
+
+	<!-- End Of reset password -->
+
+	<!-- Report start -->
+
+	<definition name="misreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/misreport.jsp" />
+	</definition>
+
+	<definition name="reportsuccess" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/report.jsp" />
+	</definition>
+	<definition name="chargeReportSucess" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/chargesReport.jsp" />
+	</definition>
+	<definition name="invoiceReportSucess" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/invoiceReport.jsp" />
+	</definition>
+
+	<definition name="auditorreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/auditorreport.jsp" />
+	</definition>
+
+	<definition name="paymentReportSucess" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/paymentReport.jsp" />
+	</definition>
+	<definition name="paymentReportSmall" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/smallPaymentReport.jsp" />
+	</definition>
+	<definition name="ipdpayment" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/ipdsmallpaymentreport.jsp" />
+	</definition>
+
+	<definition name="paymentforallusers" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/paymentforallusers.jsp" />
+	</definition>
+
+	<definition name="clientListSuccess" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/clientList.jsp" />
+	</definition>
+
+	<definition name="noActivityApptRecordPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/noActivityRecordReport.jsp" />
+	</definition>
+
+	<definition name="dnaNoFurureAppPage" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/DNANoFutureApp.jsp" />
+	</definition>
+	<definition name="currentTreatmentNoFutureApmts" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/currentTreatmNoFutureApmts.jsp" />
+	</definition>
+
+	<definition name="noActivityClientRecordPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/noActivityClientReport.jsp" />
+	</definition>
+
+
+	<definition name="previewChargesReport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/noActivityClientReport.jsp" />
+	</definition>
+	<!-- Summary Report Mapping -->
+
+	<definition name="DNAsuccess" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/DNAAnalysisReport.jsp" />
+	</definition>
+
+	<definition name="AppKeptDNA" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/appKeptvsDNAReport.jsp" />
+	</definition>
+
+	<definition name="referalTreatment" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/referalTreatmentReport.jsp" />
+	</definition>
+
+
+	<definition name="returningpts" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/returningpts.jsp" />
+	</definition>
+
+
+	<definition name="odreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/odreport.jsp" />
+	</definition>
+
+	<definition name="mlcreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/mlcreport.jsp" />
+	</definition>
+
+	<definition name="refferedreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/refferedbyreport.jsp" />
+	</definition>
+
+	<!-- TreatmentEpisode Report Mapping -->
+
+	<definition name="treatmentEpisodeListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/treatmentEpisodeList.jsp" />
+	</definition>
+
+	<!-- Report End -->
+
+	<!-- Start AssessmentFOrms -->
+
+	<definition name="createNewAssessmentForm" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/createNewAssessmentForm.jsp" />
+	</definition>
+
+
+	<definition name="assessmentMasterList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/assessmentFieldList.jsp" />
+	</definition>
+
+
+	<definition name="addAssessmentPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addAssessmentField.jsp" />
+	</definition>
+
+
+	<definition name="editAssessmentPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/editAssessmentField.jsp" />
+	</definition>
+
+	<definition name="assessmentTemplatePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/Predefine/assessmentTemplateForm.jsp" />
+	</definition>
+
+
+	<definition name="addtemplatesuccess" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addtemplatesuccess.jsp" />
+	</definition>
+
+	<definition name="showtemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/showTemplateList.jsp" />
+	</definition>
+
+	<definition name="addTemplateDetailsPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addTemplateDetails.jsp" />
+	</definition>
+
+	<definition name="addcombineformdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addcombineformdetails.jsp" />
+	</definition>
+
+	<definition name="editcombineformdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/editcombineformdetails.jsp" />
+	</definition>
+
+	<definition name="printcombineformdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/printcombineformdetails.jsp" />
+	</definition>
+
+
+
+
+
+	<!-- <definition name="assesmentsavedsuccess" extends="baseLayout"> <put-attribute 
+		name="body" value="/assesmentForms/pages/assesmentsavedsuccess.jsp"/> </definition> -->
+
+	<definition name="viewEditorPage" extends="baseLayout">
+		<put-attribute name="body" value="/minipaint/editor.jsp" />
+	</definition>
+
+	<definition name="headingListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/subHeadingList.jsp" />
+	</definition>
+
+	<definition name="addsubHeadingAssessmentPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addsubHeading.jsp" />
+	</definition>
+
+	<definition name="editSubHeadingAssessmentPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/editsubHeading.jsp" />
+	</definition>
+
+	<definition name="modifyNewAssessmentForm" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/modifyAssessmentForms.jsp" />
+	</definition>
+
+	<definition name="editPhysioTemplatePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/Predefine/editPhysioTemplate.jsp" />
+	</definition>
+
+
+	<!-- Assessment Form List -->
+
+	<definition name="viewListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/assessmentFormsList.jsp" />
+	</definition>
+
+	<definition name="editAssementPageOfClient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/editClientAssessmentform.jsp" />
+	</definition>
+
+	<definition name="printAssementPageOfClient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/printClientAssesmentForm.jsp" />
+	</definition>
+
+	<definition name="viewImagesListPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/importImagesList.jsp" />
+	</definition>
+
+	<definition name="addImagePage" extends="baseLayout">
+		<put-attribute name="body" value="/assesmentForms/pages/addImage.jsp" />
+	</definition>
+
+	<definition name="consultationNoteSucess" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/consultationnote.jsp" />
+	</definition>
+	<definition name="inputSucess" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/addAdditionalCharges.jsp" />
+	</definition>
+
+	<definition name="changePaswdSucess" extends="baseLayout">
+		<put-attribute name="body"
+			value="/common/pages/passwordChangesuccess.jsp" />
+	</definition>
+
+	<definition name="companyHomepagesuccess" extends="baseLayout">
+		<put-attribute name="header" value="" />
+	</definition>
+
+
+
+	<definition name="setNonAvailabilityReason" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/setNonAvailabilityReason.jsp" />
+	</definition>
+
+	<definition name="editNotAvailableReason" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNotAvailableReason.jsp" />
+	</definition>
+
+	<definition name="addNotAvailabilityReason" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNotAvailableReason.jsp" />
+	</definition>
+	<definition name="dischargeOutcomePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/dischargeOutcomeList.jsp" />
+	</definition>
+
+	<definition name="addDischargeOutcomePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addDischargeOutcome.jsp" />
+	</definition>
+
+	<definition name="editDischargeOutcomePage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editDischargeOutcome.jsp" />
+	</definition>
+
+	<definition name="dischargeStatusPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/dischargeStatus.jsp" />
+	</definition>
+
+
+
+	<definition name="addDischargeStatusPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addDischargeStatus.jsp" />
+	</definition>
+
+	<definition name="editDischargeStatusPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editDischargeStatus.jsp" />
+	</definition>
+
+
+
+
+	<definition name="smsTemplateListpage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/smsTemplate.jsp" />
+	</definition>
+	<definition name="addSMSTemplatepage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/tools/pages/addSMSTemplatepage.jsp" />
+	</definition>
+	<definition name="editSMSTemplatePage" extends="baseLayout">
+		<put-attribute name="body" value="/tools/pages/editSMSTemplate.jsp" />
+	</definition>
+
+
+
+	<!-- End Assessment FOrms -->
+
+	<definition name="viewPrescription" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/viewPrescription.jsp" />
+		<!-- <put-attribute name="body" value="/emr/pages/testing.jsp" /> -->
+	</definition>
+
+
+	<definition name="viewinvestigation" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/viewInvestigation.jsp" />
+	</definition>
+
+	<definition name="pathlab" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/viewInvestigation.jsp" />
+	</definition>
+
+	<definition name="printinvestigation" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/printinvestigation.jsp" />
+	</definition>
+
+	<definition name="printinvsection" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/printinvsection.jsp" />
+	</definition>
+
+	<definition name="printinvrequest" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/printinvrequest.jsp" />
+	</definition>
+
+	<definition name="elabs" extends="baseLayout">
+		<put-attribute name="body" value="/elabs/pages/elabs.jsp" />
+	</definition>
+
+	<definition name="medicalstore" extends="baseLayouts2">
+		<put-attribute name="body" value="/emr/pages/viewPrescription.jsp" />
+	</definition>
+
+
+	<!-- Other Template Mapping Tiles -->
+
+	<definition name="otherTemplateList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/otherTemplateList.jsp" />
+	</definition>
+	<definition name="addOtherTemplate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addOtherTemplate.jsp" />
+	</definition>
+	<definition name="editOtherTemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editOtherTemplate.jsp" />
+	</definition>
+
+
+	<!-- Investigation Type Master Mapping -->
+
+	<definition name="listInvestigationMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listInvestigationMaster.jsp" />
+	</definition>
+	<definition name="addInvestigationTypeMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addInvestigationTypeMaster.jsp" />
+	</definition>
+	<definition name="editInvestigationType" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editInvestigationType.jsp" />
+	</definition>
+
+	<!-- Investigation Name Master Mapping -->
+
+	<definition name="listInvestigationName" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listInvestigationName.jsp" />
+	</definition>
+	<definition name="addInvestigationName" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addInvestigationName.jsp" />
+	</definition>
+	<definition name="editInvestigationName" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editInvestigationName.jsp" />
+	</definition>
+
+
+	<!-- PrescriptionType Master Mapping -->
+
+	<definition name="listPrescriptionCategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listPrescriptionCategory.jsp" />
+	</definition>
+	<definition name="addPrescriptionCategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addPrescriptionCategory.jsp" />
+	</definition>
+	<definition name="editPrescriptionCategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editPrescriptionCategory.jsp" />
+	</definition>
+
+
+	<!-- Perscription Details Mapping -->
+
+	<definition name="listPrescriptionDetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listPrescriptionDetails.jsp" />
+	</definition>
+	<definition name="addPrescriptionDetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addPrescriptionDetails.jsp" />
+	</definition>
+	<definition name="editPrescriptiondetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editPrescriptiondetails.jsp" />
+	</definition>
+
+
+	<!-- start ipd -->
+
+	<definition name="addIpdform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/addIpdform.jsp" />
+	</definition>
+
+	<definition name="addipdcasualty" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/addipdcasualty.jsp" />
+	</definition>
+
+
+
+	<definition name="bedMaster" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/bed_master.jsp" />
+
+	</definition>
+
+
+
+	<definition name="bedStatus" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/bed_status.jsp" />
+
+	</definition>
+
+	<definition name="admission_form" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/addIpdform.jsp" />
+
+	</definition>
+
+
+	<definition name="editIpdform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/editIpdform.jsp" />
+
+	</definition>
+
+
+	
+
+	<definition name="admitfromcasualty" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/admitfromcasualty.jsp" />
+
+	</definition>
+
+
+
+
+	<definition name="bookbed" extends="ipdLayout">
+		<put-attribute name="body" value="/ipd/pages/book_bed.jsp" />
+
+	</definition>
+
+
+	<!-- end ipd -->
+
+	<!-- Expence Management -->
+
+
+	<definition name="printvoucher" extends="baseLayout">
+		<put-attribute name="body"
+			value="/expence/pages/printpaymentvoucher.jsp" />
+	</definition>
+
+	<definition name="paymentvoucher" extends="voucherLayout">
+		<put-attribute name="body" value="/expence/pages/paymentvoucher.jsp" />
+	</definition>
+
+	<definition name="viewexpencereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/expence/pages/viewexpencereport.jsp" />
+	</definition>
+
+	<definition name="prinexpencereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/expence/pages/prinexpencereport.jsp" />
+	</definition>
+
+
+	<definition name="listWardMaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listWardMaster.jsp" />
+
+	</definition>
+	<definition name="editWardMaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editWardMaster.jsp" />
+
+	</definition>
+	<definition name="listSectionMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listSectionMaster.jsp" />
+
+	</definition>
+
+	<definition name="editSectionMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editSectionMaster.jsp" />
+
+	</definition>
+	<definition name="listBedMaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listBedMaster.jsp" />
+
+	</definition>
+	<definition name="editBedMaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editBedMaster.jsp" />
+
+	</definition>
+	<definition name="listEquipmentMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listEquipmentMaster.jsp" />
+
+	</definition>
+
+	<definition name="editEquipmentMaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editEquipmentMaster.jsp" />
+
+	</definition>
+
+
+	<definition name="printIpdForm" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printIpdForm.jsp" />
+	</definition>
+
+	<definition name="dischargeform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/dischargeform.jsp" />
+	</definition>
+
+	<definition name="printdischarge" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printdischarge.jsp" />
+	</definition>
+
+	<definition name="dischargesaved" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/dischsrgedsaved.jsp" />
+	</definition>
+
+	<definition name="listExpenceCategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listExpenceCategory.jsp" />
+	</definition>
+	<definition name="addExpencecategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addExpencecategory.jsp" />
+	</definition>
+	<definition name="editExpenceCategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editExpenceCategory.jsp" />
+	</definition>
+
+	<definition name="barcode" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/barcode.jsp" />
+	</definition>
+
+	<!-- Diagnosis Master Section -->
+
+	<definition name="diagnosismaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diagnosis/pages/diagnosisMaster.jsp" />
+	</definition>
+
+	<definition name="listdiagnosis" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diagnosis/pages/diagnosis_status.jsp" />
+	</definition>
+
+
+	<!-- Diagnosis Name Master -->
+
+	<definition name="listDiagnosisName" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listDiagnosisName.jsp" />
+	</definition>
+
+	<definition name="listDiagnosisProblem" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listDiagnosisProblem.jsp" />
+	</definition>
+
+
+	<definition name="editDiagnosisProblem" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editDiagnosisProblem.jsp" />
+	</definition>
+
+
+
+	<!-- Diagnosis Problem Intervention -->
+
+	<definition name="listDiagnosisProblemIntervention" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listDiagnosisProblemIntervention.jsp" />
+	</definition>
+
+	<definition name="editDiagnosisProblemIntervention" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editDiagnosisProblemIntervention.jsp" />
+	</definition>
+
+
+
+
+
+	<!-- Problem Listing -->
+
+	<definition name="problemlisting" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diagnosis/pages/problem_listing.jsp" />
+	</definition>
+
+
+	<definition name="mischart" extends="baseLayout">
+		<put-attribute name="body" value="/mis/pages/mischart.jsp" />
+	</definition>
+
+	<definition name="graph" extends="baseLayout">
+		<put-attribute name="body" value="/mis/pages/graph.jsp" />
+	</definition>
+
+
+	<!-- Treatment Sheet -->
+	<definition name="treatmentsheet" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/treatmentSheet.jsp" />
+	</definition>
+
+
+	<definition name="initialdischarge" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/initialDischarge.jsp" />
+	</definition>
+
+	<definition name="dtr" extends="baseLayout">
+		<put-attribute name="body" value="/dtr/pages/dtrgraph.jsp" />
+	</definition>
+	<definition name="diagnosisdashboard" extends="baseLayout3">
+		<put-attribute name="body" value="/ipd/pages/diagnosisDashboard.jsp" />
+	</definition>
+
+
+	<!-- Payroll -->
+	<!-- Payroll -->
+
+	<definition name="payrolldashboard" extends="mainbaseLayout">
+		<put-attribute name="body"
+			value="/payroll/pages/payrolldashboard.jsp" />
+	</definition>
+
+	<!-- <definition name="managecompany" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/managecompany.jsp" />
+	</definition> -->
+<definition name="managecompany" extends="payrollsettingbaselayout">
+		<put-attribute name="body" value="/payrollnew/settings.jsp" />
+	</definition>
+	<definition name="managedepartment" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/departments.jsp" />
+	</definition>
+
+	<!-- <definition name="managedepartment" extends="payrollLayout">
+		<put-attribute name="body"
+			value="/payroll/pages/managedepartment.jsp" />
+	</definition> -->
+
+	<definition name="managebranches" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/managebranches.jsp" />
+	</definition>
+
+	<definition name="manageallowance" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageallownces.jsp" />
+	</definition>
+
+	<definition name="manageattendance" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/adminattendance.jsp" />
+		
+	</definition>
+
+	<definition name="managededuction" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/managededuction.jsp" />
+	</definition>
+
+	<definition name="managetax" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageTax.jsp" />
+	</definition>
+
+	<definition name="manageBank" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageBank.jsp" />
+	</definition>
+
+	<definition name="manageloan" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageLoan.jsp" />
+	</definition>
+
+
+	<!-- <definition name="manageholiday" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageHolidays.jsp" />
+	</definition> -->
+	<definition name="manageholiday" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/holidays.jsp" />
+	</definition>
+
+	<definition name="manageleave" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageLeave.jsp" />
+	</definition>
+
+	<definition name="manageemployee" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageEmployee.jsp" />
+	</definition>
+
+	<definition name="manageincrement" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/manageIncrement.jsp" />
+	</definition>
+
+	<definition name="editSalaryDetails" extends="payrollLayout">
+		<put-attribute name="body"
+			value="/payroll/pages/editSalaryDetails.jsp" />
+	</definition>
+
+	<definition name="managesalary" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/salary.jsp" />
+	</definition>
+
+	<definition name="editSalaryMonth" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/editSalaryMonth.jsp" />
+	</definition>
+
+
+	<definition name="reportHoliday" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/reportHoliday.jsp" />
+	</definition>
+
+
+	<definition name="reportLoan" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/reportLoan.jsp" />
+	</definition>
+
+	<definition name="reportSalary" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/reportSalary.jsp" />
+	</definition>
+
+	<definition name="payslip" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/salary-view.jsp" />
+	</definition>
+
+	<definition name="reportEmployee" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/reportEmployee.jsp" />
+	</definition>
+
+
+	<definition name="reportAttendance" extends="payrollLayout">
+		<put-attribute name="body"
+			value="/payroll/pages/reportAttendance.jsp" />
+	</definition>
+
+
+	<definition name="reportAllowancededuction" extends="payrollLayout">
+		<put-attribute name="body"
+			value="/payroll/pages/reportAllowancededuction.jsp" />
+	</definition>
+
+	<definition name="loginPayroll" extends="baseLayout3">
+		<put-attribute name="body" value="/payroll/pages/loginPayroll.jsp" />
+	</definition>
+
+
+
+
+
+
+	<!-- Blood Bank -->
+
+	<!-- Blood Bank -->
+
+	<definition name="bloodbank" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/newBloodBank.jsp" />
+	</definition>
+
+	<definition name="donorlist" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodDonorlist.jsp" />
+	</definition>
+
+	<definition name="reports" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/reportBloodbank.jsp" />
+	</definition>
+	<definition name="bloodcamp" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/bloodcamp.jsp" />
+	</definition>
+
+	<definition name="donatepatient" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/donatepatient.jsp" />
+	</definition>
+
+	<definition name="requestblood" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/requestblood.jsp" />
+	</definition>
+
+	<definition name="instock" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/bloodBank2.jsp" />
+	</definition>
+
+	<definition name="banklist" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/bloodBankList.jsp" />
+	</definition>
+
+
+	<!-- Inventory -->
+
+
+
+
+	<definition name="addcategories" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/addCategory.jsp" />
+	</definition>
+
+
+	<definition name="listVendor" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/listVendorInventory.jsp" />
+	</definition>
+
+	<definition name="addVendor" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/addVendor.jsp" />
+	</definition>
+
+	<definition name="editVendor" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/editInventoyVednor.jsp" />
+	</definition>
+
+
+	<definition name="manageInventory" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/vendorList.jsp" />
+	</definition>
+
+
+	<definition name="listCatalogue" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/listCatalogue.jsp" />
+	</definition>
+
+	<definition name="managecatlogue" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/managecatlogue.jsp" />
+	</definition>
+
+
+
+	<definition name="manageStorage" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/manageStorage.jsp" />
+	</definition>
+
+
+	<definition name="manageProduct" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/manageProduct.jsp" />
+	</definition>
+
+	<definition name="viewVendor" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/brandNamelist.jsp" />
+	</definition>
+
+	<definition name="stockStatus" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/stockStatus.jsp" />
+	</definition>
+
+	<definition name="procurement" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/procurement.jsp" />
+	</definition>
+
+
+	<definition name="createpo" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/createpo.jsp" />
+	</definition>
+
+	<definition name="completepo" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/completedpo.jsp" />
+	</definition>
+
+	<definition name="payment1" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/payment.jsp" />
+	</definition>
+
+
+	<definition name="listProduct" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/listProduct.jsp" />
+	</definition>
+
+	<definition name="ordertrack" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/ordertrack.jsp" />
+	</definition>
+
+	<definition name="popayment" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/polist.jsp" />
+	</definition>
+
+
+	<definition name="listsale" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/listsale.jsp" />
+	</definition>
+
+	<definition name="quicksearch" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/quicksearch.jsp" />
+	</definition>
+
+	<definition name="saleproduct" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/saleproduct.jsp" />
+	</definition>
+
+
+
+
+
+
+	<!-- Master -->
+
+	<definition name="listSubcategory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listSubcategory.jsp" />
+	</definition>
+
+
+	<definition name="addSubcategory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addSubcategory.jsp" />
+	</definition>
+
+	<definition name="editSubcategory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editSubcategory.jsp" />
+	</definition>
+
+	<definition name="listBrand" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listBrand.jsp" />
+	</definition>
+
+	<definition name="addBrand" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addBrand.jsp" />
+	</definition>
+
+	<definition name="editBrand" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editBrand.jsp" />
+	</definition>
+
+
+
+	<definition name="listCategories" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listCategories.jsp" />
+	</definition>
+
+	<definition name="addCategory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addCategory.jsp" />
+	</definition>
+
+	<definition name="editCategory" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editCategory.jsp" />
+	</definition>
+
+
+
+	<!-- Standard Charges -->
+
+	<definition name="listStandardCharges" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listStandardCharges.jsp" />
+	</definition>
+
+	<definition name="addStandardCharges" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addStandardCharges.jsp" />
+	</definition>
+
+	<definition name="editStandardcharges" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editStandardcharges.jsp" />
+	</definition>
+
+
+	<!-- Visit Consult -->
+
+	<definition name="visitconsult" extends="baseLayout">
+		<put-attribute name="body"
+			value="/ipd/pages/viewIpdVisitingConsult.jsp" />
+	</definition>
+
+
+	<definition name="barcode" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/barcode.jsp" />
+	</definition>
+
+	<!-- -->
+	<definition name="widgets" extends="mainbaseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/mainwidgets.jsp" />
+	</definition>
+	<definition name="mainsetting" extends="mainbaseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/mainsetting.jsp" />
+	</definition>
+	<definition name="miswidget" extends="mainbaseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/miswidget.jsp" />
+	</definition>
+
+
+	<!-- Master Nursing Care Pages -->
+
+
+	<definition name="listNursingcategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNursingCategory.jsp" />
+	</definition>
+
+	<definition name="addNursingcategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNursingcategory.jsp" />
+	</definition>
+
+	<definition name="editNursingcategory" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNursingcategory.jsp" />
+	</definition>
+
+	<definition name="listNursingdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNursingdetails.jsp" />
+	</definition>
+
+	<definition name="addNursingdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNursingdetails.jsp" />
+	</definition>
+
+	<definition name="editNursingdetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNursingdetails.jsp" />
+	</definition>
+
+
+	<!-- packs -->
+
+	<definition name="pacspage" extends="baseLayout">
+		<put-attribute name="body" value="/pacs/pages/pacs.jsp" />
+	</definition>
+    
+    <definition name="report" extends="baseLayout">
+		<put-attribute name="body" value="/pacs/pages/invtemplatepac.jsp" />
+	</definition>
+
+
+	<!-- Events Master -->
+
+	<definition name="listEvents" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listEvents.jsp" />
+	</definition>
+	<definition name="addEvents" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addEvents.jsp" />
+	</definition>
+	<definition name="editEvent" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editEvent.jsp" />
+	</definition>
+
+
+	<!-- Eq Mapping -->
+
+	<definition name="eqregister" extends="baseLayout">
+		<put-attribute name="body" value="/eq/pages/emrreg.jsp" />
+	</definition>
+
+	<definition name="errorotp" extends="baseLayout">
+		<put-attribute name="body" value="/eq/pages/errorotp.jsp" />
+	</definition>
+
+	<definition name="otppage" extends="baseLayout">
+		<put-attribute name="body" value="/eq/pages/eqotppage.jsp" />
+	</definition>
+
+
+	<!-- housekeeping -->
+
+	<definition name="housekeeping" extends="housekeepinglayout">
+		<put-attribute name="body"
+			value="/housekeeping/pages/housekeeping.jsp" />
+	</definition>
+
+	<definition name="laundry" extends="housekeepinglayout">
+		<put-attribute name="body" value="/housekeeping/pages/laundry.jsp" />
+	</definition>
+	<definition name="maintenance" extends="housekeepinglayout">
+		<put-attribute name="body"
+			value="/housekeeping/pages/maintenance.jsp" />
+	</definition>
+	<definition name="serviceprovider" extends="housekeepinglayout">
+		<put-attribute name="body"
+			value="/housekeeping/pages/serviceprovider.jsp" />
+	</definition>
+	<definition name="asset" extends="housekeepinglayout">
+		<put-attribute name="body" value="/housekeeping/pages/asset.jsp" />
+	</definition>
+    <definition name="staffinfo" extends="housekeepinglayout">
+		<put-attribute name="body" value="/housekeeping/pages/staffinfo.jsp" />
+	</definition>
+     <definition name="staffdashboard" extends="baseLayout">
+		<put-attribute name="body" value="/housekeeping/pages/staffdashboard.jsp" />
+	</definition>
+
+	<!-- SMS Send Mapping -->
+
+	<definition name="sendSms" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/sendSms.jsp" />
+	</definition>
+
+
+	<!-- Godown master -->
+
+	<definition name="godownlist" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listgodownlist.jsp" />
+	</definition>
+	<definition name="addGodown" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addGodown.jsp" />
+	</definition>
+	<definition name="editGodown" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editGodown.jsp" />
+	</definition>
+
+
+
+	<!-- Hospital packages -->
+	<definition name="packages" extends="baseLayout">
+		<put-attribute name="body"
+			value="/packages/pages/packagedashboard.jsp" />
+	</definition>
+
+
+	<!-- Dietary -->
+	<definition name="dietary" extends="dietarylayout">
+		<put-attribute name="body"
+			value="/dietary/pages/dietarydashboard.jsp" />
+	</definition>
+	<definition name="printdiethistory" extends="baseLayout">
+		<put-attribute name="body" value="/dietary/pages/printhistory.jsp" />
+	</definition>
+
+
+
+	<!-- cafeteria -->
+
+	<definition name="cafeteria" extends="cafeterialayout">
+		<put-attribute name="body"
+			value="/cafeteria/pages/cafeteriaDashboard.jsp" />
+	</definition>
+
+	<definition name="cafeteriahistory" extends="cafeterialayout">
+		<put-attribute name="body"
+			value="/cafeteria/pages/cafeteriahistory.jsp" />
+	</definition>
+
+
+
+	<!-- Ipd Template Master -->
+
+	<definition name="listIpdTemplate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listIpdTemplate.jsp" />
+	</definition>
+	<definition name="addIpdTemplate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addIpdTemplate.jsp" />
+	</definition>
+
+	<definition name="editIpdTemplate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editIpdTemplate.jsp" />
+	</definition>
+
+
+	<!-- Account Reconcilation -->
+
+	<definition name="accountReconcilation" extends="reconsilationLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/accountReconcilation.jsp" />
+	</definition>
+
+	<definition name="reconcilationReport" extends="reconsilationLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/reconcilationReport.jsp" />
+	</definition>
+
+	<definition name="accountDetails" extends="reconsilationLayout">
+		<put-attribute name="body" value="/accounts/pages/accountDetails.jsp" />
+	</definition>
+
+
+
+	<!-- Bank Deposite -->
+
+	<definition name="bankdeposite" extends="bankdepositeLayout">
+		<put-attribute name="body" value="/accounts/pages/bankDeposite.jsp"></put-attribute>
+
+	</definition>
+
+	<definition name="chequeDetails" extends="bankdepositeLayout">
+		<put-attribute name="body" value="/accounts/pages/chequeDetails.jsp"></put-attribute>
+
+	</definition>
+
+
+	<definition name="template" extends="baseLayout">
+		<put-attribute name="body"
+			value="/emr/pages/invstigationtemplate.jsp" />
+	</definition>
+
+	<definition name="invstgraph" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/invstigationgraph.jsp" />
+	</definition>
+
+	<definition name="paymentinvst" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/invstigationpayment.jsp" />
+	</definition>
+
+
+	<definition name="patinetconditionReport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/patientConditionReport.jsp" />
+	</definition>
+
+	<definition name="blankLetterHead" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/letterHeadBlank.jsp" />
+	</definition>
+
+   <definition name="blankLetterHeadayush" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/letterheadblankayush.jsp" />
+	</definition>
+
+	<!-- Pharmacy DashBoard -->
+    <definition name="pharmacysummaryreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/summarypaymentrpt.jsp" />
+	</definition>
+	
+	<definition name="checkavailability" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/checkavailability.jsp" />
+	</definition>
+	<definition name="saleprisc" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/saleprisc.jsp" />
+	</definition>
+
+	<definition name="reportprisc" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/reportprisc.jsp" />
+	</definition>
+
+
+
+	<definition name="creditbill" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/creditbill.jsp" />
+	</definition>
+
+	<definition name="record" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/recordCash.jsp" />
+	</definition>
+
+	<definition name="paymentpharmacy" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/paymentpharmacy.jsp" />
+	</definition>
+	<definition name="viewpharmacy" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/viewPharmacy.jsp" />
+	</definition>
+
+	<definition name="newsale" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/newsalepharmacy.jsp" />
+	</definition>
+
+	<definition name="editmedicine" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/editmedicine.jsp" />
+	</definition>
+
+	<definition name="printpharmacyprisc" extends="baseLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/printpharmacyprisc.jsp" />
+	</definition>
+
+	<definition name="reorder" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/reorderpharmacy.jsp" />
+	</definition>
+
+	<definition name="returnmedicine" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/returnMedicines.jsp" />
+	</definition>
+
+
+
+
+
+	<definition name="plist" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/plist.jsp" />
+	</definition>
+
+
+	<definition name="doctorreport" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/doctorreport.jsp" />
+	</definition>
+	<definition name="discpatientreport" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/discpatientreport.jsp" />
+	</definition>
+
+	<definition name="pharmacysetting" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/pharmacysetting.jsp" />
+	</definition>
+
+
+	<definition name="editBill" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/editBill.jsp" />
+	</definition>
+
+	<!-- TP Charges -->
+
+	<definition name="addchargesTp" extends="baseLayout">
+		<put-attribute name="body"
+			value="/thirdParties/pages/addTpcharges.jsp" />
+	</definition>
+
+	<!-- Ot Notes -->
+	<definition name="otnotes" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/otnotes.jsp" />
+	</definition>
+
+	<definition name="otimg" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/otimg.jsp" />
+	</definition>
+
+	<definition name="printotnotes" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printotnotes.jsp" />
+	</definition>
+
+
+	<!-- MRD -->
+
+
+	<definition name="mrdpage" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/mrd.jsp" />
+	</definition>
+
+
+	<!-- Master Share Charge -->
+	<definition name="shareCharges" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/shareCharges.jsp" />
+	</definition>
+
+
+	<!-- Doctor Share Report -->
+
+	<definition name="doctorShareReport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/doctorShareReport.jsp" />
+	</definition>
+
+	<!-- Tp Follower -->
+
+
+	<definition name="tpfollowerPage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/tpfollowerPage.jsp" />
+
+	</definition>
+
+	<definition name="marketing" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/marketing.jsp" />
+
+	</definition>
+
+<definition name="target" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/target.jsp" />
+
+	</definition>
+<definition name="test" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/test.jsp" />
+	</definition>
+	<!-- -->
+	<definition name="letsTalk" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/support.jsp" />
+	</definition>
+
+	<definition name="casuality" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/casuality.jsp" />
+	</definition>
+
+	<definition name="newpatient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addCasualityPatient.jsp" />
+	</definition>
+
+	<definition name="recording" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/recording.jsp" />
+	</definition>
+
+	<definition name="advprint" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/advprint.jsp" />
+	</definition>
+
+	<definition name="addPharmacyProduct" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/addPharmacyProduct.jsp" />
+	</definition>
+
+
+	<definition name="ipddailyreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/ipddailyreport.jsp" />
+	</definition>
+
+	<definition name="mrdjsppage" extends="baseLayout">
+		<put-attribute name="body" value="/mrd/pages/mrd.jsp" />
+	</definition>
+
+	<definition name="userpharreport" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/userReport.jsp" />
+	</definition>
+
+
+	<definition name="expiryreport" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/expiryMedicineReport.jsp" />
+	</definition>
+
+	<definition name="expirymedicine" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/expiryReportMedicine.jsp" />
+	</definition>
+	<definition name="expencereport" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/expencereport.jsp" />
+	</definition>
+	<definition name="supplierledgerreport" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/supplierledgerreport.jsp" />
+	</definition>
+	<definition name="vatreport" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/vatreport.jsp" />
+	</definition>
+	<definition name="editpurorder" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/editpurchaseOrder.jsp" />
+	</definition>
+
+
+
+	<definition name="userwisepayment" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/userwisepaymentReport.jsp" />
+	</definition>
+
+
+	<!-- Master -->
+	<!--State -->
+	<definition name="state" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listState.jsp" />
+	</definition>
+
+	<definition name="addState" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addState.jsp" />
+	</definition>
+
+	<definition name="editState" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editState.jsp" />
+	</definition>
+
+	<!--City Master -->
+	<definition name="city" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listCity.jsp" />
+	</definition>
+
+	<definition name="addCity" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addCity.jsp" />
+	</definition>
+
+	<definition name="editCity" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editCity.jsp" />
+	</definition>
+	
+	<!-- Ambulance Master -->
+	
+	<definition name="ambulance" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listambulance.jsp" />
+	</definition>
+
+	<definition name="addAmbulance" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addAmbulance.jsp" />
+	</definition>
+
+	 <definition name="editAmbulance" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editAmbulance.jsp" />
+	</definition>
+	
+
+	<!--Shelf Master -->
+	<definition name="shelf" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listShelf.jsp" />
+	</definition>
+
+	<definition name="addShelf" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addShelf.jsp" />
+	</definition>
+
+	<definition name="editShelf" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editShelf.jsp" />
+	</definition>
+
+	<definition name="medicinebarcode" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/medicinebarcode.jsp" />
+	</definition>
+
+
+	<definition name="mdbarcode" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/mdbarcode.jsp" />
+	</definition>
+
+<definition name="allmdbarcode" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/allmdbarcode.jsp" />
+	</definition>
+
+
+	<definition name="singlebarcodeinven" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/inventorybarcode.jsp" />
+	</definition>
+
+
+	<definition name="profitloss" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/profitloss.jsp" />
+	</definition>
+	<definition name="folder" extends="baseLayout">
+		<put-attribute name="body" value="/pacs/pages/multpacs.jsp" />
+	</definition>
+
+	<definition name="multiviewer" extends="baseLayout">
+		<put-attribute name="body" value="/pacs/pages/multiviewer.jsp" />
+	</definition>
+
+	<definition name="singlebarcode" extends="blankLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/singlebarcode.jsp" />
+	</definition>
+
+	<definition name="purorder" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/purchaseOrder.jsp" />
+	</definition>
+	<definition name="emailpurorder" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/ePurchaseOrder.jsp" />
+	</definition>
+
+
+	<definition name="loginerror" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/userloginerror.jsp" />
+	</definition>
+	<definition name="returnipdmedicine" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/returnipdMedicines.jsp" />
+	</definition>
+
+	<definition name="refundbill" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/refundBill.jsp" />
+	</definition>
+
+	<definition name="donormaster" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/donormaster.jsp" />
+	</definition>
+
+	<definition name="campmaster" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/campmaster.jsp" />
+	</definition>
+
+	<definition name="employeemaster" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/employeemaster.jsp" />
+	</definition>
+	<definition name="hospitalmaster" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/hospitalmaster.jsp" />
+	</definition>
+	<definition name="doctormaster" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/doctormaster.jsp" />
+	</definition>
+	<definition name="bloodsuppliermaster" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodsuppliermaster.jsp" />
+	</definition>
+
+	<definition name="accountingBloodBank" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/accountingBloodBank.jsp" />
+	</definition>
+	<definition name="bloodstock" extends="bloodbankLayout">
+		<put-attribute name="body" value="/bloodbank/pages/bloodstock.jsp" />
+	</definition>
+
+	<definition name="settingbloodbank" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/settingbloodbank.jsp" />
+	</definition>
+	<definition name="procurementblood" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodbankProcurement.jsp" />
+	</definition>
+	<definition name="testcomponent" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodbankTestComponent.jsp" />
+	</definition>
+	<definition name="crossmatching" extends="bloodbankLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodbankCrossMatching.jsp" />
+	</definition>
+	<definition name="bloodinvoice" extends="baseLayout">
+		<put-attribute name="body" value="/bloodbank/pages/bloodinvoice.jsp" />
+	</definition>
+	<definition name="stockcheck" extends="baseLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/stockcheckBlood.jsp" />
+	</definition>
+
+
+	<!-- -->
+	<!-- Dietary -->
+	<definition name="viewAll" extends="baseLayout">
+		<put-attribute name="body" value="/dietary/pages/listdietary.jsp" />
+	</definition>
+
+	<definition name="AddInfo" extends="baseLayout">
+		<put-attribute name="body" value="/dietary/pages/adddietarynew.jsp" />
+	</definition>
+
+	<definition name="edit" extends="baseLayout">
+		<put-attribute name="body" value="/dietary/pages/editdietarynew.jsp" />
+	</definition>
+
+	<!-- Dietary Details -->
+	<definition name="showall" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/listdietarydetails.jsp" />
+	</definition>
+
+	<definition name="AddInformation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/adddietarydetails.jsp" />
+	</definition>
+
+	<definition name="editInformation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/editdietarydetails.jsp" />
+	</definition>
+
+	<definition name="returnpurorder" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/returnPurchaseOrder.jsp" />
+	</definition>
+
+	<definition name="itemwisereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/itemwiseReport.jsp" />
+	</definition>
+	<definition name="bincardreport" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/bincardReport.jsp" />
+	</definition>
+	<definition name="productReturnReport" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/productReturnReport.jsp" />
+	</definition>
+	<definition name="productReceivedReport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/productReceivedReport.jsp" />
+	</definition>
+
+
+	<definition name="ipdformSettingList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/ipdformSettingList.jsp" />
+	</definition>
+
+	<definition name="addIpdformSetting" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addIpdformSetting.jsp" />
+	</definition>
+	<definition name="editIpdformsetting" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editIpdformsetting.jsp" />
+	</definition>
+	<definition name="chargeinvoice" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/chargeinvoice.jsp" />
+	</definition>
+
+	<!-- Package Master Action -->
+	<definition name="listpackagemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listPackage.jsp" />
+	</definition>
+	<!-- Mrd changes -->
+	<definition name="mrdAddPatient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addPatientPage.jsp" />
+	</definition>
+
+	<definition name="addMrdTemplateDetailsPage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/assesmentForms/pages/addMrdTemplateDetails.jsp" />
+	</definition>
+
+	<!--Location Master -->
+	<definition name="locationMaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listLocation.jsp" />
+	</definition>
+
+	<definition name="addlocationmaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addLocation.jsp" />
+	</definition>
+
+	<definition name="editlocationmaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editLocation.jsp" />
+	</definition>
+
+	<definition name="refundreport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/ipdopdRefundReport.jsp" />
+	</definition>
+	<definition name="ipdBillRegister" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/ipdBillRegister.jsp" />
+	</definition>
+	<definition name="serviceRegisterDetails" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/serviceRegisterDetails.jsp" />
+	</definition>
+	<definition name="departmentWiseAnalysisReport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/departmentWiseAnalysisReport.jsp" />
+	</definition>
+
+	<!-- support dashboard -->
+
+	<definition name="supportlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/support/pages/supportdashboard.jsp" />
+	</definition>
+
+
+	<!-- Role Access Setting -->
+	<definition name="roleAccessSetting" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/roleaccesssetting3.jsp" />
+	</definition>
+
+	<definition name="kpiReport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/kpiReport.jsp" />
+	</definition>
+
+	<!--Product Type Master -->
+	<definition name="producttypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listProductType.jsp" />
+	</definition>
+
+	<definition name="addproducttypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addProductType.jsp" />
+	</definition>
+
+	<definition name="editproducttypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editProductType.jsp" />
+	</definition>
+
+	<definition name="bigBill" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/bigBill.jsp" />
+	</definition>
+
+	<definition name="opdipdsaleprisc" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/opdipdnewsale.jsp" />
+	</definition>
+
+	<definition name="salereport" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/saleReport.jsp" />
+	</definition>
+
+	<definition name="transferdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/transferDashboard.jsp" />
+	</definition>
+
+	<definition name="noglobalaccess" extends="baseLayout3">
+		<put-attribute name="body" value="/common/pages/noglobalaccess.jsp" />
+	</definition>
+	<definition name="estimatesale" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/estimateSalePharmacy.jsp" />
+	</definition>
+
+	<definition name="longpo" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/longPurchaseOrder.jsp" />
+	</definition>
+
+	<definition name="requestTransfer" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/requestTransfer.jsp" />
+	</definition>
+
+	<definition name="transfertocatalogue" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/requestMedicineCatalogue.jsp" />
+	</definition>
+
+	<definition name="updeletereport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/updeleteReport.jsp" />
+	</definition>
+
+	<definition name="checkmedicineavability" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/checkmedicineavability.jsp" />
+	</definition>
+	<definition name="grnprint" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/grnPrint.jsp" />
+	</definition>
+
+	<definition name="inventoryOpeningClosingReport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/inventoryOpeningClosingReport.jsp" />
+	</definition>
+	<definition name="consumptionreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/saleConsumptionReport.jsp" />
+	</definition>
+
+	<definition name="requestedpo" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/requestedPo.jsp" />
+	</definition>
+
+	<definition name="deliverPrint" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/deliverPrint.jsp" />
+	</definition>
+	<definition name="deliverPrintDirect" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/deliverPrintDirect.jsp" />
+	</definition>
+
+
+	<!--Investigation Template Master -->
+	<definition name="listInvestigationTemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listInvestigationTemplate.jsp" />
+	</definition>
+	<definition name="addinvestigationtemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addInvestigationTemplate.jsp" />
+	</definition>
+	<definition name="editinvestigationtemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editInvestigationTemplate.jsp" />
+	</definition>
+
+	<!--Medicine Type Master -->
+	<definition name="medicinetypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listMedicineType.jsp" />
+	</definition>
+	<definition name="addmedicinetypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addMedicineType.jsp" />
+	</definition>
+	<definition name="editmedicinetypemaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editMedicineType.jsp" />
+	</definition>
+	<definition name="printbalreceipt" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/reciptPayment.jsp" />
+	</definition>
+
+	<definition name="paymentreceivereport" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/paymentReceiveReport.jsp" />
+	</definition>
+
+
+	<!--Investigation Section Master -->
+	<definition name="listInvestigationSection" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listInvestigationSection.jsp" />
+	</definition>
+	<definition name="addInvestgationSection" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addInvestigationSection.jsp" />
+	</definition>
+	<definition name="editInvestgationSection" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editInvestigationSection.jsp" />
+	</definition>
+	<definition name="printconfirmgrn" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/printconfirmgrn.jsp" />
+	</definition>
+	<!--Terms and Condition Master -->
+	<definition name="listTermsCondition" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listTermsAndConditions.jsp" />
+	</definition>
+	<definition name="addTermsCondition" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addTermsAndConditions.jsp" />
+	</definition>
+	<definition name="editTermsCondition" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editTermsAndConditions.jsp" />
+	</definition>
+
+	<definition name="itemwisestockreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/itemwisestockreport.jsp" />
+	</definition>
+	<definition name="EMRNEW" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/emrnew.jsp" />
+	</definition>
+	<definition name="nipdaccess" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/noipdaccess.jsp" />
+	</definition>
+
+	<definition name="transferreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/transferreport.jsp" />
+	</definition>
+
+	<definition name="usersaccessreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/usersaccessreport.jsp" />
+	</definition>
+
+	<definition name="returnque" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/returntoSupplierQue.jsp" />
+	</definition>
+
+	<definition name="returndashboard" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/productReturnDashboard.jsp" />
+	</definition>
+	<definition name="viewreturngrn" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/viewreturngrn.jsp" />
+	</definition>
+	<definition name="printreturngrn" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/printreturngrn.jsp" />
+	</definition>
+
+	<definition name="chargesharereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/chargesharereport.jsp" />
+	</definition>
+
+	<definition name="vitalstatistics" extends="blankLayout">
+		<put-attribute name="body" value="/ipd/pages/vitalstats.jsp" />
+	</definition>
+
+	<definition name="kpidashboard" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/kpiReport.jsp" />
+	</definition>
+	<definition name="addIndicator" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/addIndicator.jsp" />
+	</definition>
+	<definition name="kpireports" extends="baseLayout">
+		<put-attribute name="body" value="/mis/pages/kpi.jsp" />
+	</definition>
+
+
+	<!-- vital Master -->
+
+	<definition name="listvitalMasterList" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/vitalmasterList.jsp" />
+	</definition>
+	<definition name="addvitalMasterList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addVitalmasterList.jsp" />
+	</definition>
+	<definition name="editvitalMasterList" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editvitalMasterList.jsp" />
+	</definition>
+
+	<!--NABH Catagory Master -->
+	<definition name="nabhcatagorymaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNABHCatagoryMaster.jsp" />
+	</definition>
+	<definition name="addnabhcatagorymaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNABHCatagoryMaster.jsp" />
+	</definition>
+	<definition name="editnabhcatagorymaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNABHCatagoryMaster.jsp" />
+	</definition>
+
+	<!--NABH Sub Catagory Master -->
+
+	<definition name="nabhblankLayout" template="/common/pages/tiles/nabhblankLayouts.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="/common/pages/tiles/nabh_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/nabsbody.jsp" />
+
+		<put-attribute name="footer"
+			value="/common/pages/tiles/nabh_footer.jsp" />
+	</definition>
+
+	<!-- 24 May 2018   -->
+	<definition name="smartAccountLayout"
+		template="/common/pages/tiles/smartAccountLayouts.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header"
+			value="/common/pages/tiles/smartacc_header.jsp" />
+		<put-attribute name="menu"
+			value="/common/pages/tiles/smartacc_menu.jsp" />
+		<put-attribute name="body"
+			value="/common/pages/tiles/smartacc_body.jsp" />
+		<put-attribute name="footer"
+			value="/common/pages/tiles/smartacc_footer.jsp" />
+	</definition>
+	
+	<!--Video Tutorial -->
+	<definition name="videotutorialLayout" template="/common/pages/tiles/videotutorialblankLayouts.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="/common/pages/tiles/videotutorial_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/videotutorial_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/videotutorial_footer.jsp" />
+	</definition>
+
+	<definition name="nabhsubcatagorymaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNABHSubCatagoryMaster.jsp" />
+	</definition>
+	<definition name="addnabhsubcat" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addNABHSubCat.jsp" />
+	</definition>
+	<definition name="editnabhsubcat" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editnabhsubcat.jsp" />
+	</definition>
+
+	<!--NABH area Master -->
+	<definition name="nabhareamaster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNABHAreaMaster.jsp" />
+	</definition>
+	<definition name="addnabharea" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addNABHArea.jsp" />
+	</definition>
+	<definition name="editnabharea" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editnabharea.jsp" />
+	</definition>
+
+	<definition name="tpadashboard" extends="tpaLayout">
+		<put-attribute name="body" value="/tpa/pages/tpadashboard.jsp" />
+	</definition>
+	<definition name="emrdocs" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/emrdocs.jsp" />
+	</definition>
+	<definition name="roleacccess" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/roleaccess.jsp" />
+	</definition>
+	<definition name="patientconsumptionreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/patientConsumptionReport.jsp" />
+	</definition>
+
+	<definition name="patientlabel" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/patientlabel.jsp" />
+	</definition>
+	<definition name="singlepatientlabel" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/patientsinglelabel.jsp" />
+	</definition>
+
+	<definition name="uploadgrn" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/uploadGrn.jsp" />
+	</definition>
+
+	<definition name="getallbillforprint" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/printAllBill.jsp" />
+	</definition>
+
+	<definition name="errorcharge" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/errorcharge.jsp" />
+	</definition>
+
+	<definition name="blankLetterHeadprint" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/letterHeadBlankPrint.jsp" />
+	</definition>
+
+	<definition name="editoptionalform" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/editoptionalform.jsp" />
+	</definition>
+	<definition name="gynicform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/gynicAssesmentForm.jsp" />
+	</definition>
+
+	<definition name="editgynicform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/editgynicform.jsp" />
+	</definition>
+
+	<definition name="printgynicform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printgynicform.jsp" />
+	</definition>
+
+	<definition name="reorderProcurement" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/reorderProcurement.jsp" />
+	</definition>
+
+
+	<definition name="listSchedulerTask" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listSchedulerTask.jsp" />
+	</definition>
+
+	<definition name="addSchedulerTask" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addSchedulerTask.jsp" />
+	</definition>
+	<definition name="editSchedulerTask" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editSchedulerTask.jsp" />
+	</definition>
+
+
+	<definition name="listSchedulerSubtask" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listSchedulerSubtask.jsp" />
+	</definition>
+
+	<definition name="addSchedulerSubtask" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addSchedulerSubtask.jsp" />
+	</definition>
+
+	<definition name="editSchedulerSubtask" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editSchedulerSubtask.jsp" />
+	</definition>
+
+	<definition name="printdeclarationform" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printdeclarationform.jsp" />
+	</definition>
+
+	<definition name="profitlossreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/profitLossReport.jsp" />
+	</definition>
+	<definition name="advrefundprint" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/advrefundprint.jsp" />
+	</definition>
+
+	<definition name="nursingcareplan" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diagnosis/pages/nursingcareplan.jsp" />
+	</definition>
+	<definition name="printnursingplan" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diagnosis/pages/printnursingcareplan.jsp" />
+	</definition>
+	<definition name="listNursingDiagnosis" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNursingDiagnosis.jsp" />
+	</definition>
+	<definition name="addNursingDiagnosis" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNursingDiagnosis.jsp" />
+	</definition>
+	<definition name="editNursingDiagnosis" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNursingDiagnosis.jsp" />
+	</definition>
+	<definition name="listNursingCarePlanning" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNursingCarePlanning.jsp" />
+	</definition>
+	<definition name="addNursingCarePlanning" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNursingCarePlanning.jsp" />
+	</definition>
+	<definition name="listNursingCareIntervention" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listNursingCareIntervention.jsp" />
+	</definition>
+	<definition name="addNursingCareIntervention" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addNursingCareIntervention.jsp" />
+	</definition>
+
+	<definition name="editNursingCareIntervention" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editNursingCareIntervation.jsp" />
+	</definition>
+	<definition name="emergencylabel" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/emergencylabel.jsp" />
+	</definition>
+	<definition name="printemergencylabel" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printemergencylabel.jsp" />
+	</definition>
+
+	<definition name="billingreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/billingreport.jsp" />
+	</definition>
+
+	<definition name="discountreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/discountreport.jsp" />
+	</definition>
+	<definition name="cancelinvoicereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/cancelinvoicereport.jsp" />
+	</definition>
+
+	<definition name="printinvoicepayment" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/paymentrecipt.jsp" />
+	</definition>
+	<!-- // Adarsh -->
+	<!-- <definition name="manageempleave" extends="baseLayout">
+		<put-attribute name="body" value="/payroll/pages/manageempleave.jsp" />
+	</definition> -->
+	<definition name="leavePrint" extends="baseLayout">
+		<put-attribute name="body" value="/payroll/pages/printLeave.jsp" />
+	</definition>
+
+	<definition name="ipdmonthlyreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/ipdmonthlyreport.jsp" />
+	</definition>
+
+	<definition name="refundrequestdashboard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/refundrequestdashboard.jsp" />
+	</definition>
+	<definition name="indentreport" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/indentreport.jsp" />
+	</definition>
+
+	<definition name="clientrefundrequest" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/clientrefund.jsp" />
+	</definition>
+	<definition name="discountrequestdashboard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/discountrequestdashboard.jsp" />
+	</definition>
+
+	<definition name="ipddailyadddis" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/ipddailyadddis.jsp" />
+	</definition>
+
+	<definition name="newpaymentreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/newpaymentreport.jsp" />
+	</definition>
+	<definition name="productwisereturnreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/productwisereturnreport.jsp" />
+	</definition>
+	<definition name="generaldiet" extends="baseLayout">
+		<put-attribute name="body" value="/dietary/pages/generaldietplan.jsp" />
+	</definition>
+	<definition name="printgeneraldietplan" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/showgeneraldietplan.jsp" />
+	</definition>
+	<definition name="showgeneraldietplan" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/viewgeneraldietplan.jsp" />
+	</definition>
+	<definition name="editgeneraldietplan" extends="baseLayout">
+		<put-attribute name="body"
+			value="/dietary/pages/editgeneraldietplan.jsp" />
+	</definition>
+
+	<definition name="currentpatients" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/currentpatients.jsp" />
+	</definition>
+
+	<definition name="deathreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/deathreport.jsp" />
+	</definition>
+	<definition name="dtrreportform" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/dtrreportform.jsp" />
+	</definition>
+
+	<definition name="userwisepaymentreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/userwisereport.jsp" />
+	</definition>
+
+
+	<definition name="nabhdashboard" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhdashboard.jsp" />
+	</definition>
+
+	<definition name="bedoccupancyreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/bedoccupancy.jsp" />
+	</definition>
+
+	<definition name="kpinabh" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/newnabhkpi.jsp" />
+	</definition>
+
+	<definition name="accreditationtracker" extends="nabhblankLayout">
+		<put-attribute name="body"
+			value="/nabh/pages/accreditationtracker.jsp" />
+	</definition>
+	<definition name="graphreport" extends="baseLayout">
+		<put-attribute name="body" value="/mis/pages/graphreportanalysis.jsp" />
+	</definition>
+
+
+	<definition name="showallbook" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listbook.jsp" />
+	</definition>
+
+
+
+	<definition name="addBook" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addBook.jsp" />
+	</definition>
+	
+	<definition name="addsitting" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addSittingFollowup.jsp" />
+	</definition>
+	
+	<definition name="addprocedure" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addProcedure.jsp" />
+	</definition>
+	
+	<definition name="showallsitting" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listSittingFollowup.jsp" />
+	</definition>
+	
+	
+	<definition name="showallprocedure" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listProcedure.jsp" />
+	</definition>
+	
+	<definition name="editprocedure" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editProcedure.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="editsitting" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editSittingFollowup.jsp" />
+	</definition>
+	
+	<definition name="addunit" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addunit.jsp" />
+	</definition>
+	
+	
+	<definition name="showallunit" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listUnit.jsp" />
+	</definition>
+	
+   <definition name="editunit" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editunit.jsp" />
+	</definition>	
+ 
+
+
+	<definition name="editBook" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editBook.jsp" />
+	</definition>
+
+
+	<definition name="showallbookChapter" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listBookChapter.jsp" />
+	</definition>
+
+
+	<definition name="addBookChapter" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addBookChapter.jsp" />
+	</definition>
+
+	<definition name="editBookChapter" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editBookChapter.jsp" />
+	</definition>
+
+
+
+
+	<definition name="nabhcommittee" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhcommittee.jsp" />
+	</definition>
+	<definition name="nabhmeetings" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhmeetings.jsp" />
+	</definition>
+	<definition name="nabhunits" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhunits.jsp" />
+	</definition>
+	<definition name="nabhtasks" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhtasks.jsp" />
+	</definition>
+	<definition name="nabhallResourceLiberary" extends="nabhblankLayout">
+		<put-attribute name="body"
+			value="/nabh/pages/nabhallresourceLiberary.jsp" />
+	</definition>
+	<!-- file missiing <definition name="nabhpostersandVisuals" extends="nabhblankLayout"> 
+		<put-attribute name="body" value="/nabh/pages/nabhpostersandvisuals.jsp" 
+		/> </definition> -->
+	<definition name="nabhpostersandVisuals" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhfilesubmission.jsp" />
+	</definition>
+	<definition name="nabhfilesubmission" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/nabhfilesubmission.jsp" />
+	</definition>
+
+	<definition name="immunizationchart" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/immunizationchart.jsp" />
+	</definition>
+
+	<definition name="showallOutSource" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listOutSource.jsp" />
+	</definition>
+
+
+	<definition name="addOutSource" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addOutsource.jsp" />
+	</definition>
+
+	<definition name="editOutSource" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editOutSource.jsp" />
+	</definition>
+
+	<definition name="headcircumferencechart" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/childgrowthchart.jsp" />
+	</definition>
+
+
+	<definition name="opdpractshare" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/opdpractsharereport.jsp" />
+	</definition>
+
+
+	<definition name="opdreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/opdreport.jsp" />
+	</definition>
+
+
+	<definition name="showallOutSourceData" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listOutSourceData.jsp" />
+	</definition>
+
+
+	<definition name="addOutSourceData" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addOutsourceData.jsp" />
+	</definition>
+
+	<definition name="editOutSourceData" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editOutSourceData.jsp" />
+	</definition>
+
+
+	<definition name="showpatientsreport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/showpatientsreport.jsp" />
+	</definition>
+	<definition name="salarydetails" extends="payrollLayout">
+		<put-attribute name="body" value="/payroll/pages/salarydetails.jsp" />
+	</definition>
+	<definition name="opdipdconversionrevenue" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/opdipdconversionrevenue.jsp" />
+	</definition>
+	<definition name="stockvaluation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/stockvaluationreport.jsp" />
+	</definition>
+	<definition name="departmentwiserevenue" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/departmentwiserevenue.jsp" />
+	</definition>
+	<definition name="departmaterialissue" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/report/pages/deptmaterialissue.jsp" />
+	</definition>
+	<definition name="nonmovingitem" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/report/pages/nonmovingitem.jsp" />
+	</definition>
+	<definition name="payableaging" extends="inventoryLayout">
+		<put-attribute name="body" value="/report/pages/payableaging.jsp" />
+	</definition>
+	<definition name="roadmapandscope" extends="nabhblankLayout">
+		<put-attribute name="body" value="/nabh/pages/roadmapandscope.jsp" />
+	</definition>
+	<definition name="showAllMedicineTemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/showAllMedicineTemplate.jsp" />
+	</definition>
+	<definition name="stockreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/report/pages/stockreport.jsp" />
+	</definition>
+
+
+	<definition name="tpservices" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/printtpservices.jsp" />
+	</definition>
+
+	<definition name="billsummary" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/billsummary.jsp" />
+	</definition>
+	<definition name="deptwiseavgcount" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/deptwiseavgcount.jsp" />
+	</definition>
+	<definition name="feedbackForm" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/feedbackform.jsp" />
+	</definition>
+
+	<definition name="smartaccount" extends="smartAccountLayout">
+		<put-attribute name="body"
+			value="/smartaccount/pages/smartaccount.jsp" />
+	</definition>
+	<definition name="showallFeedackTemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/showallFeedackTemplate.jsp" />
+	</definition>
+	<definition name="addfeedback" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addfeedback.jsp" />
+	</definition>
+	<definition name="editFeedBack" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editFeedBack.jsp" />
+	</definition>
+	<definition name="seeallFeedbacks" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/seeallFeedbacks.jsp" />
+	</definition>
+	<definition name="printfeedbackOFPatient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/printfeedbackOFPatient.jsp" />
+	</definition>
+
+	<!--  08 jun 2018 -->
+	<definition name="usermaterialissue" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/report/pages/usermaterialissue.jsp" />
+	</definition>
+
+	<definition name="investoutsource" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/investoutsource.jsp" />
+	</definition>
+	
+	<definition name="newDetailed" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/newDetailedChargesRpt.jsp" />
+	</definition>
+	
+	<definition name="district" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/districtlevelopd.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="itemwisepurchase" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/report/pages/itemwisepurchase.jsp" />
+	</definition>
+	<definition name="Labreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/Labreport.jsp" />
+	</definition>
+
+	<definition name="investigationCount" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/investigationCount.jsp" />
+	</definition>
+	<definition name="newIpdCurrentPatient" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/newIpdCurrentPatient.jsp" />
+	</definition>
+
+	<definition name="dmdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/dmdashboard.jsp" />
+	</definition>
+
+	<!--   12 July 2018 ledger report jsp -->
+	<definition name="balancesheethorizontal" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/balancesheethorizontal.jsp" />
+	</definition>
+	<definition name="balancesheetvertical" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/balancesheetvertical.jsp" />
+	</definition>
+	<definition name="profitlosshorizontal" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/profitlosshorizontal.jsp" />
+	</definition>
+	<definition name="profitlossvertical" extends="baseLayout">
+		<put-attribute name="body"
+			value="/appointment/pages/profitlossvertical.jsp" />
+	</definition>
+
+	<definition name="newDmList" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/newDmList.jsp" />
+	</definition>
+	<definition name="pharmacysalereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/pharmacysalereport.jsp" />
+	</definition>
+	<definition name="emailPOList" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/emailPOList.jsp" />
+	</definition>
+
+	<!--   20 July 2018 share charge -->
+	<definition name="showallsharablecharge" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/showallsharablecharge.jsp" />
+	</definition>
+	<definition name="newchargesharereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/newchargesharereport.jsp" />
+	</definition>
+	<!-- lokesh 27-7-2018 -->
+	<definition name="paymentreceivedreport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/paymentreceivedreport.jsp" />
+	</definition>
+
+	<definition name="newimmunizationchart" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/newimmunizationchart.jsp" />
+	</definition>
+
+	<!--lokesh 1-8-18 -->
+	<definition name="allvaccinationlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/allvaccinationlist.jsp" />
+	</definition>
+	<definition name="addvacinationmstr" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addvacinationmstr.jsp" />
+	</definition>
+	<definition name="editvacinationmstr" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editvacinationmstr.jsp" />
+
+	</definition>
+
+
+	<!--   05 Aug 2018 -->
+	<definition name="clinicalnotes" extends="baseLayout">
+		<put-attribute name="body" value="/diagnosis/pages/clinicalNotes.jsp" />
+	</definition>
+
+	<!--lokesh -->
+	<definition name="invstpackagerpt" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/invstpackagerpt.jsp" />
+	</definition>
+
+	<definition name="listclinicalnotesmster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listclinicalnotesmster.jsp" />
+	</definition>
+	<definition name="addclinicalnotesmstr" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addclinicalnotesmstr.jsp" />
+	</definition>
+	<definition name="addclinicalproblemmster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addclinicalproblemmster.jsp" />
+	</definition>
+	<definition name="listclinicalproblemmster" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listclinicalproblemmster.jsp" />
+	</definition>
+	<definition name="addclinicalintervation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/addclinicalintervation.jsp" />
+	</definition>
+	<definition name="listclinicalintervation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/listclinicalintervation.jsp" />
+	</definition>
+	<!--   14 Aug 2018 -->
+	<definition name="returnmultimedicine" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/returnmultimedicine.jsp" />
+	</definition>
+	<definition name="editclinicalnotes" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editclinicalnotes.jsp" />
+	</definition>
+	<definition name="editclinicalproblem" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editclinicalproblem.jsp" />
+	</definition>
+	<definition name="editclinicalintervation" extends="baseLayout">
+		<put-attribute name="body"
+			value="/master/pages/editclinicalintervation.jsp" />
+	</definition>
+	<definition name="bigbilllazer" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/bigbilllaser.jsp" />
+	</definition>
+	<definition name="newstockreport1" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/newstockreport1.jsp" />
+	</definition>
+
+	<definition name="tempmedicinelist" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/pharmacy/pages/tempmedlist.jsp" />
+	</definition>
+
+	<definition name="returnmedicinenurse" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/returnmedicinenurse.jsp" />
+	</definition>
+	<definition name="retnursedashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/retnursedashboard.jsp" />
+	</definition>
+
+	<definition name="newdrreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/pharmacy/pages/newdrreport.jsp" />
+	</definition>
+
+	<definition name="followupdashboard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/followupdashboard.jsp" />
+	</definition>
+	<definition name="investigationtypewisereport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/investigationtypewisereport.jsp" />
+	</definition>
+	<definition name="bomkitdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/bomkitdashboard.jsp" />
+	</definition>
+	<definition name="newmedicinedailycount" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/newmedicinedailycount.jsp" />
+	</definition>
+	<definition name="newgstReport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/pharmacy/pages/newgstReport.jsp" />
+	</definition>
+	<definition name="bomkittemplate" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/bomkittemplate.jsp" />
+	</definition>
+
+	<definition name="detailgrnreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/detailgrnreport.jsp" />
+	</definition>
+
+	<definition name="newprintprisc" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/newprintPriscription.jsp" />
+	</definition>
+	<definition name="addremark" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addremarkmster.jsp" />
+	</definition>
+
+	<definition name="listremarks" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listremarks.jsp" />
+	</definition>
+
+	<definition name="practshareopdnew" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/practshareopdnew.jsp" />
+	</definition>
+
+	<definition name="hsnwisegst" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/report/pages/hsnwisegst.jsp" />
+	</definition>
+	<definition name="wardwiseavgstay" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/wardwiseavgstay.jsp" />
+	</definition>
+
+	<definition name="supplierpaymentreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/supplierpaymentreport.jsp" />
+	</definition>
+
+	<definition name="printpayment" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/printpayment.jsp" />
+	</definition>
+	<definition name="agreementdashboard" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/agreementdashboard.jsp" />
+	</definition>
+	<definition name="allhospitals" extends="baseLayout">
+		<put-attribute name="body" value="/support/pages/hospitals.jsp" />
+	</definition>
+	<definition name="pharmacycreditrpt" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/report/pages/pharmacycreditrpt.jsp" />
+	</definition>
+	<definition name="adjustmentreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/report/pages/adjustmentreport.jsp" />
+	</definition>
+	<definition name="investigationtypewisereportnew" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/investigationtypewisereportnew.jsp" />
+	</definition>
+	<definition name="requestqueue" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/requestqueue.jsp" />
+	</definition>
+	<definition name="adminrequestqueue" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/adminrequestqueue.jsp" />
+	</definition>
+	<definition name="thirdpartysettings" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/thirdpartysettings.jsp" />
+	</definition>
+
+	<definition name="totalrevenue" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/totalrevenue.jsp" />
+	</definition>
+
+	<definition name="inventoryOpeningClosingByCatalogue"
+		extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/inventoryOpeningClosingByCatalogue.jsp" />
+	</definition>
+
+	<definition name="productwisereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/productwisesalereport.jsp" />
+	</definition>
+	<definition name="onlinereqdashboard" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/onlinereqdashboard.jsp" />
+	</definition>
+	<definition name="recivedcredit" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/recivedcredit.jsp" />
+	</definition>
+	<definition name="getinvesrevenueNcount" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/getinvesrevenueNcount.jsp" />
+	</definition>
+	<definition name="shortpharmacybill" extends="baseLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/shortpharmacybill.jsp" />
+	</definition>
+	<definition name="ipdpatienttpreport" extends="baseLayout">
+		<put-attribute name="body"
+			value="/report/pages/ipdpatienttpreport.jsp" />
+	</definition>
+
+	<definition name="bloodbankprint" extends="baseLayout">
+		<put-attribute name="body"
+			value="/bloodbank/pages/bloodbankprint.jsp" />
+	</definition>
+
+	<definition name="errorpage" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/errorpage.jsp" />
+	</definition>
+
+	<definition name="iconelabel" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/newmultilabel.jsp" />
+	</definition>
+	<definition name="listtaxes" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listtaxtmaster.jsp" />
+	</definition>
+
+	<definition name="addtoTaxmaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/addtaxmaster.jsp" />
+	</definition>
+
+
+	<definition name="tppackagereport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/tppackagereport.jsp" />
+	</definition>
+
+	<definition name="edittaxmaster" extends="baseLayout">
+		<put-attribute name="body" value="/master/edittaxmstr.jsp" />
+	</definition>
+
+	<definition name="dailysalereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/dailysalereportnew.jsp" />
+	</definition>
+
+	<definition name="multiinvsthandle" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/multiinvsthandle.jsp" />
+	</definition>
+
+	<definition name="printmultiinvestlist" extends="baseLayout">
+		<put-attribute name="body"
+			value="/emr/pages/printmultiinvestigation.jsp" />
+	</definition>
+
+	<definition name="inventorygstreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/inventorygstreport.jsp" />
+	</definition>
+
+	<definition name="expiryerror" extends="baseLayout3">
+
+		<put-attribute name="body" value="/common/pages/expiryerror.jsp" />
+	</definition>
+	<definition name="opdtatreport" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/opdtatreport.jsp" />
+	</definition>
+	<definition name="ipdopdrevenueinvstrevnue" extends="baseLayout">
+
+		<put-attribute name="body"
+			value="/report/pages/ipdopdrevenueinvstrevnue.jsp" />
+	</definition>
+
+	<definition name="priscagainstsalereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/priscagainstsalereport.jsp" />
+	</definition>
+
+
+	<definition name="newdischargeform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/newdischargeform.jsp" />
+	</definition>
+
+
+
+
+  
+  <definition name="showdetailsreuest" extends="baseLayout">
+       <put-attribute name="body" value="/report/pages/showdetailsreuest.jsp" />
+ </definition>
+ 
+ <definition name="requestdetails" extends="baseLayout">
+       <put-attribute name="body" value="/report/pages/requestdetails.jsp" />
+ </definition>
+<definition name="investigationtat" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/investigationtat.jsp" />
+	</definition>
+	<definition name="listmfg" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listmfg.jsp" />
+	</definition>
+	<definition name="addmfg" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addmfg.jsp" />
+	</definition>
+	<definition name="editmfg" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editmfg.jsp" />
+	</definition>
+
+	<definition name="phardiscount" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/phardiscount.jsp" />
+</definition>
+	<definition name="addemployee" extends="baseLayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payroll/pages/addemployee.jsp" />
+	</definition>
+	
+	
+	<definition name="editemployee" extends="baseLayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payroll/pages/editemployee.jsp" />
+
+	</definition>
+	<definition name="bincardreportnew" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/bincardreportnew.jsp" />
+	</definition>
+	<definition name="employeelist" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/employees.jsp" />
+	</definition>
+	<definition name="showdesignation" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/designations.jsp" />
+	</definition>
+	<definition name="payrollbaselayout" template="/common/pages/tiles/payrollbaselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/common/pages/tiles/payrollnewheader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/payrollnewmenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/payrollnewbody.jsp" />
+</definition>
+ <definition name="payrollprofile" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/profile.jsp" />
+	</definition>
+	<definition name="listwiseemp" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/employees-list.jsp" />
+	</definition>
+	
+	<definition name="genericnamelist" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/genericnamelist.jsp" />
+	</definition>
+
+	<definition name="addgenericname" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addgenericname.jsp" />
+	</definition>
+	<definition name="payrollsettingbaselayout" template="/common/pages/tiles/payrollsettingbaselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/common/pages/tiles/payrollnewheader.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/payrollnewmenu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/payrollnewbody.jsp" />
+</definition>
+<definition name="employeesalrpt" extends="payrollbaselayout">
+		<put-attribute name="menu" value=" " />
+		<put-attribute name="body" value="/payrollnew/empsalrpt.jsp" />
+	</definition>
+<definition name="weekleave" extends="payrollsettingbaselayout">
+		<put-attribute name="body" value="/payrollnew/leave-type.jsp" />
+	</definition>
+	
+		<definition name="vaccinedashboard" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/vaccinationdashboard.jsp" />
+	</definition>
+	<definition name="manageempleave" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/leaves-employee.jsp" />
+	</definition>
+	<definition name="empadminleave" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/leaves.jsp" />
+	</definition>
+	<definition name="listdosage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listpriscdosasemaster.jsp" />
+	</definition>
+	<definition name="adddosage" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addpriscdosase.jsp" />
+	</definition>
+	<definition name="indentnewreport" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/indentnewreport.jsp" />
+	</definition>
+	
+		<definition name="patientbarcode" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/patientbarcode.jsp" />
+	</definition>
+	<definition name="indvdiscount" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/indvdiscount.jsp" />
+	</definition>
+	<definition name="listsms" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listsms.jsp" />
+	</definition>
+	<definition name="addsms" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addsms.jsp" />
+	</definition>
+	<definition name="editsms" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editsms.jsp" />
+	</definition>
+	
+	<definition name="paymentreportNotesdash" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/paymentReportNoteDashBoard.jsp" />
+	</definition>
+	<definition name="smscountdashboard" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/smscountdashboard.jsp" />
+	</definition>
+	<definition name="cancelpharmacybillreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/cancelpharmacybillreport.jsp" />
+	</definition>
+	<definition name="expiryproductpopup" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/expiryproductpopup.jsp" />
+	</definition>
+		<definition name="hsaccess" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/clinicWiseAccess.jsp" />
+	</definition>
+	
+	<definition name="editgrnlogreport" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/editgrnlogreport.jsp" />
+	</definition>
+	
+	<definition name="listoutsourcerate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listoutsourcerate.jsp" />
+	</definition>
+	<definition name="addoutsourcerate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addoutsourcerate.jsp" />
+	</definition>
+	<definition name="editoutsourcerate" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editoutsourcerate.jsp" />
+	</definition>
+	<definition name="otreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/otreport.jsp" />
+	</definition>
+	<definition name="paymentreciptreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/paymentreciptreport.jsp" />
+	</definition>
+	<definition name="hisvideotutorial" extends="videotutorialLayout">
+		<put-attribute name="body" value="/nabh/pages/videotutorialdashboard.jsp" />
+	</definition>
+	<definition name="revenuematrix" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/revenuematrix.jsp" />
+	</definition>
+	<definition name="nosofadmdisc" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/nosofadmdisc.jsp" />
+	</definition>
+	<definition name="wardwiserevenuerept" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/wardwiserevenuerept.jsp" />
+	</definition>
+	
+	<definition name="nelsontotalrevenue" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/deptwiseRevRpt.jsp" />
+	</definition>
+	<definition name="deptwise_ot" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/nelsonmothlyipdrevreport.jsp" />
+	</definition>
+	<definition name="payment_report_combinned" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/payment_report_combinned.jsp" />
+	</definition>
+	<definition name="userwiseaccess" extends="baseLayout">
+		<put-attribute name="body" value="/registration/pages/userwiseaccess.jsp" />
+	</definition>
+	<definition name="packagedashboard" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/packagedashboard.jsp" />
+	</definition>
+	<definition name="childpackagelist" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/childpackagelist.jsp" />
+	</definition>
+	<definition name="all_relesed_notes" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/released_notes.jsp" />
+	</definition>
+	<definition name="departmaterialsummary" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/report/pages/departmaterialsummary.jsp" />
+	</definition>
+	
+	<definition name="dayemployee" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/attendance-employee.jsp" />
+	</definition>
+	
+	<definition name="new_aureus_discard" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/aureus_discharge_form.jsp" />
+	</definition>
+	
+	<definition name="attendancereport" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/attendancereport.jsp" />
+	</definition>
+	<definition name="accountreport" extends="payrollbaselayout">
+		<put-attribute name="body" value="/payrollnew/accountreport.jsp" />
+	</definition>
+	
+	<definition name="print_aureus_dcard" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/print_aureus_dcard.jsp" />
+	</definition>
+	<definition name="showqualification" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/qualification.jsp" />
+	</definition>
+	<definition name="payrollotdashboard" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/payrollotdashboard.jsp" />
+	</definition>
+	<definition name="minimumqtypopup" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/minimumqtypopup.jsp" />
+	</definition>
+	<definition name="discountapprove" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/discountapprove.jsp" />
+	</definition>
+	<definition name="invstabsvalreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/invabsvalrpt.jsp" />
+	</definition>
+	<definition name="vistingconreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/vistingconreport.jsp" />
+	</definition>
+	
+	<definition name="pcsgstreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/pcsgstreport.jsp" />
+	</definition>
+	
+	<definition name="pcsbill" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/pcsPrintPreview.jsp" />
+	</definition>
+	
+	<definition name="cataloguewisesalereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/cataloguewisesalereport.jsp" />
+	</definition>
+	<definition name="showdocumentlist" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/payrolldoclist.jsp" />
+	</definition>
+	
+	
+	<definition name="allUsersSign" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/investigtionsignmaster.jsp" />
+	</definition>
+	
+	<definition name="mobileattendance" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/mobileattendance.jsp" />
+	</definition>
+	
+	<definition name="sessionAddedPharMed" extends="baseLayout">
+		<put-attribute name="body" value="/pharmacy/pages/sessionAddedPharMed.jsp" />
+	</definition>
+	<definition name="mobileattendancereport" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/mobattendacereport.jsp" />
+	</definition>
+	
+	<definition name="multipleadjusteditdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/multipleadjusteditdashboard.jsp" />
+	</definition>
+	<definition name="isinadjusterrorpage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/isinadjusterrorpage.jsp" />
+	</definition>
+	<definition name="multiadjustmentprint" extends="baseLayout">
+		<put-attribute name="body" value="/inventory/pages/multiadjustmentprint.jsp" />
+	</definition>
+	<definition name="timesheetdashboard" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/timesheetdashboard.jsp" />
+	</definition>
+	<definition name="createtimesheet" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/createtimesheet.jsp" />
+	</definition>
+	<definition name="tokenrequestdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/tokenrequestdashboard.jsp" />
+	</definition>
+	<definition name="saveasdrafttimesheet" extends="payrollbaselayout">
+	<put-attribute name="menu" value=" " />
+		<put-attribute name="body"
+			value="/payrollnew/saveasdrafttimesheet.jsp" />
+	</definition>
+	
+	
+	<definition name="puresevaprofile" extends="baseLayout">
+	
+		<put-attribute name="body"
+			value="/emr/pages/clntprof.jsp" />
+	</definition>
+	
+	<!-- Client module -->
+	<definition name="editpatientnewpage" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/editpatientpage.jsp" />
+	</definition>
+	
+	
+	
+	<!--Manas Login Layout  -->
+	
+	<definition name="manaslayout" template="/common/pages/tiles/manaslayout/manaslayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="menu" value="/common/pages/tiles/manaslayout/manas_header.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/manaslayout/manas_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/manaslayout/manas_footer.jsp" />
+	</definition>
+	
+	
+	<definition name="manaslogin" extends="manaslayout">
+		<put-attribute name="body" value="/manaslogin/manasloginpage.jsp" />
+	</definition>
+	
+	<definition name="printstaffdashboard" extends="baseLayout">
+		<put-attribute name="body" value="/diarymanagement/pages/printstaffdashboardnew.jsp" />
+	</definition>
+	
+	<!--Manas Maindashboard Layout  -->
+	<definition name="manasmaindashboardlayout" template="/common/pages/tiles/maindashboardlayout/manasmaindashboardlayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/maindashboardlayout/manasmaindashboard_header.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/maindashboardlayout/manasmaindashboard_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/maindashboardlayout/manasmaindashboard_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/maindashboardlayout/manasmaindashboard_footer.jsp" />
+	</definition>
+	
+	<definition name="manasmaindashboard" extends="manasmaindashboardlayout">
+		<put-attribute name="body" value="/manasmaindashboard/pages/manasmaindashboard.jsp" />
+	</definition>
+	<!--Manas OPD Layout  -->
+	<definition name="manasopdlayout" template="/common/pages/tiles/manasopdlayout/manasopdlayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/manasopdlayout/manasopd_header.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/manasopdlayout/manasopd_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/manasopdlayout/manasopd_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/manasopdlayout/manasopd_footer.jsp" />
+	</definition>
+	
+	
+	<definition name="mnsipdlayout" template="/newMnsIpd/mnsipdbaselayout.jsp">
+		<put-attribute name="body" value="/newMnsIpd/ipdlayoutbody.jsp" />
+	</definition>
+	
+	
+	<definition name="mnsbookbed" extends="mnsipdlayout">
+		<put-attribute name="body" value="/newMnsIpd/pages/mns_ipd_dash.jsp" />
+	</definition>
+	
+	<definition name="newopd" extends="manasopdlayout">
+		<put-attribute name="body" value="/manasopd/manasopd1.jsp" />
+	</definition>
+
+<definition name="mobweek1" extends="manasopdlayout">
+
+		<put-attribute name="body" value="/manasopd/appregistration.jsp" />
+	</definition>	
+
+<definition name="mobweek" extends="manasopdlayout">
+
+		<put-attribute name="body" value="/manasopd/manasopd.jsp" />
+	</definition>	
+	<definition name="manasemrlayout" template="/common/pages/tiles/manasemrlayout/manasemrlayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/manasemrlayout/manasemr_header.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/manasemrlayout/manasemr_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/manasemrlayout/manasemr_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/manasemrlayout/manasemr_footer.jsp" />
+	</definition>
+	
+ <definition name="emrDetailsPage" extends="manasemrlayout">
+		<put-attribute name="body" value="/manasemr/manasemr.jsp" />
+	</definition>
+	
+	<!--Manas MIS Layout  -->
+	<definition name="manasmislayout" template="/common/pages/tiles/manasmislayout/manasmislayout.jsp">
+		<put-attribute name="title" value="APM" />
+		<put-attribute name="header" value="/common/pages/tiles/manasmislayout/manasmis_header.jsp" />
+		<put-attribute name="menu" value="/common/pages/tiles/manasmislayout/manasmis_menu.jsp" />
+		<put-attribute name="body" value="/common/pages/tiles/manasmislayout/manasmis_body.jsp" />
+		<put-attribute name="footer" value="/common/pages/tiles/manasmislayout/manasmis_footer.jsp" />
+	</definition>
+	
+	<definition name="mnsmis" extends="manasmislayout">
+		<put-attribute name="body" value="/manasmis/pages/mis.jsp" />
+	</definition>
+	
+	<definition name="vermanhgynicform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/gynicAssesmentForm1.jsp" />
+	</definition>
+		<definition name="onlinebookappt" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/onlinebookappt.jsp" />
+	</definition>
+	<definition name="printnewgynicform" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printnewgynicform.jsp" />
+	</definition>
+	<definition name="consultationrpt" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/consultationrpt.jsp" />
+	</definition>
+	
+	<definition name="bedoccupancyrpt" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/bedoccupancyReport.jsp" />
+	</definition>
+	
+	<definition name="renderchrges" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/RenderchrgesRpt.jsp" />
+	</definition>
+	
+	<!-- birthplace master -->
+	<definition name="listbirthplace" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/listbirthplace.jsp" />
+	</definition>
+	<definition name="addbirthplace" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/addbirthplace.jsp" />
+	</definition>
+	<definition name="editbirthplace" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/editbirthplace.jsp" />
+	</definition>
+	
+	<definition name="otdb" extends="manasopdlayout">
+		<put-attribute name="body" value="/manasopd/manasot.jsp" />
+	</definition>
+	<definition name="vaccinationdashboard" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/vaccinationdashboard.jsp" />
+	</definition>
+	
+	<definition name="dewormingdashboard" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/dewormingdashboard.jsp" />
+	</definition>
+	
+	<definition name="doctorreportdatewise" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/doctorreportdatewise.jsp" />
+	</definition>
+	<definition name="openuploadgrndata" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/openuploadgrndata.jsp" />
+	</definition>
+	
+	<definition name="practitioner" extends="baseLayout">
+		<put-attribute name="body"
+			value="/registration/pages/practitioner.jsp" />
+	</definition>
+	
+	<definition name="editpharmacybill" extends="pharmacyLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/editpharmacybill.jsp" />
+	</definition>
+	<definition name="editpharmacybillreport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/editpharmacybillreport.jsp" />
+	</definition>
+	<definition name="patientdashboard" extends="pharmacyLayout">
+		<put-attribute name="body" value="/pharmacy/pages/patientdashboard.jsp" />
+	</definition>
+	<definition name="birthplacereport" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/birthplacereport.jsp" />
+	</definition>
+	<definition name="jobworkdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/jobworkdashboard.jsp" />
+	</definition>
+	
+	<definition name="jobworkprint" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/jobworkprint.jsp" />
+	</definition>
+	
+	<definition name="jobworkissuereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/inventory/pages/jobworkissuereport.jsp" />
+	</definition>
+	<definition name="deleteinvoice" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/deleteinvoice.jsp" />
+	</definition>
+	<definition name="investigationgraph" extends="baseLayout">
+
+		<put-attribute name="body" value="/report/pages/investigationgrapgh.jsp" />
+	</definition>
+	<definition name="addnewpatient" extends="baseLayout">
+		<!-- <put-attribute name="menu" value=" " /> -->
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addnewpatient.jsp" />
+	</definition>
+	
+	<definition name="departmentopd" extends="baseLayout">
+	<put-attribute name="body" value="/manasopd/departmentopd.jsp" />
+	</definition>
+	
+	<definition name="dailyregistration" extends="baseLayout">
+	<put-attribute name="body" value="/manasopd/dailyregistrationrpt.jsp" />
+	</definition>
+	
+	<definition name="deptwiseavgcountnew" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/deptwiseavgcountnew.jsp" />
+	</definition>
+	
+	
+	<definition name="printopdletter" extends="baseLayout">
+		<put-attribute name="body" value="/emr/pages/printopdletter.jsp" />
+	</definition>
+	<definition name="adjustpatientdata" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/adjustpatientdata.jsp" />
+	</definition>
+	
+	<definition name="lmhopdpreview" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/lmhopdpreview.jsp" />
+	</definition>
+	<definition name="payerCreation" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/payerCreation.jsp" />
+	</definition>
+	<definition name="referdoctorclinical" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/referdoctorclinical.jsp" />
+	</definition>
+	<definition name="referdepartmentclinical" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/referdepartmentclinical.jsp" />
+	</definition>
+	<definition name="collegeadmission" extends="manasopdlayout">
+		<put-attribute name="body" value="/collegeadmission/pages/collegeadmission.jsp" />
+	</definition>
+	<definition name="listadmission" extends="manasopdlayout">
+		<put-attribute name="body" value="/collegeadmission/pages/listadmission.jsp" />
+	</definition>
+	<definition name="viewcollegeadmission" extends="manasopdlayout">
+		<put-attribute name="body" value="/collegeadmission/pages/viewcollegeadmission.jsp" />
+	</definition>
+	<definition name="paymentagainstinvoice1" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/paymentagainstinvoice.jsp" />
+	</definition>
+	<definition name="openingClosingByBatch" extends="inventoryReportLayout">
+		<put-attribute name="body" value="/inventory/pages/openingClosingByBatch.jsp" />
+	</definition>
+	
+	<!-- Follow Up -->
+	<definition name="followUpProcedure" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/followUpProcedure.jsp" />
+	</definition>
+	
+	<definition name="pharmacySettingInventory" extends="inventoryLayout">
+		<put-attribute name="body"
+			value="/pharmacy/pages/pharmacysetting.jsp" />
+	</definition>
+	
+	<definition name="referedpatientrpt" extends="baseLayout">
+	<put-attribute name="body" value="/manasopd/referedpatientrpt.jsp" />
+	</definition>
+	
+	<definition name="amcCmcDashboard" extends="inventoryLayout">
+		<put-attribute name="body" value="/inventory/pages/amcCmcDashboard.jsp" />
+	</definition>
+	
+	<definition name="sittingandfollouprpt" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/sittingandfollouprpt.jsp" />
+	</definition>
+	
+	<definition name="dailyopdcolorrpt" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/dailyopdcolorrpt.jsp" />
+	</definition>
+	
+	<definition name="gatepassdashboard" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/gatepassdashboard.jsp" />
+	</definition>
+	
+	<definition name="printgatepass" extends="baseLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/printgatepass.jsp" />
+	</definition>
+	
+	<definition name="indentError" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/inventory/pages/indentError.jsp" />
+	</definition>
+	
+	<definition name="pendingpoproduct" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/pendingpoproduct.jsp" />
+	</definition>
+	<definition name="ipdreport" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/ipdreport.jsp"></put-attribute>
+	</definition>
+	<definition name="ipdfakeconsultreport" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/IpdFakeConsultrpt.jsp"></put-attribute>
+	</definition>
+	<definition name="consultationNotes" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/consultationNotes.jsp"></put-attribute>
+	</definition>
+	<definition name="consultationNotes1" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/consultationNotes1.jsp"></put-attribute>
+	</definition>
+	<definition name="printConsultationPage" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printConsultationPage.jsp"></put-attribute>
+	</definition>
+	<definition name="printconsultation" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printconsultation.jsp"></put-attribute>
+	</definition>
+	<!-- Duty Allocation -->
+	<definition name="addDuty" extends="baseLayout">
+		<put-attribute name="body" value="/ambulance/pages/dutyallocation.jsp" />
+	</definition>
+	
+	<definition name="duty" extends="baseLayout">
+		<put-attribute name="body" value="/ambulance/pages/listDuty.jsp" />
+	</definition>
+	 <definition name="editDuty" extends="baseLayout">
+		<put-attribute name="body" value="/ambulance/pages/editDuty.jsp" />
+	</definition>
+	<definition name="consultationOphthamo" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/consultationNoteForOphthamologist.jsp"></put-attribute>
+	</definition>
+	<definition name="printopthomoConsultationPage" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printOpthoConsultationForm.jsp"></put-attribute>
+	</definition>
+	<!-- Change Login Status -->
+	<definition name="showDashboard" extends="baseLayout">
+		<put-attribute name="body" value="/common/pages/showDashboard.jsp" />
+	</definition>
+	<definition name="ambReport" extends="baseLayout">
+	   <put-attribute name="body" value="/ambulance/pages/ambulancereport.jsp" />
+	</definition>
+	<definition name="punchkarmarpt" extends="baseLayout">
+	   <put-attribute name="body" value="/punchkarma/pages/punchkarma.jsp" />
+	</definition>
+	<definition name="addpunchkarma" extends="baseLayout">
+	   <put-attribute name="body" value="/punchkarma/pages/addpunchkarma.jsp" />
+	</definition>
+	<definition name="editpunchnote" extends="baseLayout">
+	   <put-attribute name="body" value="/punchkarma/pages/editpunchkarma.jsp" />
+	</definition>
+		<definition name="printpacs" extends="baseLayout">
+	   <put-attribute name="body" value="/pacs/pages/printpacsreport.jsp" />
+	</definition>
+	
+	<definition name="ipdconsultationpage" extends="baseLayout">
+	   <put-attribute name="body" value="/diarymanagement/pages/IpdFakeConsultationpage.jsp" />
+	</definition>
+	
+	<definition name="opdconsultationpage" extends="baseLayout">
+	   <put-attribute name="body" value="/diarymanagement/pages/opdconsultationpage.jsp" />
+	</definition>
+	<definition name="redirectipd" extends="baseLayout">
+	   <put-attribute name="body" value="/diarymanagement/pages/redirectipd.jsp" />
+	</definition>
+	<definition name="consultsuccess" extends="baseLayout">
+	   <put-attribute name="body" value="/diarymanagement/pages/ConsultSuccess.jsp" />
+	</definition>
+	<definition name="patienthistory" extends="baseLayout">
+	   <put-attribute name="body" value="/manasopd/patienthistory.jsp" />
+	</definition>
+	<definition name="showdeclaration" extends="baseLayout">
+	   <put-attribute name="body" value="/master/pages/showdeclaration.jsp" />
+	</definition>
+	<definition name="printpayroll" extends="baseLayout">
+	   <put-attribute name="body" value="/master/pages/printpayrolldeclaration.jsp" />
+	</definition>
+	<definition name="patienttransact" extends="baseLayout">
+	   <put-attribute name="body" value="/ipd/pages/patienttransactionrpt.jsp" />
+	</definition>
+	
+	<definition name="bams_discharge" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/bams_discharge.jsp" />
+	</definition>
+	
+	<definition name="categorywiserpt" extends="pharmacyLayoutReport">
+		<put-attribute name="body" value="/pharmacy/pages/CategoryWiseProductrpt.jsp" />
+	</definition>
+	
+	<definition name="bams_opdconsultpage" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/bams_consultationpage.jsp" />
+	</definition>
+	<definition name="smslogrpt" extends="baseLayout">
+	<put-attribute name="body" value="/report/pages/smslogreport.jsp"></put-attribute>
+	</definition>
+	<definition name="edittemplt" extends="baseLayout">
+	<put-attribute name="body" value="/emr/pages/investigationtemplate.jsp"></put-attribute>
+	</definition>
+	<definition name="dailynotes" extends="baseLayout">
+	<put-attribute name="body" value="/newMnsIpd/pages/dailynotes.jsp"></put-attribute>
+	</definition>
+	<definition name="newnotes" extends="baseLayout">
+	<put-attribute name="body" value="/newMnsIpd/pages/addnewnote.jsp"></put-attribute>
+	</definition>
+	<definition name="editdailynote" extends="baseLayout">
+	<put-attribute name="body" value="/newMnsIpd/pages/editdailynotes.jsp"></put-attribute>
+	</definition>
+	<definition name="physioipd" extends="baseLayout">
+	<put-attribute name="body" value="/manasopd/physioipd.jsp" />
+	</definition>
+	<definition name="addipdpatient" extends="baseLayout">
+		<!-- <put-attribute name="menu" value=" " /> -->
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addnewipdpatient.jsp" />
+	</definition>
+	<definition name="chargenamewiserevenue" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/report/pages/OpdRevenueReportforLmh.jsp" />
+	</definition>
+	<definition name="ipdprintdashpoard" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/ipdprintDashboard.jsp" />
+	</definition>
+	<definition name="physiopreview" extends="baseLayout">
+		<put-attribute name="body"
+			value="/manasopd/physioipdpreview.jsp" />
+	</definition>
+	<definition name="medicinesalereport" extends="pharmacyLayoutReport">
+		<put-attribute name="body"
+			value="/pharmacy/pages/medicinesalereport.jsp" />
+	</definition>
+	<definition name="ipdsittingandfollowup" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/IpdsittingfollowupReport.jsp" />
+	</definition>
+	
+	<definition name="totebaselayout" template="/common/pages/tiles/totebaselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/common/pages/tiles/totenewheader.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/common/pages/tiles/apm_footer.jsp" />
+  </definition>
+
+
+	<definition name="printConsultationtote" extends="totebaselayout">
+		<put-attribute name="body" value="/ipd/pages/printConsultationTote.jsp"></put-attribute>
+	</definition>
+	<definition name="blankletterheadtote" extends="totebaselayout">
+		<put-attribute name="body" value="/accounts/pages/letterheadblanktote.jsp"></put-attribute>
+	</definition>
+	<definition name="tote_discharge" extends="totebaselayout">
+		<put-attribute name="body" value="/ipd/pages/tote_discharge.jsp"></put-attribute>
+	</definition>
+		<definition name="billsummary_tote" extends="totebaselayout">
+		<put-attribute name="body" value="/accounts/pages/billsummary_tote.jsp" />
+	</definition>
+	<definition name="newdewormingchart" extends="baseLayout">
+		<put-attribute name="body"
+			value="/accounts/pages/newdewormingchart.jsp" />
+	</definition>
+	<definition name="referdepartmentcount" extends="baseLayout">
+		<put-attribute name="body" value="/manasopd/referdepartmentcountreport.jsp" />
+	</definition>
+	
+	<definition name="revenuecount" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/departpemtrevenuecountrpt.jsp" />
+	</definition>
+	
+	<definition name="deptwisecount" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/deptwisecount.jsp" />
+	</definition>
+	
+	<definition name="printn" extends="baseLayout">
+	<put-attribute name="body" value="/newMnsIpd/pages/printdailynotes.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="printdeclaration" extends="baseLayout">
+	<put-attribute name="body" value="/master/pages/printpayrolldeclaration.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="responsehandler" extends="baseLayout">
+		<put-attribute name="body" value="/ccavResponseHandler.jsp" />
+
+	</definition>
+		<definition name="newcharge" extends="baseLayout">
+		<put-attribute name="body" value="/master/pages/newchargethirdparty.jsp" />
+
+	</definition>
+	
+	<definition name="patientbarcode" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/patientbarcode.jsp" />
+	</definition>
+	<definition name="singlepatientbarcode" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/singlepatientbarcode.jsp" />
+	</definition>
+	<definition name="departmentChargesRevenuerpt" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/departmentChargesRevenuerpt.jsp" />
+	</definition>
+	<definition name="ChargesRevenuerpt" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/ChargesRevenuerpt.jsp" />
+	</definition>
+	
+	<definition name="printpriscription" extends="baseLayout">
+		<put-attribute name="body" value="/ipd/pages/printpriscriptionpage.jsp" />
+	</definition>
+	<definition name="approveqty" extends="inventoryReportLayout">
+		<put-attribute name="body"
+			value="/inventory/pages/vendorratereport.jsp" />
+	</definition>
+	
+	
+	<definition name="showpreviewmark" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/showpreviewmark.jsp" />
+	</definition>
+	<definition name="showpreviewmark1" extends="baseLayout">
+		<put-attribute name="body" value="/accounts/pages/showpreviewmark1.jsp" />
+	</definition>
+	<definition name="paymentagainstinvoicenkpphysio" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/paymentagainstinvoiceforNkpphysio.jsp" />
+	</definition>
+	
+	<definition name="manageclientaffitech" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/manageclientlistAffitech.jsp" />
+
+	</definition>
+	
+	<!-- <definition name="manageclientaffitech" extends="mnsipdlayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/manageclientlistAffitech.jsp" />
+
+	</definition> this is menu for crm we are commented because pagination not working-->
+	
+	<definition name="addnewpatientforafitech" extends="baseLayout">
+		<!-- <put-attribute name="menu" value=" " /> -->
+		<put-attribute name="body"
+			value="/diarymanagement/pages/addnewpatientforafitech.jsp" />
+	</definition>
+	
+	<definition name="departmentwisediscountreport" extends="baseLayout">
+		<put-attribute name="body" value="/report/pages/DepartmentWiseDiscountReport.jsp" />
+	</definition>
+	
+	<definition name="investigationdetailrevenue" extends="baseLayout">
+
+		<put-attribute name="body"
+			value="/report/pages/InvestigationDetailRevenue.jsp" />
+	</definition>
+	
+	<definition name="dailyremarkforaffitech" extends="baseLayout">
+		<put-attribute name="body"
+			value="/diarymanagement/pages/dailyremarkforaffitech.jsp" />
+
+	</definition>
+</tiles-definitions>
+

@@ -1,0 +1,546 @@
+ALTER TABLE `apm_medicine_charges` ADD COLUMN `tgstamt` VARCHAR(45) DEFAULT 0 AFTER `discount_share`,
+ ADD COLUMN `gstper` VARCHAR(45) DEFAULT 0 AFTER `tgstamt`;
+
+ALTER TABLE `apm_credit_account` ADD COLUMN `ipdid` VARCHAR(45) DEFAULT 0 AFTER `practitioner_id`;
+
+
+
+ALTER TABLE `invoice_delete_charges` ADD COLUMN `discamount` VARCHAR(45) DEFAULT 0 AFTER `isdelivered`,
+ ADD COLUMN `discperc` VARCHAR(45) DEFAULT 0 AFTER `discamount`;
+
+
+ALTER TABLE `inventory_vendor` ADD COLUMN `drug_license` VARCHAR(45) AFTER `branch`;
+
+
+CREATE TABLE `procurement_deleted_producr` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `prodid` VARCHAR(45) DEFAULT 0,
+  `proc_id` VARCHAR(45) DEFAULT 0,
+  `qty` VARCHAR(45) DEFAULT 0,
+  `charge` VARCHAR(45) DEFAULT 0,
+  `userid` VARCHAR(45) DEFAULT NULL,
+  `datetime` VARCHAR(45) DEFAULT NULL,
+  `childid` VARCHAR(45) DEFAULT 0,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+
+ALTER TABLE `inventory_parent_procurement` MODIFY COLUMN `dmid` INTEGER UNSIGNED DEFAULT 0;
+
+
+ALTER TABLE `apm_user` ADD COLUMN `show_wardname` VARCHAR(45) DEFAULT 0 AFTER `active_clinic`;
+
+
+CREATE TABLE `temp_pharmacy_sale` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `clientid` VARCHAR(45),
+  `ispharmacy` VARCHAR(45) DEFAULT 0,
+  `loginsessionid` VARCHAR(45),
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+
+ALTER TABLE `apm_medicine_bill` ADD COLUMN `tempsessionid` VARCHAR(45) DEFAULT 0 AFTER `disc_type`;
+
+
+ALTER TABLE `apm_credit_account` CHANGE COLUMN `ipdid` `advance_ipdid` VARCHAR(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT 0;
+
+ALTER TABLE `temp_pharmacy_sale` ADD COLUMN `isfordiscount` VARCHAR(45) DEFAULT 0 AFTER `loginsessionid`,
+ ADD COLUMN `discsmt` VARCHAR(45) DEFAULT 0 AFTER `isfordiscount`,
+ ADD COLUMN `distype` VARCHAR(45) DEFAULT 0 AFTER `discsmt`,
+ ADD COLUMN `discinper` VARCHAR(45) DEFAULT 0 AFTER `distype`;
+
+
+CREATE TABLE `modify_invoice_log` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `invoiceid` VARCHAR(45) BINARY NOT NULL,
+  `userid` VARCHAR(45) NOT NULL,
+  `datetime` VARCHAR(45) NOT NULL,
+  `status` VARCHAR(45) NOT NULL,
+  `chargeinvoiceid` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+CREATE TABLE  `return_product_temporary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` varchar(45) DEFAULT '0',
+  `vendorid` varchar(45) DEFAULT '0',
+  `qty` varchar(45) DEFAULT '0',
+  `temp_id` varchar(45) DEFAULT '0',
+  `logsessionid` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ALTER TABLE `apm_client_parent_priscription` ADD COLUMN `userid` VARCHAR(45) AFTER `admission`;
+
+ALTER TABLE `apm_newchargetype` ADD COLUMN `compulsay_consultant` VARCHAR(45) DEFAULT 0 AFTER `ward`;
+
+CREATE TABLE  `return_product_temporary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` varchar(45) DEFAULT '0',
+  `vendorid` varchar(45) DEFAULT '0',
+  `qty` varchar(45) DEFAULT '0',
+  `temp_id` varchar(45) DEFAULT '0',
+  `logsessionid` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `inventory_product_return_log` ADD COLUMN `newprodid` VARCHAR(45) DEFAULT 0 AFTER `notes`,
+ ADD COLUMN `newprocid` VARCHAR(45) DEFAULT 0 AFTER `newprodid`;
+
+ALTER TABLE `inventory_product_return_log` ADD COLUMN `newprodid` VARCHAR(45) DEFAULT 0 AFTER `notes`,
+ ADD COLUMN `newprocid` VARCHAR(45) DEFAULT 0 AFTER `newprodid`;
+
+
+ALTER TABLE `apm_newchargetype` ADD COLUMN `compulsay_consultant` VARCHAR(45) DEFAULT 0 AFTER `ward`;
+
+ALTER TABLE `apm_newchargetype` ADD COLUMN `compulsay_consultant` VARCHAR(45) DEFAULT 0 AFTER `ward`;
+
+
+ALTER TABLE `inventory_product_return_log` ADD COLUMN `newvat` VARCHAR(45) DEFAULT 0 AFTER `newprocid`,
+ ADD COLUMN `newdiscper` VARCHAR(45) DEFAULT 0 AFTER `newvat`,
+ ADD COLUMN `newdiscount` VARCHAR(45) DEFAULT 0 AFTER `newdiscper`,
+ ADD COLUMN `newgstamt` VARCHAR(45) DEFAULT 0 AFTER `newdiscount`,
+ ADD COLUMN `newtotal` VARCHAR(45) DEFAULT 0 AFTER `newgstamt`;
+
+ALTER TABLE `inventory_product_return_log` ADD COLUMN `invoicenoo` LONGTEXT AFTER `newtotal`;
+
+
+ALTER TABLE `inventory_return_grn_parent` ADD COLUMN `nettotal` VARCHAR(45) DEFAULT 0 AFTER `datetime`,
+ ADD COLUMN `netvat` VARCHAR(45) DEFAULT 0 AFTER `nettotal`,
+ ADD COLUMN `netdiscount` VARCHAR(45) DEFAULT 0 AFTER `netvat`,
+ ADD COLUMN `netcgst` VARCHAR(45) DEFAULT 0 AFTER `netdiscount`,
+ ADD COLUMN `netsgst` VARCHAR(45) DEFAULT 0 AFTER `netcgst`,
+ ADD COLUMN `netigst` VARCHAR(45) DEFAULT 0 AFTER `netsgst`,
+ ADD COLUMN `netsubtotal` VARCHAR(45) DEFAULT 0 AFTER `netigst`;
+
+ALTER TABLE `inventory_return_grn_parent` ADD COLUMN `mainnotes` LONGTEXT AFTER `netsubtotal`;
+
+
+ALTER TABLE `inventory_product_return_log` MODIFY COLUMN `notes` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+
+CREATE TABLE  `retrun_product_po_vat_allocations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `returngrnid` varchar(45) DEFAULT '0',
+  `voucherno` varchar(45) DEFAULT NULL,
+  `vatrate` varchar(45) DEFAULT '0',
+  `totalamt` varchar(45) DEFAULT '0',
+  `taxable` varchar(45) DEFAULT '0',
+  `discount` varchar(45) DEFAULT '0',
+  `taxamt` varchar(45) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `ledger_sheet` ADD COLUMN `vendorid` VARCHAR(45) DEFAULT 0 AFTER `phar_paymentid`,
+ ADD COLUMN `payment_vendorid` VARCHAR(45) DEFAULT 0 AFTER `vendorid`;
+
+
+ALTER TABLE `inventory_return_grn_parent` ADD COLUMN `aprovedamt` VARCHAR(45) DEFAULT 0 AFTER `mainnotes`,
+ ADD COLUMN `aproveuserid` VARCHAR(45) AFTER `aprovedamt`,
+ ADD COLUMN `aprovedate` VARCHAR(45) AFTER `aproveuserid`;
+
+
+
+ALTER TABLE `inventory_return_vendor_account` ADD COLUMN `aproved_amt` VARCHAR(45) DEFAULT 0 AFTER `status`;
+
+
+CREATE TABLE `inventory_paymentpo_parent` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `vendorid` VARCHAR(45),
+  `datetime` VARCHAR(45),
+  `userid` VARCHAR(45),
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `inventory_paymentpo` ADD COLUMN `parentid` VARCHAR(45) DEFAULT 0 AFTER `cheq_receiver`;
+
+
+ALTER TABLE `sevenstar`.`medicine_opening_stock` ADD COLUMN `indentqty` VARCHAR(45) DEFAULT 0 AFTER `isconsume`,
+ ADD COLUMN `purchaseqty` VARCHAR(45) DEFAULT 0 AFTER `indentqty`;
+ 
+ ALTER TABLE `sevenstar`.`ledger_sheet` ADD COLUMN `ofcialledgerid` VARCHAR(45) DEFAULT 0 AFTER `expenceid`;
+ 
+ 
+ALTER TABLE `nelson`.`temp_pharmacy_sale` MODIFY COLUMN `loginsessionid` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+ALTER TABLE `apm_patient` ADD COLUMN `regdate` VARCHAR(45) DEFAULT NULL AFTER `hospitalborn`;
+
+ALTER TABLE `sevenstar`.`apm_user` ADD COLUMN `edit_paypo` VARCHAR(45) DEFAULT 0 AFTER `discharge_new`;
+
+ALTER TABLE `sevenstar`.`apm_pharmacy_user` ADD COLUMN `medlimit` VARCHAR(45) DEFAULT 0 AFTER `creditlimitaccess`;
+
+ALTER TABLE `apm_patient` ADD COLUMN `companyname` VARCHAR(45) AFTER `regdate`,
+ ADD COLUMN `neiscardno` VARCHAR(45) AFTER `companyname`,
+ ADD COLUMN `designation` VARCHAR(45) AFTER `neiscardno`,
+ ADD COLUMN `relationofuser` VARCHAR(45) AFTER `designation`,
+ ADD COLUMN `unit_station` VARCHAR(45) AFTER `relationofuser`,
+ ADD COLUMN `claimid` VARCHAR(45) AFTER `unit_station`,
+ ADD COLUMN `colliery` VARCHAR(45) AFTER `claimid`,
+ ADD COLUMN `areatp` VARCHAR(45) AFTER `colliery`;
+
+ 
+ ALTER TABLE `support_conversation` CHANGE COLUMN `user_msg` `msg` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+ CHANGE COLUMN `admin_msg` `who` VARCHAR(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+ 
+ CREATE TABLE `support_excutives` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `apm_appointment_type` ADD COLUMN `fullnabhcharge` VARCHAR(45) DEFAULT 0 AFTER `shareablecharge`;
+
+ALTER TABLE `apm_treatment_episode` ADD COLUMN `discharge_end_date` VARCHAR(45) AFTER `emergencydetail`;
+
+ALTER TABLE `apm_treatment_episode` ADD COLUMN `finalmodify` LONGTEXT AFTER `discharge_end_date`;
+
+ALTER TABLE `apm_treatment_episode` ADD COLUMN `finalmodifydate` VARCHAR(45) AFTER `finalmodify`;
+
+ALTER TABLE `ledger_sheet` ADD COLUMN `inv_locationid` VARCHAR(45) DEFAULT 0 AFTER `ofcialledgerid`;
+
+ALTER TABLE `apm_user` ADD COLUMN `opd_invoice_post` VARCHAR(45) DEFAULT 0 AFTER `edit_paypo`;
+
+ALTER TABLE `apm_medicine_bill` ADD COLUMN `grosstotal` VARCHAR(45) DEFAULT 0 AFTER `tempsessionid`,
+ ADD COLUMN `grosssubtotal` VARCHAR(45) DEFAULT 0 AFTER `grosstotal`;
+
+ALTER TABLE `his_bmi` ADD COLUMN `tempr` VARCHAR(45) AFTER `postmeal`,
+ ADD COLUMN `spo` VARCHAR(45) AFTER `tempr`;
+ 
+ 
+ ALTER TABLE `inventory_product_return_log` ADD COLUMN `iscancel` VARCHAR(45) DEFAULT 0 AFTER `invoicenoo`,
+ ADD COLUMN `cancel_notes` LONGTEXT AFTER `iscancel`,
+ ADD COLUMN `cancel_date` VARCHAR(45) AFTER `cancel_notes`,
+ ADD COLUMN `cancel_userid` VARCHAR(45) AFTER `cancel_date`;
+
+
+
+ALTER TABLE `apm_parent_expence_management` ADD COLUMN `purno` VARCHAR(45) AFTER `cyear`;
+
+
+ALTER TABLE `apm_user` ADD COLUMN `sms_on_bedchange` VARCHAR(45) DEFAULT 0 AFTER `opd_invoice_post`,
+ ADD COLUMN `sms_on_newadm` VARCHAR(45) DEFAULT 0 AFTER `sms_on_bedchange`;
+
+CREATE TABLE `total_revenue_report` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `date` VARCHAR(45) DEFAULT NULL,
+  `total_ipds` VARCHAR(45) DEFAULT NULL,
+  `total_opds` VARCHAR(45) DEFAULT NULL,
+  `bed_ocupancy` VARCHAR(45) DEFAULT NULL,
+  `avg_length_stay` VARCHAR(45) DEFAULT NULL,
+  `ipd_revenue` VARCHAR(45),
+  `opd_revenue` VARCHAR(45),
+  `investigation_revenue` VARCHAR(45),
+  `other_revenue` VARCHAR(45),
+  `gr_ipd_payment` VARCHAR(45),
+  `gr_opd_payment` VARCHAR(45),
+  `gr_invst_payment` VARCHAR(45),
+  `gr_other_payment` VARCHAR(45),
+  `opdtoipdconv` VARCHAR(45),
+  `opdtoipdconvratio` VARCHAR(45),
+  `total_revenue` VARCHAR(45),
+  `conv_revenue` VARCHAR(45),
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+
+
+ALTER TABLE `total_revenue_report` ADD COLUMN `totalcredit` VARCHAR(45) AFTER `conv_revenue`,
+ ADD COLUMN `credit_return` VARCHAR(45) AFTER `totalcredit`,
+ ADD COLUMN `card_sale` VARCHAR(45) AFTER `credit_return`,
+ ADD COLUMN `cash_sale` VARCHAR(45) AFTER `card_sale`,
+ ADD COLUMN `cheque` VARCHAR(45) AFTER `cash_sale`,
+ ADD COLUMN `neft` VARCHAR(45) AFTER `cheque`,
+ ADD COLUMN `cash_return` VARCHAR(45) AFTER `neft`,
+ ADD COLUMN `discount` VARCHAR(45) AFTER `cash_return`,
+ ADD COLUMN `total_pharm_payment` VARCHAR(45) AFTER `discount`;
+
+ALTER TABLE `apm_investigation_type` ADD COLUMN `CGHS` LONGTEXT AFTER `pkgid`;
+
+ALTER TABLE `daily_wardwise_patient` MODIFY COLUMN `ipdids` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+
+ALTER TABLE `support_data` ADD COLUMN `executive` VARCHAR(45) DEFAULT NULL AFTER `department`;
+
+ALTER TABLE `support_data` ADD COLUMN `remark` LONGTEXT DEFAULT NULL AFTER `executive`,
+ ADD COLUMN `usernamefull` VARCHAR(45) DEFAULT NULL AFTER `remark`;
+
+ALTER TABLE `support_conversation` ADD COLUMN `readbyadmn` VARCHAR(45) DEFAULT 0 AFTER `datetime`,
+ ADD COLUMN `readbyuser` VARCHAR(45) DEFAULT 0 AFTER `readbyadmn`;
+ 
+
+ALTER TABLE `apm_patient` ADD COLUMN `policyholder` VARCHAR(45) AFTER `areatp`;
+
+ALTER TABLE `inventory_paymentpo_parent` ADD COLUMN `isfromledger` VARCHAR(45) DEFAULT 0 AFTER `totalpaid`;
+
+
+ALTER TABLE `apm_medicine_payment` ADD COLUMN `paymentflag` VARCHAR(45) DEFAULT 0 AFTER `paymentseqno`;
+ALTER TABLE `apm_client_parent_priscription` ADD COLUMN `location_s` VARCHAR(45) DEFAULT 0 AFTER `userid`;
+
+ALTER TABLE `apm_user` ADD COLUMN `cathlab` VARCHAR(45) AFTER `sms_on_newadm`;
+
+ALTER TABLE `apm_role_access` ADD COLUMN `cathlab` TINYINT(1) UNSIGNED DEFAULT 0 AFTER `pharm_print_backdate`;
+
+ALTER TABLE `his_parent_package` ADD COLUMN `third_party` VARCHAR(45) NOT NULL DEFAULT 0 AFTER `invtypeid`;
+
+CREATE TABLE `ipd_sequence_numbers` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `date` VARCHAR(45) DEFAULT NULL,
+  `seqno` INTEGER,
+  PRIMARY KEY (`id`)
+)
+
+ENGINE = InnoDB;
+
+ALTER TABLE `ipd_sequence_numbers` ADD COLUMN `ation` VARCHAR(45) DEFAULT NULL AFTER `seqno`;
+ALTER TABLE `ipd_sequence_numbers` CHANGE COLUMN `ation` `action` VARCHAR(45) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+ALTER TABLE `ipd_addmission_form` ADD COLUMN `ipdabrivationid` VARCHAR(45) DEFAULT NULL AFTER `opdtoipd`;
+ALTER TABLE `apm_user` ADD COLUMN `ipd_abbr_access` VARCHAR(45) DEFAULT 0 AFTER `wardforcharge`;
+
+ALTER TABLE `apm_medicine_bill` ADD COLUMN `initial_paymode` VARCHAR(45) AFTER `grosssubtotal`,
+ADD COLUMN `final_paymode` VARCHAR(45) AFTER `initial_paymode`;
+
+ALTER TABLE `inventory_procurement` ADD COLUMN `remainfreeqty` VARCHAR(45) DEFAULT 0 AFTER `child_agreementid`;
+
+ALTER TABLE `inventory_product_return_log` ADD COLUMN `returnqty_ac` VARCHAR(45) DEFAULT 0 AFTER `cancel_userid`,
+ADD COLUMN `returnfreeqty_ac` VARCHAR(45) DEFAULT 0 AFTER `returnqty_ac`;
+
+ALTER TABLE `inventory_procurement` ADD COLUMN `islongpoprod` VARCHAR(45) DEFAULT 0 AFTER `remainfreeqty`;
+
+ALTER TABLE `apm_expence_management` ADD COLUMN `inv_paymentid` VARCHAR(45) DEFAULT 0 AFTER `ctype`;
+
+ALTER TABLE `apm_user` ADD COLUMN `isledgerhosp` VARCHAR(45) DEFAULT 0 AFTER `iskunal`;
+
+CREATE TABLE `adjustment_data` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `adjustment_type` VARCHAR(45),
+  `product_id` VARCHAR(45),
+  `pre_stock` VARCHAR(45),
+  `current_stock` VARCHAR(45),
+  `change_qty` VARCHAR(45),
+  `userid` VARCHAR(45),
+  `datetime` VARCHAR(45),
+  `remark` LONGTEXT,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `apm_user` ADD COLUMN `hidelogoinvst` VARCHAR(45) DEFAULT 0 AFTER `ipd_abbr_access`,
+ ADD COLUMN `hidelogoemr` VARCHAR(45) DEFAULT 0 AFTER `hidelogoinvst`,
+ ADD COLUMN `hidelogobillinv` VARCHAR(45) DEFAULT 0 AFTER `hidelogoemr`;
+
+ALTER TABLE `apm_user` ADD COLUMN `invst_inv_apr` VARCHAR(45) DEFAULT 0 AFTER `hidelogobillinv`;
+
+ALTER TABLE `inventory_product` ADD COLUMN `is_po_prod` VARCHAR(45) DEFAULT 0 AFTER `isfromindent`;
+
+ALTER TABLE`inventory_procurement` ADD COLUMN `grnwithpo_child` VARCHAR(45) DEFAULT 0 AFTER `islongpoprod`;
+
+ALTER TABLE `inventory_temp_po` ADD COLUMN `newgstper` VARCHAR(45) DEFAULT 0 AFTER `isagrement`;
+
+ALTER TABLE `inventory_parent_procurement` ADD COLUMN `ispocomplete` VARCHAR(45) DEFAULT 0 AFTER `agreementid`,
+ ADD COLUMN `grnwithpo` VARCHAR(45) DEFAULT 0 AFTER `ispocomplete`;
+ 
+ ALTER TABLE `inventory_procurement` ADD COLUMN `parentpoid` VARCHAR(45) DEFAULT 0 AFTER `grnwithpo_child`;
+ 
+ ALTER TABLE `inventory_procurement` ADD COLUMN `proc_condition` VARCHAR(45) DEFAULT 0 AFTER `parentpoid`;
+ 
+ ALTER TABLE `inventory_parent_procurement` ADD COLUMN `compltpen_userid` VARCHAR(45) AFTER `grnwithpo`,
+ ADD COLUMN `compltpen_date` VARCHAR(45) AFTER `compltpen_userid`,
+ ADD COLUMN `compltpen_reason` LONGTEXT AFTER `compltpen_date`;
+ 
+ ALTER TABLE `inventory_product_log` ADD COLUMN `currentpack` VARCHAR(45) DEFAULT 0 AFTER `previousqty`,
+ ADD COLUMN `previouspack` VARCHAR(45) DEFAULT 0 AFTER `currentpack`,
+ ADD COLUMN `currentgst` VARCHAR(45) DEFAULT 0 AFTER `previouspack`,
+ ADD COLUMN `previousgst` VARCHAR(45) DEFAULT 0 AFTER `currentgst`,
+ ADD COLUMN `currentmrp` VARCHAR(45) DEFAULT 0 AFTER `previousgst`,
+ ADD COLUMN `previousmrp` VARCHAR(45) DEFAULT 0 AFTER `currentmrp`,
+ ADD COLUMN `currentsaleprice` VARCHAR(45) DEFAULT 0 AFTER `previousmrp`,
+ ADD COLUMN `previoussaleprice` VARCHAR(45) DEFAULT 0 AFTER `currentsaleprice`,
+ ADD COLUMN `currentpurprice` VARCHAR(45) DEFAULT 0 AFTER `previoussaleprice`,
+ ADD COLUMN `previouspurprice` VARCHAR(45) DEFAULT 0 AFTER `currentpurprice`,
+ ADD COLUMN `currentexpdate` VARCHAR(45) AFTER `previouspurprice`,
+ ADD COLUMN `previousexpdate` VARCHAR(45) AFTER `currentexpdate`;
+ 
+ ALTER TABLE `inventory_product_log` ADD COLUMN `datetime` VARCHAR(45) AFTER `previousexpdate`;
+ 
+ akash, 12:23
+CREATE TABLE  `sevenstar`.`return_product_temporary` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` varchar(45) DEFAULT '0',
+  `vendorid` varchar(45) DEFAULT '0',
+  `qty` varchar(45) DEFAULT '0',
+  `temp_id` varchar(45) DEFAULT '0',
+  `logsessionid` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+12:28
+ALTER TABLE `sevenstar`.`apm_client_parent_priscription` ADD COLUMN `userid` VARCHAR(45) AFTER `admission`;
+
+akash, 13:58
+ALTER TABLE `sevenstar`.`inventory_product_return_log` ADD COLUMN `newprodid` VARCHAR(45) DEFAULT 0 AFTER `notes`,
+ ADD COLUMN `newprocid` VARCHAR(45) DEFAULT 0 AFTER `newprodid`;
+
+
+lokesh, 17:22
+ALTER TABLE `sevenstar`.`apm_newchargetype` ADD COLUMN `compulsay_consultant` VARCHAR(45) DEFAULT 0 AFTER `ward`;
+
+
+akash, 11:55
+ALTER TABLE `sevenstar`.`inventory_product_return_log` ADD COLUMN `newvat` VARCHAR(45) DEFAULT 0 AFTER `newprocid`,
+ ADD COLUMN `newdiscper` VARCHAR(45) DEFAULT 0 AFTER `newvat`,
+ ADD COLUMN `newdiscount` VARCHAR(45) DEFAULT 0 AFTER `newdiscper`,
+ ADD COLUMN `newgstamt` VARCHAR(45) DEFAULT 0 AFTER `newdiscount`,
+ ADD COLUMN `newtotal` VARCHAR(45) DEFAULT 0 AFTER `newgstamt`;
+
+
+akash, 12:04
+ALTER TABLE `sevenstar`.`inventory_product_return_log` ADD COLUMN `invoicenoo` LONGTEXT AFTER `newtotal`;
+
+
+akash, 12:13
+ALTER TABLE `sevenstar`.`inventory_return_grn_parent` ADD COLUMN `nettotal` VARCHAR(45) DEFAULT 0 AFTER `datetime`,
+ ADD COLUMN `netvat` VARCHAR(45) DEFAULT 0 AFTER `nettotal`,
+ ADD COLUMN `netdiscount` VARCHAR(45) DEFAULT 0 AFTER `netvat`,
+ ADD COLUMN `netcgst` VARCHAR(45) DEFAULT 0 AFTER `netdiscount`,
+ ADD COLUMN `netsgst` VARCHAR(45) DEFAULT 0 AFTER `netcgst`,
+ ADD COLUMN `netigst` VARCHAR(45) DEFAULT 0 AFTER `netsgst`,
+ ADD COLUMN `netsubtotal` VARCHAR(45) DEFAULT 0 AFTER `netigst`;
+
+
+akash, 12:34
+ALTER TABLE `sevenstar`.`inventory_return_grn_parent` ADD COLUMN `mainnotes` LONGTEXT AFTER `netsubtotal`;
+
+ALTER TABLE `sevenstar`.`inventory_product_return_log` MODIFY COLUMN `notes` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+
+akash, 14:40
+CREATE TABLE  `sevenstar`.`retrun_product_po_vat_allocations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `returngrnid` varchar(45) DEFAULT '0',
+  `voucherno` varchar(45) DEFAULT NULL,
+  `vatrate` varchar(45) DEFAULT '0',
+  `totalamt` varchar(45) DEFAULT '0',
+  `taxable` varchar(45) DEFAULT '0',
+  `discount` varchar(45) DEFAULT '0',
+  `taxamt` varchar(45) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+lokesh, 15:22
+ALTER TABLE `sevenstar`.`ledger_sheet` ADD COLUMN `vendorid` VARCHAR(45) DEFAULT 0 AFTER `phar_paymentid`,
+ ADD COLUMN `payment_vendorid` VARCHAR(45) DEFAULT 0 AFTER `vendorid`;
+
+
+akash, 16:56
+ALTER TABLE `sevenstar`.`inventory_return_grn_parent` ADD COLUMN `aprovedamt` VARCHAR(45) DEFAULT 0 AFTER `mainnotes`,
+ ADD COLUMN `aproveuserid` VARCHAR(45) AFTER `aprovedamt`,
+ ADD COLUMN `aprovedate` VARCHAR(45) AFTER `aproveuserid`;
+
+
+praful ghagre, 18:02
+ALTER TABLE `welltreat`.`ipd_template` MODIFY COLUMN `text` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+
+
+
+akash, 23:35
+ALTER TABLE `sevenstar`.`inventory_return_vendor_account` ADD COLUMN `aproved_amt` VARCHAR(45) DEFAULT 0 AFTER `status`;
+
+
+akash, 00:16
+CREATE TABLE `sevenstar`.`inventory_paymentpo_parent` (
+  `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+  `vendorid` VARCHAR(45),
+  `datetime` VARCHAR(45),
+  `userid` VARCHAR(45),
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+ALTER TABLE `sevenstar`.`inventory_paymentpo` ADD COLUMN `parentid` VARCHAR(45) DEFAULT 0 AFTER `cheq_receiver`;
+
+
+akash, 14:20
+ALTER TABLE `sevenstar`.`inventory_paymentpo_parent` ADD COLUMN `total_amt` VARCHAR(45) DEFAULT 0 AFTER `userid`,
+ ADD COLUMN `sumofreturn` VARCHAR(45) DEFAULT 0 AFTER `total_amt`,
+ ADD COLUMN `refundcheck` VARCHAR(45) DEFAULT 0 AFTER `sumofreturn`;
+
+
+akash, 14:25
+ALTER TABLE `sevenstar`.`inventory_paymentpo` ADD COLUMN `bankid` VARCHAR(45) DEFAULT 0 AFTER `parentid`;
+
+
+akash, 15:53
+ALTER TABLE `sevenstar`.`inventory_paymentpo_parent` ADD COLUMN `totalpaid` VARCHAR(45) DEFAULT 0 AFTER `refundcheck`;
+
+
+akash, 16:52
+ALTER TABLE `sevenstar`.`inventory_return_vendor_account` ADD COLUMN `paymentid` VARCHAR(45) DEFAULT 0 AFTER `aproved_amt`;
+
+18:17
+ALTER TABLE `aureus`.`inventory_parent_procurement` MODIFY COLUMN `dmseq` INTEGER(10) UNSIGNED DEFAULT 0;
+
+lokesh, 18:30
+CREATE TABLE `demo`.`support_data` (
+  `id` INTEGER UNSIGNED AUTO_INCREMENT,
+  `clinic_id` VARCHAR(45) DEFAULT NULL,
+  `userid` VARCHAR(45) DEFAULT NULL,
+  `datetime` VARCHAR(45) DEFAULT NULL,
+  `query_type` VARCHAR(45) DEFAULT NULL,
+  `query` LONGTEXT DEFAULT NULL,
+  `status` VARCHAR(45) DEFAULT 0,
+  `isfixable` VARCHAR(45) DEFAULT 0,
+  `department` VARCHAR(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+
+manoj mishra, 10:32
+ALTER TABLE `sevenstar`.`ledger_sheet` ADD COLUMN `expenceid` VARCHAR(45) DEFAULT 0 AFTER `payment_vendorid`;
+
+
+lokesh, 17:26
+ALTER TABLE `sevenstar`.`apm_user` ADD COLUMN `discharge_new` VARCHAR(45) DEFAULT 0 AFTER `show_wardname`;
+
+
+lokesh, 18:37
+ALTER TABLE `sevenstar`.`apm_patient` ADD COLUMN `hospitalborn` VARCHAR(45) DEFAULT 0 AFTER `smsdate`;
+
+
+akash, 16:21
+ALTER TABLE `sevenstar`.`medicine_opening_stock` ADD COLUMN `indentqty` VARCHAR(45) DEFAULT 0 AFTER `isconsume`,
+ ADD COLUMN `purchaseqty` VARCHAR(45) DEFAULT 0 AFTER `indentqty`;
+
+
+manoj mishra, 17:55
+ALTER TABLE `sevenstar`.`ledger_sheet` ADD COLUMN `ofcialledgerid` VARCHAR(45) DEFAULT 0 AFTER `expenceid`;
+
+
+akash, 12:42
+ALTER TABLE `nelson`.`temp_pharmacy_sale` MODIFY COLUMN `loginsessionid` LONGTEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL;
+
+
+lokesh, 13:39
+ALTER TABLE `sevenstar`.`apm_patient` ADD COLUMN `regdate` VARCHAR(45) DEFAULT NULL AFTER `hospitalborn`;
+
+
+akash, 11:07
+ALTER TABLE `sevenstar`.`apm_user` ADD COLUMN `edit_paypo` VARCHAR(45) DEFAULT 0 AFTER `discharge_new`;
+
+14:25
+ALTER TABLE `sevenstar`.`apm_pharmacy_user` ADD COLUMN `medlimit` VARCHAR(45) DEFAULT 0 AFTER `creditlimitaccess`;
+ 
+ 
+ 
+ 
+
+
+

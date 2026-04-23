@@ -1,0 +1,99 @@
+.menuEditor{
+	left:0;
+	width:97%;
+	font:12px/27px Arial,sans-serif;
+	color:#3366cc;
+	height:30px;
+	background:#2D2D2D;
+	z-index:100;
+	margin-left: 21px;
+	position: absolute;
+}
+.menuEditor a:hover{
+	background-color:#676767;
+	color:#CCCCCC;
+}
+.menuEditor a{
+	text-decoration:none;
+	padding:6px 8px 7px;
+	color:#CCCCCC;
+	outline:none;
+}
+.menuEditor ul{
+	list-style:none;
+	margin:0;
+	padding:0 0 0 10px;
+}
+.menuEditor ul li{
+	padding:0;
+	float:left;
+}
+.menuEditor ul li ul li{
+	padding:0;
+	float:none;
+	margin:0 0 0 0px;
+	width:100%;
+}
+.menuEditor ul li ul{
+	position:absolute;
+	border:1px solid #5680c1;
+	margin-top:-1px;
+	display:none;
+	padding:0px 16px 0px 0;
+}
+.menuEditor .active ul{
+	display:block !important;
+}
+.menuEditor .single ul{
+	display:block !important;
+}
+.menuEditor .active a{
+	background-color:white;
+	border:1px solid #5680c1;
+	border-bottom:0;
+	display:block;
+	height:24px;	/* 29 original */
+	padding:0 8px 0 8px;
+	position:relative;
+	z-index:1;
+	color:#2D2D2D;
+}
+/*Styling for the link of the current page*/
+.menuEditor .current a{
+	background-color:#2D2D2D;
+	border-top:2px solid #5680c1;/*red ribbon at top*/
+	border-bottom:0;
+	display:block;
+	height:25px;
+	padding:0 8px 0 8px;
+	position:relative;
+	z-index:1;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.menuEditor .active a:hover{
+	background-color:white;
+	color:#2D2D2D;
+}
+.menuEditor .active ul a:hover{
+	background-color:#e4ebf8;
+}
+.menuEditor .active ul a{
+	border:0 !important;
+	border:0;
+	width:100%;
+}
+.menuEditor .arrow{
+	border-color:#C0C0C0 transparent white;
+	border-style:solid dashed dashed;
+	margin-left:5px;
+	position:relative;
+	top:10px;
+}
+.menuEditor .mid-line{
+	background-color:#ff0000;
+	border-top:1px solid #e5e5e5;
+	font-size:0;
+	width:100%;
+	padding:0 8px 0 8px;
+}

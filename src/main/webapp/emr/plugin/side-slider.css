@@ -1,0 +1,90 @@
+#sideslider {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    left: auto;
+    margin-left: auto;
+    margin-right: -265px;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    width: 300px;
+    z-index: 99;
+}
+
+#sideslider .sideslider-tab {
+    background-color: #15536e;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    height: 35px;
+    left: -33px;
+    padding-top: 6px;
+    padding-left: 24px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 34px;
+    transform: rotate(-90deg);
+    width: 102px;
+    font-size:16px;
+    font-weight:600;
+}
+
+#sideslider a {
+    text-decoration: none;
+}
+
+#sideslider-smartbutton {
+    background-color: rgb(247, 247, 247);
+    margin-left: 36px;
+    padding: 4px 4px 4px 4px;
+    position: relative;
+    width: 249px;
+}
+
+#sideslider .sideslider-close {
+    background-color: #000;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    font-weight: 300;
+    height: 21px;
+    padding-right: 15px;
+    padding-top: 3px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 265px;
+}
+
+
+#sideslider-text .line {
+    display: block;
+    margin-bottom: 10px;
+}
+#sideslider-text {
+    color: #fff;
+    text-align: left;
+    margin-left: 5px;
+}
+
+#sideslider-text .header {
+    display: block;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px #000;
+}
+.sideclear {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    height: 0;
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}

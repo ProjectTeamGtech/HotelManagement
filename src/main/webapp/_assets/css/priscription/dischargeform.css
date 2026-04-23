@@ -1,0 +1,46 @@
+/* lg */ 
+@media (min-width: 1200px) {
+.disp1{
+	display: none;
+}		
+
+	
+}
+
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	
+}
+
+
+/* xs */
+@media (max-width: 767px) {
+	
+.disp{
+	display: none;
+}
+.contentt{
+	text-align: left !important;
+}
+	
+}
+
+
+
+/* XS Portrait */
+@media (max-width: 480px) {
+
+
+
+}
+
+
+
+/* XXS Portrait */
+@media (max-width: 393px) {
+
+
+}

@@ -1,0 +1,1 @@
+<b>Registration done successfully</b>

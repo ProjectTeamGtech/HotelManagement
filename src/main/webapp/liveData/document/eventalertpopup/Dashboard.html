@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>Dashboard APM</title>
+    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="css/dailog.css" rel="stylesheet" type="text/css" />
+    <link href="css/calendar.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/dp.css" rel="stylesheet" type="text/css" />   
+    <link href="css/alert.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/main.css" rel="stylesheet" type="text/css" /> 
+     <link rel="icon" href="images/icon.ico">
+<!--Popup-->
+
+
+
+ <style type="text/css">
+   
+     
+      
+  
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var moveLeft = 20;
+        var moveDown = 10;
+        
+        $('a#trigger').hover(function(e) {
+          $('div#pop-up').show();
+          //.css('top', e.pageY + moveDown)
+          //.css('left', e.pageX + moveLeft)
+          //.appendTo('body');
+        }, function() {
+          $('div#pop-up').hide();
+        });
+        
+        $('a#trigger').mousemove(function(e) {
+          $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+        
+      });
+    </script>
+
+ 
+
+<!--Popup end-->
+
+</head>
+<body on="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+
+      <div  id="calhead" style="padding-left:1px;padding-right:1px;">          
+            <div class="cHead"><div class="ftitle">My Calendar</div>
+            <div id="loadingpannel" class="ptogtitle loadicon" style="display: none;">Loading data...</div>
+             
+            </div>          
+            
+            <div id="caltoolbar" class="ctoolbar">
+              <div id="faddbtn" class="fbutton">
+                <div><span title='Click to Create New Event' class="addcal">
+
+                New Event                
+                </span></div>
+            </div>
+            <div class="btnseparator"></div>
+             <div id="showtodaybtn" class="fbutton">
+                <div><span title='Click to back to today ' class="showtoday">
+                Today</span></div>
+            </div>
+              <div class="btnseparator"></div>
+
+            <div id="showdaybtn" class="fbutton">
+                <div><span title='Day' class="showdayview">Day</span></div>
+            </div>
+              <div  id="showweekbtn" class="fbutton fcurrent">
+                <div><span title='Week' class="showweekview">Week</span></div>
+            </div>
+              <div  id="showmonthbtn" class="fbutton">
+                <div><span title='Month' class="showmonthview">Month</span></div>
+
+            </div>
+            <div class="btnseparator"></div>
+              <div  id="showreflashbtn" class="fbutton">
+                <div><span title='Refresh view' class="showdayflash">Refresh</span></div>
+                </div>
+             <div class="btnseparator"></div>
+            <div id="sfprevbtn" title="Prev"  class="fbutton">
+              <span class="fprev"></span>
+
+            </div>
+            <div id="sfnextbtn" title="Next" class="fbutton">
+                <span class="fnext"></span>
+            </div>
+            <div class="fshowdatep fbutton">
+                    <div>
+                        <input type="hidden" name="txtshow" id="hdtxtshow" />
+                        <span id="txtdatetimeshow">Loading</span>
+
+                    </div>
+            </div>
+            
+            <div class="clear"></div>
+            </div>
+      </div>
+    
+    
+    
+    
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     <br>  <br>  <br>     <br>  <br>  <br>     <br>  <br>  <br> 
+ 
+ 
+ 
+ 
+ <!--Popup-->
+<div id="container">
+      <h1>Pop-up </h1>
+      <p>
+         <a href="#" id="trigger">To show hidden div, simply hover your mouse over
+       this link</a>.
+      </p>
+      
+      <br><br>
+      
+      <p>
+         <a href="#" id="trigger">To show hidden div, simply hover your mouse over
+       this link</a>.
+      </p>
+      
+      <!-- HIDDEN / POP-UP DIV -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>   
+    
+<div id="pop-up" style="z-index: 180; margin-top:-163px; margin-left:-130px; width: 400px; visibility: visible; left: 0px; top: 158px; display:none;" class="bubble">
+<table class="bubble-table" cellspacing="0" cellpadding="0"><tbody><tr><td class="bubble-cell-side"><div id="tl1" class="bubble-corner"><div class="bubble-sprite bubble-tl"></div></div></td><td class="bubble-cell-main"><div class="bubble-top"></div></td><td class="bubble-cell-side"><div id="tr1" class="bubble-corner"><div class="bubble-sprite bubble-tr"></div></div>  </td></tr><tr><td class="bubble-mid" colspan="3"><div style="overflow: hidden" id="bubbleContent1"><div><div></div><div class="cb-root">
+    
+<table width="200" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+How r u ?
+</td>
+</tr>
+</table>
+    
+&nbsp; </div></div></div></td></tr><tr><td><div id="bl1" class="bubble-corner"><div class="bubble-sprite bubble-bl"></div></div></td><td><div class="bubble-bottom"></div></td><td><div id="br1" class="bubble-corner"><div class="bubble-sprite bubble-br"></div></div></td></tr></tbody></table><div id="prong2" class="prong"><div class="bubble-sprite"></div></div></div>
+      </td>
+  </tr>
+</table>
+      
+</div>
+
+
+
+
+<!--Popup End-->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+       <br><br>    <br><br>    <br><br>    <br><br>    <br><br> 
+    
+ 
+    
+<table style="margin-left:100px;" width="200" border="0" cellspacing="0" cellpadding="0">
+ <tr>
+    <td>
+    <div style="WIDTH:200;" title="Time:Apr 1 (Tue) 15:00 -  16:00
+Event:Mohammad Irfan
+Location:Undefined" class="chip chip0 "><div class="dhdV" style="display:none">-1$Mohammad Irfan$Tue Apr 01 2014 15:00:00 GMT+0530 (India Standard Time)$Tue Apr 01 2014 16:00:00 GMT+0530 (India Standard Time)$0$0$0$-1$0$$</div><div style="BORDER-BOTTOM-COLOR:#7a367a" class="ct">&nbsp;</div><dl style="BORDER-BOTTOM-COLOR:#7a367a; BACKGROUND-COLOR:#b373b3; BORDER-TOP-COLOR: #7a367a; HEIGHT: 38px; BORDER-RIGHT-COLOR:#7a367a; BORDER-LEFT-COLOR:#7a367a"><dt style="BACKGROUND-COLOR:#7a367a">15:00 - 16:00 <i class="cic cic-tmr">&nbsp;</i></dt><dd><span>Mohammad Irfan</span></dd><div class="resizer" style="display:none"><div class="rszr_icon">&nbsp;</div></div></dl><div style="BORDER-BOTTOM-COLOR:#7a367a; BACKGROUND-COLOR:#b373b3; BORDER-TOP-COLOR: #7a367a; BORDER-RIGHT-COLOR: #7a367a; BORDER-LEFT-COLOR:#7a367a" class="cb1">&nbsp;</div><div style="BORDER-BOTTOM-COLOR:#7a367a; BORDER-TOP-COLOR:#7a367a; BORDER-RIGHT-COLOR:#7a367a; BORDER-LEFT-COLOR:#7a367a" class="cb2">&nbsp;</div></div>
+    </td>
+  </tr>
+</table>
+
+
+
+      <br>  <br>  <br>  <br>  <br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+     
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,660 @@
+/* lg */ @media (min-width:1200px){
+	/* .header {
+    left: 0px;
+    right: 0px;
+    z-index: 1003;
+    margin-top: 0px;
+    width: 183%;
+    margin-left: -290px;
+	} */
+	.sepratorspav {
+    margin-left: -115px;
+    margin-right: 146px;
+}
+}
+/* md */ @media (min-width:992px) and (max-width:1199px){
+	.calennw {
+    margin-top: 30px !important;
+    margin-right: -5px !important;
+    margin-left: 0px !important;
+	}
+	.hisbackimg{
+		height: 535px !important;
+	}
+/* 	.appWrapper.aside-fixed #sidebar {
+    display: none !important;
+} */
+	.hidden-md{
+	display: none;
+	
+	}
+	.hz-menu #sidebar {
+	    width: 100% !important;
+	    bottom: auto !important;
+	}
+	.tdtable {
+	    width: 100%;
+	}	
+	.widthdebicha{
+	 width:100% !important;
+	}
+	label {
+    font-size: 11px;
+	}
+	.clinpackga {
+    font-size: 12px !important;
+	}
+	.minthuclinpr{
+	min-height: 190px;
+	}
+	.addchabtn{
+	width: 100% !important;
+	margin-left: 15px !important;
+	}
+	hr {
+    margin-top: 12px !important;
+    margin-bottom: 5px !important;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+	.sepratorspav {
+ 	margin-right: 90px !important;
+	margin-left: -52px !important;
+	}
+	.pdate {
+    width: 12% !important;
+	}
+	
+	.widget-appointments .month {
+    font-size: 21px !important;
+    }
+	.smallbedic{
+    width: 10.667% !important;
+	}
+	.mainbox {
+    width: 195px !important;
+}
+	.standard-section-data-label {
+    font-size: 11pt !important;
+}
+	.tile .tile-header h1, .tile .tile-header h2, .tile .tile-header h3, .tile .tile-header h4 {
+    font-size: 11px !important;
+}
+	
+	.smsbora {
+    margin-top: 0px !important;
+}
+	
+
+	.setopd {
+    margin-top: -10px !important;
+}
+	.btn {
+    padding: 4px 7px !important;
+    font-size: 13px !important;
+}
+.numbermanage {
+    margin-left: 4px !important;
+    margin-top: 4px !important;
+    position: absolute;
+}
+.notify-arrow {
+    left: 203px !important;
+}
+.dropdown-menu.extended {
+    margin-left: 15px !important;
+}
+.badge {
+    margin-top: -25px !important;
+    position: absolute !important;
+    margin-left: 13px !important;
+}
+.uguid {
+    margin-top: -15px !important;
+}
+.downapp {
+    margin-top: -15px !important;
+    margin-right: 5px !important;
+}
+.abou {
+    margin-top: -17px !important;
+}
+.careic {
+    margin-top: -17px !important;
+}
+	.timer-table th {
+    padding: 5px 14px 5px 15px;
+    font-size: 12px;
+	}
+	div.cHead {
+    margin-top: 19px;
+	}
+.pracwid{
+	width:87% !important;
+	}
+	.backclien1 {
+   	background-color: #6F6F6F !important;
+	margin-top: -16px;
+	color: #FFF;
+	padding: 0px !important;
+	}
+	.backclien {
+    background-color: #6F6F6F !important;
+    padding: 10px 1px 12px 0px !important;
+    color: #FFF;
+	}
+	.practday{
+	width: 100% !important;
+	}
+	.weekdash {
+    width: 45px !important;
+}
+.bellicasa{
+    color: rgb(85, 85, 85) !important;
+    font-size: 22px !important;
+}
+	.appdashspell {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+	.weekwidt{
+	width: 71% !important;
+	}
+	.thridpar{
+	font-size: 9px !important;
+	margin-left: 13px !important;
+	}
+	.mapmarw {
+    width: 64px !important;
+}
+.calenderne {
+    width: 72px !important;
+}
+	.panthumb{
+	padding-left: 0px !important;
+padding-right: 3px !important;
+}
+.clientsearchbak{
+	background-color: rgba(212, 212, 212, 0.11) !important;
+	border: 1px solid #DDD;
+	padding: 12px;
+	width: 100%;
+	margin-left: 0px;
+	height: 87px;
+}
+.textclinet {
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 11px;
+}
+.managecleintpad{
+	padding: 0px 13px 0px 3px !important;
+	}
+	
+	.backtotal {
+    height: 75px !important;
+}
+	input[type="radio"], input[type="checkbox"] {
+    width: 22px !important;
+    height: 20px !important;
+}
+	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+     position: absolute;
+	margin-left: -20px;
+	margin-top: -2px !important;
+	}
+	
+	.invest21 {
+    width: 8% !important;
+	}
+	/*.invest9{
+	width: 28% !important;
+	}
+	.invest5 {
+    width: 9% !important;
+	}
+	.invest7 {
+    width: 12% !important;
+	}*/
+		.btn-new{
+    margin-left: -11px !important;
+}
+.btn-new:hover{
+    margin-left: -11px !important;
+}
+	.titlestleftiocn {
+    margin-left: -55px !important;
+	}
+	.widget-appointments .owl-carousel .owl-item {
+    	padding: 0 5px !important;
+	}
+	.card-container {
+    position: relative;
+    min-height: 150px !important;
+}
+	
+}
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+	.widget-appointments .owl-carousel .owl-item {
+    	padding: 0 5px !important;
+	}
+	.hidden-sm{
+	display: none;
+	
+	}
+	
+	.content-left, .content-right {
+    width: 100% !important;
+    float: left;
+	}
+	.titlestleftiocn {
+    margin-left: -55px !important;
+	}
+	.btn-new{
+    margin-left: -11px !important;
+	}
+	.btn-new:hover{
+	    margin-left: -11px !important;
+	}
+		.mt {
+	    padding-top: 0px !important;
+	}
+	.setnotfor{
+    margin-top: 0px !important;
+	}
+	.ionemrse {
+    margin-top: -10px !important;
+	}
+	.calennw {
+    margin-top: 25px !important;
+    margin-right: -5px !important;
+    margin-left: 11px !important;
+}
+	.invest21 {
+    width: 8% !important;
+	}
+	/*.invest5 {
+    width: 9% !important;
+	}
+	.invest9{
+	width: 28% !important;
+	}
+	.invest7 {
+    width: 12% !important;
+	}*/
+	.widget-appointments .month {
+    font-size: 21px !important;
+    }
+    .pdate {
+    width: 12% !important;
+}
+	
+	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+	margin-left: -20px;
+	margin-top: -2px !important;
+	}
+	.mainbox {
+    width: 187px !important;
+}
+	input[type="radio"], input[type="checkbox"] {
+    width: 22px !important;
+    height: 20px !important;
+}
+	.padleft0 {
+    padding-left: 0px ;
+}
+h3, .h3 {
+    font-size: 16px;
+}
+	label {
+    font-size: 11px;
+}
+	.padding8 {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 3px;
+}
+	.normalmd{
+	font-size: 14px !important;
+	}
+	
+	.prepaymd{
+	margin-top: -15px;
+	}
+	.dosen {
+    margin-left: -32px;
+}
+.sepratorspav {
+    margin-left: -79px;
+    margin-right: 52px !important;
+}
+	.martop2das{
+	margin-top:2px !important;
+	}
+.paddingneil{
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+	.balance {
+    float: right !important;
+    margin-top: 0px !important;
+}
+	body {
+    font-size: 11px;
+}
+	.mdscr{
+	padding-left: 0px;
+	}
+  .md9 {
+    width: 70%;
+}
+	.edmd{
+	width: 222px;
+	}
+	.card-container {
+    	min-height: 165px !important;
+	}
+	.mmargin{
+	margin-left: 80px;
+}
+}
+
+
+
+/* xs */ @media (min-width:767px){
+
+.padleft0 {
+    padding-left: 0px !important;
+}
+.card-container {
+    	min-height: 116px !important;
+	}
+	
+}
+/* XS */ @media (max-width:480px){
+	.ad{
+	padding-left:46px !important;
+	}
+	
+	#sidebar {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	margin-left: -15px !important;
+	/*   margin-top: -205px; */
+}
+.toppad15 {
+    padding-top: 0px !important;
+}
+	.allsbso{
+	position: absolute;
+	}
+	.header {
+    left: 0px;
+    right: 0px;
+    z-index: 1002;
+    padding: 0px 8px 0px 31px;
+	}
+	.calennw{
+	width: 113% !important;
+	margin-left: -39px !important;
+	margin-top: -7px !important;
+	}
+	.sm-clean a {
+    padding: 1px 0px 4px 29px !important;
+	}
+	ul.sidebar-menu {
+    margin-top: 50px !important;
+	}
+	.ui-datepicker {
+    width: 20em;
+    padding: 0px 0px 0px 0px;
+    margin-left: 11px;
+	}
+	.padommmleft{
+	padding-left: 0px;}
+	
+	.daypad{
+	padding-left: 0px;
+	}
+	div.ctoolbar {
+	padding:0px;
+	}
+	.timeset{
+	float:right;
+	font-size: 12px;
+	margin-right: 4px;
+	}
+	.timer-table th {
+    padding: 3px 3px 3px 2px;
+    font-weight: bold;
+    font-size: 9px;
+	}
+	.weekne{
+	margin-left: 18px !important;
+	}
+	.weeb{
+	    padding: 0px 0px 0px 25px !important;
+	}
+	.loginbt{
+	margin-top: 5px !important;
+	}
+	.todayt{
+	width: 0px;
+	overflow: hidden;
+	padding: 2px;
+	font-size: 8px;
+	}
+	.clenv{
+	background-color: #FFD369;
+	}
+	div.new {
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    border: 1px solid #DDD;
+    box-shadow: 2px 2px 3px #888;
+	}
+	.thumbnail {
+    display: block !important;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+    line-height: 0 !important;
+    background-color: none !important;
+    border: 0px solid #DDD !important;
+    border-radius: 0px !important;
+    transition: all 0.2s ease-in-out 0s !important;
+	}
+	.popold{
+	margin-top: 10px;
+	}
+	.who{
+	margin-top: -42px;
+	}
+	.cond{
+	margin-top: -23px;
+	}
+	.popoldmin{
+	margin-top: -10px;
+	}
+	.dtd{
+	 margin-bottom: 10px !important;
+	}
+	.dtdf{
+	margin: 0px -18px 8.5px !important;
+	}
+	.btnback{
+	background-color: #F6B66F;
+	color: #FFF;
+	padding: 4px 12px 6px 9px;
+	}
+	.bookapoinbac {
+    background-color: #EFEFEF !important;
+    text-align: left;
+    height: auto;
+    margin-top: 0px;
+	}
+	.tdtable{
+	width:100%;
+	padding: 5px 12px 5px 12px;
+	}
+	.dayme{
+	width: 90px;
+	}
+	.gobtn{
+	margin-left: 58px;
+	}
+	.input-group {
+    display: inline-flex;
+    margin-right: 8px;
+	}
+	.martop2das {
+    margin-top: 4px;
+    width: 52% !important;
+}
+	.timer-table {
+    margin-top: -35px;
+	}
+	#header .nav-right > li.nav-profile, #header .nav-left > li.nav-profile {
+    margin-top: 0;
+    padding: 0px;
+    height: 40px;
+	}
+	.tiemsl{
+	width:8%;
+	}
+	.pracwid{
+	width: 120px !important;
+	}
+	.mapmarw{
+	width: 54px !important;
+	}
+	.gobn{
+	margin-top: 0px;
+	width: 32px;
+	background-color: #EEE;
+	border-color: #CCC;
+	color: #000;
+	}
+	.mago{
+	width: 40%;
+	}
+	.fa {
+    margin: 0px 0px 0px -5px !important;
+	}
+	.input-group-addon {
+    padding: 6px 12px;
+    
+	}
+	.wrapper {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0px 0px 15px;
+    width: 100%;
+	}
+	.reapeatslot{
+	margin-top: 10px !important;
+	}
+	.calenderne{
+	width: 69px !important;
+    margin-left: -7px;
+	}
+	.da1{
+	margin-top: 5px !important;
+	}
+	.weektim{
+	width:15% !important;
+	}
+	.durane{
+	float: right !important;
+	}
+	div.ctoolbar div.fbutton div {
+    float: left;
+    padding: 0px 0px;
+	}
+	.fontnew{
+	font-size: 8px !important;
+	}
+	.green
+	{
+	font-size: 11px !important;
+	}
+	.marlft124 {
+    margin-left: -172px;
+	}
+	.topbarback {
+    background-color: #EFEFEF;
+    margin-left: 0px;
+    width:308px;
+    padding: 2px 0px 2px 10px;
+	}
+	.editassf{
+	font-size: 15px; font-weight: bold
+	}
+	.editassetel{
+	font-size: 12px; font-weight: normal;
+	}
+	.editassesadd{
+		font-size: 14px;
+	font-weight: bold;
+	}
+	.canvwidth{
+	height:400px; width: 255px;
+	}
+	.canvwidthimg{
+	height:400px; width: 255px;
+	}
+	.widthcan{
+	width: 109% !important;
+	margin-left: -15px;
+	}
+	.marlftright{
+	margin-left: 15px;
+	margin-right: 15px;
+	}
+	.texthead {
+    font-size: 11px;
+	}
+	.clienttextn{
+	color: #000 !important;
+	width: 125%;
+	font-size:8px;
+	margin-left: 4px;
+	}
+	.rownew{
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+	}
+	.mobadm{
+	width:30% !important;
+	}
+	.cleintwidthna{
+	width: 100% !important;
+	}
+	.weekdash{
+	width: 73px !important;
+	}
+	a.logo {
+    margin-top: 6px !important;
+	}
+	.dropne{
+	margin-top: 44px;
+	}
+	ul.top-menu > li > .logout {
+    color: #2F2F2F;
+    font-size: 15px;
+    margin-top: -30px;
+	}
+	.sidebar-toggle-box {
+    margin-left: -15px !important;
+	}
+	.emailhead{
+	padding-top: 85px !important;
+	}
+	.emailtxt{
+	padding-top: 465px !important;
+	}
+}

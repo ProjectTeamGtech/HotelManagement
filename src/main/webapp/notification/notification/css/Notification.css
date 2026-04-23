@@ -1,0 +1,66 @@
+﻿.dropdonlist{
+    width: 50%;
+float: right;
+margin-left: -83px;
+
+}
+.thwid{
+    width: 52%;
+}
+.droplist{
+    margin-top:-34px;
+    width: 48%;
+    margin-right: 9px;
+}
+.textsize{
+    width: 50%;
+}
+.tableheadback{
+    background-color: rgba(224, 224, 224, 0.83);
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-width: 1px 0px 0px;
+    border-style: solid none none;
+    border-color: #DDD -moz-use-text-color -moz-use-text-color;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.backleftcor{
+    background-color: rgba(43, 177, 255, 0.5);
+}
+.padback{
+    padding: 15px 0px 0px 9px !important;
+}
+.checpad{
+    padding: 10px 0px 0px !important;
+}
+.hrmar{
+    margin-top: 10px !important;
+    margin-bottom: 4px;
+}
+.hrmar1{
+    margin-top: 10px !important;
+margin-bottom: 3px;
+}
+.feed{
+    padding: 11px 0px 0px 9px !important;
+}
+.marset{
+    margin-top: 11px;
+}
+.savebtn{
+    float: right;
+}
+.btn-primary {
+    color: #FFF;
+    background-color: #2BB1FF;
+    border-color: #2BB1FF;
+}
+.clibac{
+    background-color: blanchedalmond;
+}

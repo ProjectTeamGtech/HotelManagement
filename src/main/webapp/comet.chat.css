@@ -1,0 +1,46 @@
+.chatInput{
+	border:1px solid #43b9be;
+	background-color: #FFFFF;
+	color: #000000;
+	font-weight: normal;
+	padding-left: 2px;
+	height: 30px;
+	width: 248px;
+}
+.fromUserName {
+	color: #43b9be;
+    font-size: 12px;
+    padding: 5px;	
+}
+.fromMessage {
+        color: #555;
+    font-size: 12px;
+}
+
+.toUserName {
+	color: #43b9be;
+	font-size: 12px; 
+	padding: 5px;
+}
+
+.toMessage {
+    color: #555;
+    font-size: 12px;
+}
+.windowTitle {
+	color: #FFFFFF;
+	font-size: 12px; 
+	float: left;
+	position: relative;
+	top: 5px;
+    padding: 5px;
+}
+.windowClose {
+	color: #FFFFFF;
+	font-size: 14px; 
+	float: right;
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+	padding: 3px 8px 0px 0px;
+}

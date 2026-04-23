@@ -1,0 +1,28 @@
+.newloktable td{
+text-align: left;
+border: none;
+}
+
+.newloktable tr{
+border: none;
+height: 40px;
+}
+
+
+.lokbtn{
+	width: 80%;
+	font-weight: bold;
+}
+.newloktable{
+	padding: 20px;
+}
+
+.loktextarea{
+	height: 35px !important;
+}
+
+.lokhaeders{
+	background-color: #d8d8d8;
+	margin-top: 25px;
+	padding-top: 5px;
+}

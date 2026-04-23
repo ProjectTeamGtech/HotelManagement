@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>jscolor demo</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="jscolor.js"></script>
+
+	Click here: <input class="color" value="66ff00" id="palate">
+	
+	<input type="button" value="Go" onclick="getColorValue();">
+	
+	
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+	function getColorValue(){
+		alert(document.getElementById('palate').value);
+	}
+</script>

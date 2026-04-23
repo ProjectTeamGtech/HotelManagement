@@ -1,0 +1,101 @@
+
+.topmenuright{ float:right;}
+.logo{margin: auto; max-width:449px;margin-top: 100px;}
+img {
+	border: none;
+}
+
+/* dock - top */
+.dock {
+	position: relative; 
+	height: 50px; 
+	text-align: center;
+}
+.dock-container {
+	position: absolute;
+	height: 50px;
+	background: url(images/dock-bg2.gif);
+	padding-left: 20px;
+}
+a.dock-item {
+	display: block;
+	width: 40px;
+	color: #000;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+.dock-item img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+.dock-item span {
+	display: none; 
+	padding-left: 20px;
+}
+
+/* dock2 - bottom */
+#dock2 {
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	left: 0px;
+}
+.dock-container2 {
+	position: absolute;
+	height: 50px;
+	
+	padding-left: 20px;
+}
+a.pranam {
+	display: block; 
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #000; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.pranam span {
+	display: none;
+	padding-left: 20px;
+}
+.pranam img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+
+
+* Footer ($footer)
+*/
+
+.fin {
+   padding: 1rem;
+   background-color: #ffffff;
+   color: #fffdfa;
+   text-align: center;
+}        
+
+@media only screen and (min-width: 800px) and (min-height: 600px) {
+   .fin {
+       position: fixed;
+       bottom: 0;
+       left: 50%;
+       margin: 0 -390px;
+       padding: 0 1rem;
+       width: 780px;
+       height: 3rem;
+       -webkit-border-radius: 5px 5px 0 0;
+       -moz-border-radius:    5px 5px 0 0;
+       border-radius:         5px 5px 0 0;
+       -webkit-box-shadow: 0 -25px 30px -25px hsla(0, 0%, 0%, 0.30);
+       -moz-box-shadow:    0 -25px 30px -25px hsla(0, 0%, 0%, 0.30);
+       box-shadow:         0 -25px 30px -25px hsla(0, 0%, 0%, 0.30);
+       line-height: 3rem;
+   }
+}

@@ -1,0 +1,628 @@
+.namewidth{
+    width: 250px !important;
+}
+.martop10{
+    margin-bottom: 10px;
+     margin-left: 0px;
+    
+}
+.addwidth{
+    width: 481px !important;
+}
+.agewidth{
+    width: 65px !important;
+}
+.left20{
+    margin-left: 20px;
+}
+.left10{
+    margin-left: 10px;
+}
+.lableright{
+    float: right;
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 6px 8px 4px 11px !important;
+    border-bottom: 1px solid #E5E5E5;
+    background: #43b9be none repeat scroll 0% 0% !important; 
+}
+.padnil{
+	padding-left: 0px;
+padding-right: 0px;
+}
+.modal-body {
+    position: relative;
+    padding: 4px 11px !important; 
+}
+
+
+.rowblank{
+ margin-right: 0px !important; 
+    margin-left: 0px !important; 
+}
+.btn-primary {
+    color: #fff !important;
+    background-color: #43b9be !important;
+    border-color: #424A5D !important;
+    font-weight: normal !important;
+}
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #424A5D !important;
+    border-color: #424A5D !important;
+    font-weight: normal !important;
+}
+.btnset{
+    float: right;
+    margin-top: 25px;
+}
+.typedose{
+    /* background-color: rgba(192, 192, 192, 0.23); */
+    padding: 7px 0px 0px 0px;
+    margin-bottom: 15px;
+}
+.form-control:focus {
+    border-color: #ffff80!important; 
+    background-color: #ffff80!important; 
+    
+}
+.textprime{
+	    background-color: #43b9be;
+    color: #fff;
+}
+.addmissiontitle{
+	background-color: #999;
+    padding: 5px 0px 5px 13px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.marbo3dtab{
+	margin-bottom: 3px;
+}
+
+.marto6tiadd{
+	    margin-top: 6px;
+}
+.paddleft0{
+	    padding-left: 0px;
+}
+.backward{
+              background-color: rgba(192, 192, 192, 0.17);
+    padding: 18px 7px 12px 8px;
+    margin-bottom: 7px;
+        }
+        .bedno2 {
+    float: left;
+    margin-top: 0px;
+    color: #fff !important;
+    font-size: 11px !important;
+}
+.paddright0{
+	    padding-right: 0px;
+}
+.savebigbtn{
+	    width: 35%;
+    height: 44px !important;
+    font-size: 20px;
+	}
+	.settopad{
+	    padding: 7px 0px 0px 0px;
+	}
+.mname{
+    margin-left: -26px;
+}
+.advice{
+    width: 148px;
+}
+.content-grids {
+    background: #3391E7 none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+.images_1_of_3 {
+    padding: 10px 10px 10px 10px;
+    border-radius: 1.1em;
+    background: #428F0C none repeat scroll 0% center;
+    width: 189px;
+    color: #fff;
+    height: 111px;
+    margin-bottom: 5px;
+}
+.listimg {
+    display: block;
+    float: left;
+}
+.images_1_of_3 img {
+    max-width: 16%;
+    display: block;
+    margin-top: 6px;
+}
+.bedno{
+    float: right;
+    margin-top: 0px;
+    color: #fff !important;
+    font-size: 11px !important;
+}
+/* .bigfont{
+	font-size: 20px;
+} */
+.bigfont{
+	font-size: 13px;
+    color: #FFF023;
+    font-weight: normal;
+}
+.availbed{
+    margin-top: 33px;
+font-size: 18px;
+}
+.bedic{
+    margin-top: -7px !important;
+}
+.bedspace{
+    margin-left: 5px;
+}
+
+.bedicon{
+    width: 15%;
+}
+.setcino{
+    max-width: 100% !important;
+}
+.male{
+    max-width: 62% !important;
+margin-left: 4px;
+}
+.martop10icon{
+        margin-top: 2px;
+    margin-left: -7px;
+    font-size: 11px;
+    color:#ffffff !important;
+}
+.bookbed{
+    background-color: #424A5D;
+}
+.firiclef{
+	    margin-top: 0px;
+}
+.maboticsa{
+	    margin-bottom: 5px;
+}
+.bookbedmina{
+	margin-left: -28px;
+}
+.patintid{
+    margin-left: -47px;
+}
+.bemabono{
+	    margin-bottom: 3px;
+}
+.martop10only{
+    margin-top:10px;
+   
+}
+.dateleft{
+    margin-left: -33px;
+}
+.ageleft{
+    margin-left: -16px;
+}
+.bookbtnbed{
+    margin-left: 48px;
+}
+.colwid {
+    width: 102% !important;
+margin-left: 0px;
+}
+.martop5{
+    margin-top: 5px;
+}
+.selectward{
+    margin-top: 14px;
+    float:right;
+}
+label {
+    font-size: 13px;
+}
+.admissback{
+    background-color: rgb(236, 236, 236);
+}
+.adformback{
+    border: 1px solid;
+    padding: 40px 0px 0px;
+    margin-top: -37px;
+    width: 98%;
+    margin-left: 9px;
+}
+.admissionlogo{
+    z-index: 99 !important;
+    position: inherit;
+}
+.bednosele{
+    width: 14%;
+    margin-top: -40px;
+}
+.scbtn{
+    width: 7%;
+}
+.daignosis{
+  
+    background-color: beige;
+    padding: 10px 0px 7px;
+}
+.formbormar{
+    margin-bottom: 0px !important;
+}
+.diagtitle{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-weight: normal;
+}
+.savebtn{
+    float: right;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+
+.topadjust{
+    margin-top: -4px;
+}
+.downbed{
+    margin-top: 5px;
+margin-left: 5px;
+}
+.marightset5{
+    margin-right: 5px;
+}
+.cleintname{
+    margin-top: 6px;
+    color:#fff !important;
+}
+.popupbed{
+    height: 250px !important;
+}
+.popupbedpoup{
+    height: auto !important;
+}
+.thumbnail {
+    margin-bottom: 5px;
+}
+.fontpup{
+    font-size: 12px;
+}
+.leftpoupma{
+    margin-left: -25px;
+}
+.allbed{
+    margin-top: -8px;
+}
+.clientdata{
+    margin-left: 15px;
+    margin-bottom: 10px !important;
+}
+.advice{
+    width: 463px !important;
+}
+.addbtnas{
+    margin-left: -10px;
+}
+.presbtn{
+    float: right;
+margin-right: 10px;
+}
+.docsig{
+    float: right;
+}
+.marleft10only{
+    margin-left: 10px;
+}
+.disscbtn{
+    width: 7%;
+margin-left: 10px;
+}
+.disprima{
+    margin-top: 16px;
+margin-bottom: 57px;
+}
+.disback{
+    background-color: rgb(245, 245, 220);
+padding-bottom: 10px;
+}
+.disonlyback{
+    background-color: rgb(245, 245, 220);
+    height: 121px;
+}
+.importaright{
+    float: right;
+}
+.disseconcons{
+    width: 27%;
+}
+.secdiswid{
+    width: 30%;
+margin-left: -12px;
+}
+.thumbnail {
+   	    width: 119%;
+}
+.iocnwidth {
+    width: 34% !important;
+}
+
+.thumsmall{
+	margin-bottom: 0px;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #DDD;
+    border-radius: 0px;
+    padding: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+    text-align: center;
+    height: 93px;
+    line-height: 1.42857;
+        width: 182%;
+    margin-left: -30px;
+    color: #000;
+}
+.thumsmall2{
+	margin-bottom: 5px;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #DDD;
+    border-radius: 0px;
+    padding: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    display: inline-block;
+    text-align: center;
+    height: 93px;
+    line-height: 1.42857;
+        width: 182%;
+    margin-left: -12px;
+    color: #000;
+}
+.paddingrih {
+    padding-left: 0px !important;
+    padding-right: 30px !important;
+}
+.drugnae{
+    background-color: aliceblue;
+    padding: 7px 0px 6px 10px;
+    margin-bottom: 2px;
+}
+.popupbedheaight{
+    min-height: 190px;
+}
+.druga{
+    text-decoration: none !important;
+}
+.pharna{
+    margin-left: 33px;
+}
+.adddrug{
+    float: right;
+margin-right: -30px;
+}
+.drugdays{
+   margin-left:-26px;
+}
+
+.activedrug{
+    background-color: #424A5D !important;
+    color: #fff;
+    padding: 7px 0px 6px 10px;
+    margin-bottom: 2px;
+}
+.calender{
+    margin-left: 0px;
+    width: 100%;
+}
+.admiscalen{
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.topbane6{
+    margin-top: 10px;
+}
+.drugdform{
+    width: 811px;
+}
+.slectdrunmas{
+    background-color: antiquewhite;
+padding: 10px !important;
+margin-top: -14px;
+}
+.martoandleft{
+    margin-top:10px;
+    margin-left: -30px;
+}
+.tableback{
+    background-color: #cccccc !important;
+color: #000 !important;
+font-style: normal;
+}
+.druaddback{
+    background-color: rgba(240, 239, 239, 0.73);
+    margin-top: 0px;
+    padding: 10px 0px 5px;
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.addrugbtn{
+    margin-top: 25px;
+}
+.pharname{
+    margin-top: -3px;
+}
+
+
+
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 50%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-order: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+
+ .pnamewidth{
+             width:13% !important;
+         }
+         
+         .pdate{
+             width:14% !important;
+         }
+         .pnew {
+             width: 4% !important;
+         }
+         .pview {
+             width: 12% !important;
+         }
+          .med9{
+            width:12% !important;
+        }
+        .med21 {
+            width: 36% !important;
+        }
+        .med8 {
+            width: 8% !important;
+        }
+        .med6 {
+            width: 6% !important;
+        }
+        .Iview {
+             width: 20% !important;
+         }
+         .med30{
+             width: 30% !important;
+         }
+        .regno{
+             width: 7% !important;
+        }
+        .updareg{
+             width: 9% !important;
+        }
+        .intest{
+            width: 8%;
+        }
+        .investtypr{
+            width: 14%;
+        }
+        .intname{
+            width: 24%;
+        }
+        .inspeci{
+            width: 21%;
+        }
+        .inreport{
+            width: 11%;
+        }
+        .invest5{
+        width: 5% !important;
+        }
+        .invest7{
+        width: 7% !important;
+        }
+         .invest9{
+            width:14% !important;
+        }
+          .invest27{
+            width:25% !important;
+        }
+        .invest21 {
+            width: 20% !important;
+        }
+        .invest23{
+        width: 23% !important;
+        }
+        .invest8 {
+            width: 11% !important;
+        }
+        .invest6 {
+            width: 7% !important;
+        }
+        .inaddbtn{
+            float: right;
+            margin-top: -11px;
+            margin-bottom: 6px;
+        }
+        .aswinilogo{
+           margin-bottom: -73px;
+		    margin-top: 0px;
+		    width: 19%;
+        }
+        .aslohas15{
+            margin-left: 15px;
+        }
+        .wirteptext{
+            border-bottom: 7px double rgb(228, 228, 228);
+            line-height: 37px;
+        }
+        .underlinetext{
+            text-decoration: underline;
+        }
+        .writewid{
+            width:20% !important;
+
+        }
+        .writewid40 {
+            width: 49% !important;
+        }
+        .writetext35{
+            width: 35% !important;
+        }
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 0px 0px 0px 1px;
+    line-height: 20px !important;
+    vertical-align: top;
+    border-top: 0px solid #ddd;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.25) !important;
+}
+.martopeid6{
+    margin-top: 6px !important;
+}
+ .admissionbackgreen{
+    background-color: #43b9be;
+    color: #fff;
+    width: 16%;
+ }
+ .bordertopgreen{
+    	border-top:1px solid #43b9be;
+ }
+ .bordertopgray{
+ 	    border-top: 1px solid #c7c7c7;
+ }

@@ -1,0 +1,70 @@
+﻿/* lg */ 
+@media (min-width: 1200px) {
+
+
+}
+
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tile .tile-header h1 {
+    font-size: 10px !important;
+}
+ body {
+    font-size: 11px !important;
+}
+ .minheight72 {
+    min-height: 58px !important;
+}
+ p {
+    margin: 0 0 0px;
+    font-size: 11px !important;
+}
+ .smallbell {
+    font-size: 10px !important;
+    float: right;
+    margin-top: 7px !important;
+}
+ .mainbox {
+    width: 169px !important;
+    min-height: 99px !important;
+}
+ .minheight28 {
+    min-height: 26px !important;
+}
+ 
+}
+
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+  
+}
+
+
+/* xs */
+@media (max-width: 767px) {
+   
+ 
+
+}
+
+
+/* XS Portrait */
+@media (max-width: 480px) {
+
+
+}
+
+
+
+/* XXS Portrait */
+@media (max-width: 393px) {
+
+
+}
+
