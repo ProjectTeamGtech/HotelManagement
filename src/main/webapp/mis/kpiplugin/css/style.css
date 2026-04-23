@@ -1,0 +1,64 @@
+/* =The style for the lab
+-------------------------------------------------------------- */
+h1, .h1 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
+#sidebar {
+    width:360px !important;
+    float: left;
+    padding-top: 15px;
+    background-color: transparent;
+}
+
+#content {
+        width: 710px;
+    float: right;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+
+/* navigation */
+nav {
+    width:360px;
+    background-color:rgba(240, 240, 240, 0.42);
+    border:solid 1px rgb(220,220,220);
+    padding:0 12px;
+}
+
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:12px;
+}
+
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav li {
+
+}
+
+nav li a {
+    color:rgb(50,50,50);
+    font-weight:700;
+}
+
+a.nav-active {
+    color:#ccc;
+}
+
+
+
+hr {
+    border:none;
+    background-color:rgb(220,220,220);
+    height:12px;
+    margin-bottom:18px;
+}

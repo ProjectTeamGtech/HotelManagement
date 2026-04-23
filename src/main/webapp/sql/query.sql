@@ -1,0 +1,1 @@
+ALTER TABLE `apm_user` ADD COLUMN `dept_opd_report` TINYINT(1) UNSIGNED DEFAULT 0 AFTER `isclinic`;

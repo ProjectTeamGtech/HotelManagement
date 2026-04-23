@@ -1,0 +1,28 @@
+#AutocompleteContainer
+{
+position: absolute;
+display: none;
+height: 300px;
+
+overflow:auto;
+z-index: 99999;
+}
+#AutocompleteContainer ul
+{
+list-style: none;
+padding: 0px;
+width:60%;
+
+}
+#AutocompleteContainer ul li
+{
+width:50%;
+clare:both;
+text-align:left !important;
+margin: 2px;
+
+}
+.textarea
+{
+	overflow:scroll;
+}

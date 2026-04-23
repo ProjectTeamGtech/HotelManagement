@@ -1,0 +1,1697 @@
+/* media print */
+
+@media print{
+   body {
+     -webkit-print-color-adjust: exact; 
+   } 
+   .dischargecardbgni{
+	padding-top: 5px;border-bottom: 1px solid #43b9be;padding-bottom: 5px;background-color: rgba(91, 192, 222, 0.16);
+}
+   .savedeclarationclientheading{ font-size: 22px !important;}
+    .no-print{
+        display: none;
+    }
+   .displaynonesrno{display: none !important;}
+   .printpadingleftrightzero{ padding-left: 0px !important; padding-right: 0px !important;}
+   .colorwhitprint{color: #fff !important;}
+   .details {
+    background: #43b9be !important;
+    color: #fff !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px;
+    width: 102%;
+}
+.tableborderprint{border: solid 1px #ebebeb; }
+.ipddalyreportsthead{background-color: #ff0000!important;color: #0000 !important; }   
+.theadfinal{background-color: #4E7894!important;color: #0000 !important; }   
+ .table th {
+        background-color: #4E7894 !important;
+        color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    } 
+    
+    .coloraprint {
+        background-color: #4E7894 !important;
+        color: #000 !important
+    } 
+.colorwhitprint{color: #fff !important}    
+.patientdetailsprintwidth{width: 50% !important;}    
+.tablewidthipdreportsprint{width: 900px !important;}  
+
+.vewledrgobox{
+	    border: solid 1px #fff !important;
+    padding: 16px 0px 0px 0px !important;
+    background-color: #fff !important;
+} 
+
+.viewledrprintwidth{width: 20%; display: inline; float: left;} 
+.padingleftrightzeroprint{padding-left: 0px !important;padding-right: 0px !important;} 
+.displayinlineprint{display: inline; float: left;}  
+.viewledrnoborder{border: 1px solid rgba(0, 0, 0, 0.1) !important;} 
+.viewledrcenter{text-align: center !important;}  
+.ipddailyreporttopmarprint{margin-top: 50px !important;}
+.displayprint{display: block !important;}
+
+/* Immunization */
+ 
+.immunizsavebtn{
+	background-color: #365f91 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #193f6d !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+}
+.immunizsavebtn:hover {
+    background-color: #416794 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #225088 !important;;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+}
+.immunizsavebtn:focus {
+    background-color: #416794 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #225088 !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+}
+
+.immunizprintbtn{
+	background-color: #365f91 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #193f6d !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+}
+.immunizprintbtn:hover {
+    background-color: #416794 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px  !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #225088 !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+}
+
+.immunizprintbtn:focus {
+    background-color: #416794 !important;
+    padding: 6px 20px 6px 20px !important;
+    font-size: 18px !important;
+    color: #fff !important;
+    float: right !important;
+    border: solid 5px #225088 !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-radius: 8px !important;
+    margin-right: 8px !important;
+}
+
+.immunrowhead{
+	background-color: #365f91 !important;
+    color: white !important;
+    padding: 5px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+}
+.immunrowhitbg{
+	background-color: #fff !important;
+    color: #000 !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+    text-align: left !important;
+    border: solid 1px #cacaca !important;
+}
+ .immunrowhitbg:hover{
+	background-color: #e6e6e6 !important;
+    color: #000 !important;
+    padding: 5px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+        border: solid 1px #cacaca !important;
+        cursor: pointer !important;
+}
+.immunrobluelightbg{
+	background-color: #dbe5f1 !important;
+    color: #000 !important;
+    padding: 5px !important;
+    font-size: 14px !important;
+    text-align: left !important;
+        border: solid 1px #cacaca !important;
+}
+.immunrobluelightbg:hover{
+	background-color: #e6e6e6 !important;
+    color: #000 !important;
+    padding: 5px !important; 
+    font-size: 14px !important;
+    text-align: left !important;
+        border: solid 1px #cacaca !important;
+        cursor: pointer !important;
+}
+ 
+.colorred{color: red !important;}
+.immuheadpading{padding: 10px !important;color: #fff !important;}
+.immuheadpadingprint{padding: 18px !important;color: #fff !important;}
+.immuheadpadinga{padding: 0px 10px 10px 10px !important;}
+.duedatetextirfa {
+    margin-top: 18px !important;
+    margin-left: 9px !important;
+    position: absolute !important;
+    color: yellow !important;
+    font-weight: bold !important;
+    display: inline !important;
+    float: left !important;
+}
+.duedatetextirfb {
+    margin-top: 18px !important;
+        margin-left: 135px !important;
+    position: absolute !important;
+    color: yellow !important;
+    font-weight: bold !important;
+    display: inline !important;
+    float: right !important;
+}
+.immutextbox{
+	     height: 22px !important;
+    width: 40% !important;
+    display: inline !important;
+    float: left !important;
+    margin-left: 6px !important;
+    margin-top: 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+.immutextboxblanknew {
+   height: 22px !important;
+    width: 40% !important;
+    display: inline !important;
+    float: left !important;
+    margin-left: 6px !important;
+    margin-top: 3px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: solid 1px #b5b5b5 !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    
+}
+.immudofrightmar{margin-right: 40px !important;}
+.immutextinline{display: inline !important; float: left !important; line-height: 27px !important; }
+.colmdfourwidth{ width: 300px !important;}
+
+.colmdbirthprint{ width: 15% !important;}
+.colmdvaccinesprint{ width: 18% !important;}
+.colmddobprint{ width: 40% !important;}
+.immborderfull{border: solid 1px red !important;} 
+
+/* Immunization */
+
+
+
+/* MIS Chart */
+.widthi{ width: 252px !important;}
+.marginlefti{margin-left: 10px !important;}
+.miscounttext{
+	    font-size: 12px !important;
+    font-weight: bold !important;
+        text-align: center !important;
+}
+.miscounttextnum{
+	    font-size: 26px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+.mischarttotalcountbox{
+	border: dashed 1px #69c !important;
+    padding: 5px !important;
+    background-color: #fff !important;
+        margin-right: 8px !important;
+        margin-left: 8px !important;
+}
+
+.mischarttotalcountboxa{
+	border: dashed 1px #40dc87 !important;
+    padding: 5px !important;
+    background-color: #ecf7f1 !important;
+        margin-right: 8px !important;
+         
+}
+
+.mischartnethospitalrevenu{
+	border: dashed 1px #de52cc !important;
+    padding: 5px !important;
+    background-color: #ffe8fc !important;
+        margin-right: 8px !important;
+}
+
+.mischartconversionipdrevenu{
+	border: dashed 1px #c7b817 !important;
+    padding: 5px !important;
+    background-color: #fffcdd !important;
+        margin-right: 8px !important;
+}
+
+.mischartconversionratio{
+	border: dashed 1px #86bd2c !important;
+    padding: 5px !important;
+    background-color: #eaffc8 !important;
+}
+.dischargeprintnleftm{ margin-left: -40px !important;}
+
+  
+   }
+   
+/* media print */  
+
+
+.uppercaseirf{ text-transform: uppercase !important;}
+.fullwidth{ width: 100% !important;}
+.widthsixzero{ width: 60% !important;}
+ 
+
+
+
+
+/* viewledrport.jsp */
+.vewledrgobox{
+	    border: solid 1px #dcdcdc;
+    padding: 16px 0px 0px 0px;
+    background-color: #cddae0;
+}
+.vewledrgobtn{padding: 2px 15px 0px 15px !important;}
+
+
+/* viewledrport.jsp */
+
+
+
+/* MIS Chart */
+.misslectwhit{
+	background-color: #6a9ccd !important;
+    border: solid 1px #fff !important;
+    color: #fff !important;
+    height: 24px !important;
+}
+.misgomonthlykpi{
+	    border: solid 1px #eaffc9 !important;
+    background-color: #eaffc9 !important;
+    color: #000 !important;
+}
+.misgomonthlykpi:hover{
+	    border: solid 1px #ffe8fc !important;
+    background-color: #ffe8fc !important;
+    color: #000 !important;
+}
+.printmonthlykpi {
+    color: #fff;
+    font-size: 18px;
+}
+.printmonthlykpi:hover {
+    color: #fff;
+    font-size: 18px;
+}
+.printmonthlykpi:focus {
+    color: #fff;
+    font-size: 18px;
+}
+.monthlykpitr{
+	    border: solid 1px #d4d4d4 !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+}
+.backsetrcololefttext {
+    background-color: #43b9be;
+    padding: 9px 15px 0px 15px;
+    text-align: left;
+    min-height: 42px;
+    color: #fff;
+}
+.widthi{ width: 45% !important;}
+.marginlefti{margin-left: 10px;}
+.miscounttext{
+	    font-size: 12px;
+    font-weight: bold;
+        text-align: center;
+}
+.miscounttextnum{
+	    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+.mischarttotalcountbox{
+	border: dashed 1px #69c;
+    padding: 5px;
+    background-color: #fff;
+        margin-right: 8px;
+        margin-left: 8px;
+}
+
+.mischarttotalcountboxa{
+	border: dashed 1px #40dc87;
+    padding: 5px;
+    background-color: #ecf7f1;
+        margin-right: 8px;
+         
+}
+
+.mischartnethospitalrevenu{
+	border: dashed 1px #de52cc;
+    padding: 5px;
+    background-color: #ffe8fc;
+        margin-right: 8px;
+}
+
+.mischartconversionipdrevenu{
+	border: dashed 1px #c7b817;
+    padding: 5px;
+    background-color: #fffcdd;
+        margin-right: 8px;
+}
+
+.mischartconversionratio{
+	border: dashed 1px #86bd2c;
+    padding: 5px;
+    background-color: #eaffc8;
+        margin-right: 8px;
+}
+
+
+
+
+/* Discharge form */
+.dischargepencilwhit{color: #fff;}
+.dischargepencilwhit:hover{color: #fff;}
+.dischargepersonalandadmin{background-color: rgba(245, 245, 245, 0.95); cursor: pointer;}
+.dischargepersonalandadmin:hover{ background-color: rgba(204, 204, 204, 0.95); cursor: pointer;}
+
+/* Discharge form */
+
+
+
+
+.btn.btn-success:focus {
+  background-color: #449d44 !important;
+  border-color: #4cae4c;
+}
+.pharmacyshortcutkeysemenu{
+	    color: #fff;
+    font-size: 14px;
+    margin-top: 3px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+.pharmacyshortcutkeysemenu:hover{
+	    color: #ccc;
+    font-size: 14px;
+    margin-top: 3px;
+    position: relative;
+    float: right;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+.pharmacyshortcutkeysemenu:focus{
+	    color: #fff;
+    font-size: 14px;
+    margin-top: 3px;
+    position: relative;
+    float: right;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+.daydashboardpreview{    margin-left: 396px;
+    position: absolute !important;}
+.daydashbowarsevensth{background-color: #fff !important;}
+
+
+
+
+/* Payslip */
+.paysliptdfont{
+	font-size: 12px !important;
+    color: #000;
+}
+
+.payslipbackti {
+    background-color: rgb(66, 74, 93);
+    font-size: 16px !important;
+    color: #fff;
+    /* font-size: 20px !important; */
+    font-weight: bold;
+}
+
+
+
+.cliqualif {
+    font-size: 13px !important;
+    font-weight: bold;
+}
+
+.bottext {
+    font-size: 12px !important;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+/* Payslip */
+
+/* Immunization */
+#switchVisibleimmunizationindi10to12Years2{display: none;}
+#switchVisibleimmunizationindi12Years2{display: none;}
+#switchVisibleimmunizationindi4to6Years2{display: none;}
+#switchVisibleimmunizationindi18Months2{display: none;}
+#switchVisibleimmunizationindi16To18Months2{display: none;}
+#switchVisibleimmunizationindi15Months2{display: none;}
+#switchVisibleimmunizationindi12Months2{display: none;}
+#switchVisibleimmunizationindiFourteenWeek9To12Months2{display: none;}
+#switchVisibleimmunizationindiFourteenWeekNineMonths2{display: none;}
+#switchVisibleimmunizationindiFourteenWeekSixMonths2{display: none;}
+#switchVisibleimmunizationindiFourteenWeek2{ display: none;}
+#switchVisibleimmunizationindiTenWeek2{display: none;}
+#switchVisibleimmunizationindiSixWeek2{display: none;}
+#switchVisibleimmunization2{display: none;}
+#switchVisibleimmunizationindi2{display: none;}
+.immunizsavebtn{
+	background-color: #365f91;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #193f6d;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+}
+.immunizsavebtn:hover {
+    background-color: #416794;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #225088;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+}
+.immunizsavebtn:focus {
+    background-color: #416794;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #225088;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+}
+
+.immunizprintbtn{
+	background-color: #365f91;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #193f6d;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.immunizprintbtn:hover {
+    background-color: #416794;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #225088;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.immunizprintbtn:focus {
+    background-color: #416794;
+    padding: 6px 20px 6px 20px;
+    font-size: 18px;
+    color: #fff;
+    float: right;
+    border: solid 5px #225088;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.immunrowhead{
+	background-color: #365f91;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.immunrowhitbg{
+	background-color: #fff;
+    color: #000;
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+        border: solid 1px #cacaca;
+        
+}
+ .immunrowhitbg:hover{
+	background-color: #e6e6e6;
+    color: #000;
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+        border: solid 1px #cacaca;
+        cursor: pointer;
+}
+.immunrobluelightbg{
+	background-color: #dbe5f1;
+    color: #000;
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+        border: solid 1px #cacaca;
+}
+.immunrobluelightbg:hover{
+	background-color: #e6e6e6;
+    color: #000;
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+        border: solid 1px #cacaca;
+        cursor: pointer;
+}
+ 
+.colorred{color: red;}
+.immuheadpading{padding: 10px;}
+.immuheadpadinga{padding: 0px 10px 10px 10px;}
+.duedatetextirfa {
+    margin-top: 21px;
+    margin-left: 9px;
+    position: absolute;
+    color: yellow;
+    font-weight: bold;
+    display: inline;
+    float: left;
+}
+.duedatetextirfb {
+    margin-top: 21px;
+        margin-left: 158px;
+    position: absolute;
+    color: yellow;
+    font-weight: bold;
+    display: inline;
+    float: right;
+}
+.immutextbox{
+	     height: 22px;
+    width: 40%;
+    display: inline;
+    float: left;
+    margin-left: 6px;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
+}
+.immutextboxblanknew {
+   height: 22px;
+    width: 40%;
+    display: inline;
+    float: left;
+    margin-left: 6px;
+    margin-top: 3px;
+    padding: 0px 0px 0px 0px;
+    border: solid 1px #b5b5b5;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.immudofrightmar{margin-right: 40px;}
+.immutextinline{display: inline; float: left;    line-height: 27px;}
+
+/* Immunization */
+
+.followupafterirf{
+	margin-top: 25px;
+    border: dashed 2px #5cb85c;
+    padding: 6px;
+    text-align: center;
+}
+.micimg12 {
+    float: right;
+    width: 26%;
+       margin-top: -5px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 114px;
+}
+.addnewprescriptionbox{
+	    padding: 5px;
+    margin-top: -5px;
+    background-color: rgb(217, 236, 255);
+    border: 1px solid rgb(216, 216, 216);
+    width: 480px;
+    margin-bottom: 7px;
+}
+.dischargecardbgni{
+	padding-top: 5px;border-bottom: 1px solid #43b9be;padding-bottom: 5px;background-color: rgba(91, 192, 222, 0.16);
+}
+.dietplanwidthfull{width: 100% !important;}
+.scrolldietplan {
+   overflow: scroll;
+    height: 78px;
+    overflow-x: hidden;
+    border: solid 1px #cecece;
+    padding: 5px;
+}
+
+.displayblockweb{display: block;}
+
+/* IPD Dashboard Bad */
+
+ 
+	.tile {
+    min-height: 124px;
+}
+.setbordericon1 {
+    text-align: center;
+    padding: 0px;
+}
+.set2div{
+	padding: 0px;
+    border-right: 1px solid rgba(241, 239, 239, 0.1);
+    width: 14%;
+	margin-top: -5px;
+	text-align: center;
+	min-height: 100px;
+}
+
+.setbordericon {
+    border-right: 1px solid rgba(241, 239, 239, 0.1);
+    padding: 0px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    opacity: 0.6;
+}
+.setbordericon:hover {
+    border-right: 1px solid rgba(241, 239, 239, 0.1);
+    padding: 0px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    opacity: 1;
+}
+
+.set12manage{
+	padding: 2px 5px 1px 0px;
+    border-bottom: 1px solid rgba(241, 239, 239, 0.1);
+    line-height: 21px;
+    opacity: 0.6;
+}
+.set12manage:hover{
+	padding: 2px 5px 1px 0px;
+    border-bottom: 1px solid rgba(241, 239, 239, 0.1);
+    line-height: 21px;
+    opacity: 1;
+}
+.bg-lightred1 {
+    background-color: #a54d4a !important;
+    color: white !important;
+}
+.bg-greenseaum {
+    background-color: #95a2a9 !important;
+    color: white !important;
+}
+
+
+@media (max-width: 991px){
+
+.tile {
+    min-height: 145px;
+}
+}
+
+@media only screen and (max-width: 992px) {
+	.tile {
+    min-height: 145px;
+}
+}
+
+ 
+
+
+
+
+/* IPD Dashboard Bad */
+
+.scroll{
+	overflow: scroll;  width: 100%; height: 200px; overflow-x: hidden;border: solid 2px #4e7894;
+	
+}
+.overflowhidden{
+	overflow: scroll;
+}
+.theadfix{
+	position: fixed;
+     
+    box-shadow: 0 0 black;
+    background-color: #4e7894;
+}
+.savesmbtn{background-color: #43b9be;
+    color: #fff;} 
+    .savesmbtn:hover{background-color: #424A5D;
+    color: #fff;} 
+.inputborderi{border: solid 1px #d4d4d4;}
+.mrdshiftdetailspopup{    width: 849px !important;}
+.tpacolorleft{float: right;}
+.tpasearchuhid{width: 20% ;}
+.tpadatei{width: 7%;}
+.opdreqinvestigationsavebtn{
+	    margin-top: -86px !important;
+    position: relative !important;
+}
+.topotnotsbg{
+	padding-top: 5px;border-bottom: 1px solid #43b9be;padding-bottom: 5px;background-color: rgba(91, 192, 222, 0.16);
+}
+.pharmacydashbowardtableborder{
+	border: solid 1px #000 !important;
+	border-bottom: 1px solid rgb(0, 0, 0) !important;
+}  
+.pharmacyddinput{
+	width: 100% !important;
+    font-size: 17px ;
+    font-weight: bold;
+    border: solid 1px #000;
+    height: 32px !important;
+}
+.payepharmacyi{
+	border: dashed 1px #673d3d;
+    padding: 5px 10px 4px 10px;
+    font-weight: bold;
+    background-color: #43b9be;
+    float: left;
+    font-size: 14px;
+    margin-top: -7px;
+    color: white;
+} 
+.savenprintlg{
+	font-size: 24px !important;
+    height: 45px !important;
+    padding: 14px 24px 10px 24px !important;
+}   
+ .labelfontsize{font-size: 13px;}
+.topback2i {
+    background-color: #fbfbfb;
+    padding: 10px 10px 10px 10px;
+    border: solid 2px #ecebeb;
+}   
+.viewaccountdiv{
+	border: dashed  #43b9be;
+    padding: 8px;
+    background-color: #fffefe;
+} 
+.marginleftrightzeroiinvestigaiontype {
+    margin-left: -15px !important;
+    margin-right: 0px !important;
+}
+.investigationaddbtn{
+	margin-left: -30px;
+}
+.widthzero{width: 0px !important;}
+ .pull-right{float: right;}
+.marginleftrightzeroi{margin-left: 0px !important; margin-right: 0px !important;}
+.padingleftrightzeroi{padding-left: 0px !important;padding-right: 0px !important;}
+.padingleftrightsm{padding-left: 2px !important;padding-right: 2px !important;}
+.colorwhiti{color: #fff;}  
+.colorblacki{color: #000 !important;}  
+.patientdetailsprintwidth{width: 50% !important;}   
+.headingbari{background-color: #43b9be !important; color: #fff !important;font-size: 16px;padding: 5px;margin-left: 0px;}  
+ .displaynoneweb{display: none;}
+ .opddisplayblockweb{display: block;}
+
+
+
+/*-- responsive media queries --*/
+@media (max-width: 1440px){
+
+ 
+}
+@media (max-width: 1366px){
+
+ 
+}
+@media (max-width: 1280px){
+
+ 
+}
+@media (max-width: 1080px){
+
+  
+}
+@media (max-width: 1024px){
+
+  
+	
+}
+@media (max-width: 991px){
+
+ 
+}
+@media (max-width: 800px){
+
+ 
+}
+@media (max-width: 768px){
+/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 0px;
+}
+	.timer-table th.fixed {
+	width:80px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 0px;}
+	.opdmainmargintop{margin-top: -70px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+	
+}
+@media (max-width: 736px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 0px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -85px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+
+}
+@media (max-width: 667px){
+	
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 0px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -85px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+}
+@media (max-width: 640px){
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+
+
+
+
+
+.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 100%;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+ 
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+}
+@media (max-width: 600px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 0px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+
+}
+@media (max-width: 568px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 0px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+}
+@media (max-width: 480px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+}
+@media (max-width: 414px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+
+ 
+}
+@media (max-width: 384px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+  
+ 	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+
+}
+
+@media (max-width: 375px){
+	 	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+
+	
+	/* OPD */
+	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+}
+
+@media (max-width: 360px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90% !important;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:200px !important;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+ 
+ 
+}
+
+
+
+
+@media (max-width: 320px){
+	/* OPD */
+	.timer-table {
+	/* background:#FFFFFF; */
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:90%;
+	margin-top: -33px;
+	table-layout: fixed;
+	
+	
+}
+
+	.timer-table {
+    margin-top: -35px;
+    margin-left: 25px;
+}
+	.timer-table th.fixed {
+	width:300px;
+}
+	.opdcalendarwidth{width: 36px !important;}
+	.opddateleftmargin{margin-left: 10px;}
+	.opdmainmargintop{margin-top: -78px;}
+	.timer-table th {
+
+    padding: 3px 3px 3px 2px;
+    font-weight: normal;
+    font-size: 16px !important;
+
+}
+	
+	/* OPD */
+
+ 	.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+	.checkboxmtpa {
+    position: relative;
+    display: inline !important;
+    min-height: 17px;
+    margin-top: 42px !important;
+    margin-bottom: 10px;
+    margin-left: -1px;
+    width: -18px !important;
+    line-height: 24px;
+}
+	.tpacolorleft{float: left; margin-left: -21px; margin-top: 10px;}
+	.tpasearchuhid{width: 100% ;}
+.tpadatei{width: 48%; display: inline; float: left;}
+.tpadateigo{margin-left: 17px;}
+.tpadateib{width: 48%; display: inline; float: right;}
+	.padingleftrightzeroim{padding-left: 0px !important;padding-right: 0px !important;}
+	.newmicimg {
+    float: right;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.barotnotesi{
+	padding: 4px 9px 7px 13px !important;
+}
+.mismenubarmobile{
+	height: 36px !important;
+font-size: 18px;
+padding: 9px 5px 5px 12px !important;
+text-align: left;
+}	
+  .displaynoneweb{display: block;}
+.displaynonemobile{display: none;}
+
+
+}
+

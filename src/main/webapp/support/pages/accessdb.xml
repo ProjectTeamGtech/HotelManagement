@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clinics>
+<clinic id="kunalhospital">
+	<investigation>
+		<investigation-hidecolumn>1</investigation-hidecolumn>
+		
+	</investigation>
+</clinic>
+
+<clinic id="sevenstar">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+
+<clinic id="aureus">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+
+<clinic id="nelson">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="akdcnagpur">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="demo">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="iconhospital">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="ngppadole">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="welltreat">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="mpbetulsadar">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="kubdehospital">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+<clinic id="ngpoxygen">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+
+<clinic id="mangalayatan">
+	<investigation>
+		<investigation-hidecolumn>0</investigation-hidecolumn>
+	</investigation>
+</clinic>
+</clinics>

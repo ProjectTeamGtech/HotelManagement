@@ -1,0 +1,65 @@
+
+#leftNavigation {
+  margin: 2rem 0;
+}
+#leftNavigation, #leftNavigation li ul {
+  list-style: none;
+  padding: 0;
+}
+#leftNavigation li a {
+  font-size: 11px;
+  display: block;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  color: #adadad;
+  border-bottom: solid 1px #adadad;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+#leftNavigation li a, #leftNavigation li a .leftNavIcon {
+  line-height: 120%;
+}
+#leftNavigation li a .leftNavIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  padding: 0.8rem 0;
+  text-align: center;
+}
+#leftNavigation li a:hover {
+  color: white;
+}
+#leftNavigation li ul {
+  margin-left: -8px;
+  background-color: #17232f;
+  width: 112%;
+  margin-top: -11px;
+}
+#leftNavigation li ul li a {
+  border-bottom: solid 1px #233547;
+}
+#nav-accordion > li > ul >  li > ul > li > a {
+  	border-bottom: none !important;
+	padding: 8px 0px 0px 14px;
+}
+#leftNavigation li ul li:last-child a {
+  border-bottom: none;
+}
+#leftNavigation li ul li.active a {
+  color: white;
+}
+#leftNavigation li.active > a {
+  color: white;
+}
+#leftNavigation li.active ul {
+  display: block;
+}
+#leftNavigation > li.active {
+  background-color: #427c97;
+}
+.leftmenu{
+	margin-left: 20px;
+}

@@ -1,0 +1,627 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="s" uri="/struts-tags" %>
+    <%@page import="com.apm.common.web.common.helper.LoginInfo"%>
+<%@page import="com.apm.common.web.common.helper.LoginHelper"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<link href="common/chosen_v1.1.0/chosen.css" rel="stylesheet" type="text/css" />
+
+<style>
+        .padright {
+            padding-left: 40px;
+        }
+        .table.table {
+            color: RGBA(85, 85, 85, 0.85);
+            background-color: #fff;
+        }
+
+        .comtitle {
+            font-size: 13px;
+            background: rgb(102, 153, 204) none repeat scroll 0% 0% !important;
+            color: rgb(255, 255, 255);
+        }
+
+        .marbot25 {
+            margin-bottom: 25px;
+        }
+
+        .editcompany {
+            float: right;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        .borright {
+            border-right: 1px dashed rgb(192, 192, 192);
+        }
+
+        .buildinglogo {
+            width: 60%;
+            margin-top: 30px;
+        }
+        #sidebar .panel-group .panel > .panel-heading + .panel-collapse > .panel-body {
+            border-top: 0;
+            min-height: auto !important;
+        }
+        .miheight {
+            min-height: auto !important;
+        }
+        .my-table th {
+            background-color: #424A5D;
+            color: #fff !important;
+            border-bottom: 1px solid #DFD8D4;
+            border-right: 1px solid #DFD8D4;
+            border-top: 1px solid #DFD8D4;
+            padding: 3px 3px 4px 5px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 11px;
+            background-size: 100% 100%;
+        }
+        .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+            padding: 1px 7px 1px 7px !important;
+        }
+        .sidebar-xs #header .branding > a {
+            background-position: 6px 10px;
+            width: 100% !important;
+            font-size: 21px;
+            padding: 0px 1px 2px 15px;
+            text-align: center;
+            color: #fff;
+        }
+            .sidebar-xs #header .branding > a > span {
+                display: inline-block;
+            }
+        .sidebar-xs #header .branding {
+            width: 100%;
+            padding-top: 7px;
+            text-align: center;
+        }
+        .theight {
+            height: 21px;
+        }
+    </style>
+    
+    <style>
+        .topheadbaxck {
+            background-color: rgb(239, 239, 239);
+            padding: 8px 0px;
+        }
+        .red{
+            color:red;
+        }
+        .addcatego {
+            float: right;
+            margin-top: -40px;
+            margin-right: 30px;
+        }
+        .sort{
+        width: 15%;padding-top: 2px;
+        }
+                   .setborba{
+	background-color: #efefef !important;
+    padding-top: 5px !important;
+}
+ .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    background-image: linear-gradient(to bottom, #777 0, #777 100%) !important;
+    
+}
+.dropdown-menu {
+    padding: 0px 0 !important;
+    margin: 0px 0 0 !important;
+}
+ul.dt-button-collection.dropdown-menu>* {
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+ @media print
+{
+body {
+    font-size: 9px !important;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 2px 2px 2px 2px !important;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    font-weight: normal;
+    font-size: 9px !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.settopbac {
+    background-color: #ddd !important;
+}
+.totalbor {
+    background-color: #f5f5f5 !important;
+}
+
+    .print_special { border: none !important; } 
+    label {
+    	font-size: 9px !important;
+	}
+	p {
+	    margin: 0 0 2.5px !important;
+	    font-size: 9px !important;
+	}
+	
+
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: transparent;
+    background-color: #ccc !important;
+    color: #000 !important;
+    font-size: 9px !important;
+}
+
+
+}
+        
+    </style>
+    <SCRIPT type="text/javascript" >
+    $(window).on('load', function() {
+    	$('#dashboardloaderPopup').modal('hide');
+    });
+    
+       $(document).ready(function() {
+    	   $('#dashboardloaderPopup').modal('show');
+		$("#fromdate").datepicker({
+
+			dateFormat : 'dd-mm-yy',
+			yearRange: yearrange,
+			minDate : '30-12-1880',
+			changeMonth : true,
+			changeYear : true
+
+		});
+		$("#todate").datepicker({
+
+			dateFormat : 'dd-mm-yy',
+			yearRange: yearrange,
+			minDate : '30-12-1880',
+			changeMonth : true,
+			changeYear : true
+
+		});
+		$("#expected_date").datepicker({
+
+			dateFormat : 'dd-mm-yy',
+			yearRange: yearrange,
+			minDate : '30-12-1880',
+			changeMonth : true,
+			changeYear : true
+
+		});
+		
+	});
+    
+    </SCRIPT>
+    
+     <script type="text/javascript" src="common/js/pagination.js"></script>
+     <script type="text/javascript" src="accounts/js/additionalCharges.js"></script>
+     <style type="text/css">
+		.manascommheader{
+		  	padding: 6px;
+		    font-size: 20px;
+		    text-transform: uppercase;
+		    display: flex;
+		    border-bottom: 2px solid #10606f;
+		    background: #43b9be;
+		}
+		.manascommheader h4,h3{
+			font-weight: bold;
+			font-size: 17px;
+			font-family: 'Open Sans', sans-serif !important;
+			color: white;
+		}
+		.manascommheader img{
+			margin-right: 6px !important;
+		}
+		
+		.manastableheader {
+		    background-color: #95d2de !important;
+		    color: black !important;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="col-lg-12 col-md-12 col-xs-12" style="padding: 0px;">
+		 <%
+									LoginInfo loginInfo = LoginHelper.getLoginInfo(request);
+		   						%>
+							<div class="row details mainheader">
+								<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 manascommheader">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: -webkit-inline-box;padding: 0px;">
+										 <img src="manasmaindashboard/images/Refund_Icon.svg" style="filter: brightness(5);margin-left: 7px;">
+										 <h4>Refund Request Dashboard</h4>
+									</div>
+									<!-- <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 oneseticonleft">
+										<img src="dashboardicon/Refund.png" class="img-responsive prescripiconcircle">
+										<img src="manasmaindashboard/images/Refund_Icon.svg" style="filter: brightness(5);width: 21%;margin-top: 5px;margin-left: 7px;">
+									</div>
+									<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 titlestleftiocn">
+										<h4>Refund Request Dashboard </h4>
+									</div> -->
+								</div>
+							</div>
+	<div class="col-lg-12 col-md-12 col-xs-12" style="padding: 0px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 topheadbaxck">
+                       <div class="col-md-12">
+                          <div class="form-inline">
+						  	<s:form action="refundrequestdashboardAdditional" theme="simple">
+						  		<div class="form-group" style="width: 7%;">
+						  			<s:textfield name="searchtext"  id="searchtext" cssClass="form-control" placeholder="Search" style="width:100%;"/>
+						  		</div>
+						  		
+						  		<div class="form-group" style="width: 7%;">
+						  			<s:textfield id="fromdate" name="fromdate" readonly="true"  cssClass="form-control" placeholder="From Date" style="width:100%;"/>
+						  		</div>
+						  
+						  		<div class="form-group" style="width: 7%;">
+						  			<s:textfield  name="todate" id="todate" readonly="true"  cssClass="form-control" placeholder="To Date" style="width:100%;"/>
+						  		</div>
+						  		<div class="form-group" style="width: 9%;">
+						  			<s:select headerKey="" id="filter_status" headerValue="Select Status" cssClass="form-control" list="#{'0':'Request', '1':'Approved', '2':'Paid'}" name="filter_status" />
+						  		</div>
+						  		
+						  		<div class="form-group">
+						  		<button type="submit" class="btn btn-primary">Go</button>
+						  		</div>
+						  		
+						  		<div class="form-group" style="width: 13%;">
+						  			<a href="refundrequestdashboardAdditional?countdata=0" class="btn btn-primary"> <span>Non-Approve Count</span><span>(<s:property value="non_approve_count"/>)</span></a>
+						  		</div>
+						  		<div class="form-group" style="width: 11%;">
+						  			<a href="refundrequestdashboardAdditional?countdata=1" class="btn btn-primary"> <span>Non-Paid Count</span><span>(<s:property value="non_applied_count"/>)</span></a>
+						  		</div>
+						  		<div class="form-group" style="width: 9%;">
+						  			<a href="refundrequestdashboardAdditional?countdata=2&fromdate=<s:property value="fromdate"/>&todate=<s:property value="todate"/>" class="btn btn-primary"> <span>Deleted Count</span><span>(<s:property value="Delete_count"/>)</span></a>
+						  		</div>
+						  	<div class="form-inline" style="float: right;margin-top: 5px;text-transform: uppercase;">
+											  <div class="checkbox">
+											    <label>
+											      <i class="fa fa-square" aria-hidden="true" style="color:#ffa3a3"></i> Request
+											    </label>
+											  </div>&nbsp;|
+											  <div class="checkbox">
+											    <label>
+											      <i class="fa fa-square" aria-hidden="true" style="color:rgb(72, 204, 184);"></i> Approved
+											    </label>
+											  </div>&nbsp;|
+											  <div class="checkbox">
+											    <label>
+											      <i class="fa fa-square" aria-hidden="true" style="color:#7fcc80"></i> Paid
+											    </label>
+											  </div>
+							</div>
+						  	<input type="button" onclick="printReport()" value="Download Excel" class="btn btn-warning hidden" />
+						   </s:form>
+						   </div>
+						  
+                       </div>
+                    </div> 
+                    <div class="">
+                        <table class="table table-responsive" style="width: 100%;text-transform: uppercase;">
+                            <thead>
+                                <tr>
+                                	<th style="width: 5%;" class="manastableheader">Sr. No</th>
+                                	<th style="width: 5%;" class="manastableheader">UHID</th>
+                                	<th style="width: 3%;" class="manastableheader">ID</th>
+                                	<th style="width: 5%;" class="manastableheader">Invoice Type</th>
+                                	<th style="width: 13%;" class="manastableheader">Request Date</th>
+                                    <th style="width: 13%;" class="manastableheader">Requested By</th>
+                                  <!--   <th style="width: 8%;">Patient ID</th> -->
+                                   	<th style="width: 16%;" class="manastableheader">Patient Name</th>
+                                	<th style="width: 8%;" class="manastableheader">Amount</th>
+                                	<th style="width: 20%;" class="manastableheader">Refund Note</th>
+                                	<th style="width: 15%;" class="manastableheader">Approve Note</th>
+                                	<th class="manastableheader">Approved by</th>
+                                	<th style="width: 8%;" class="manastableheader">Advance/Invoice</th>
+                                	<th style="width: 10%;" class="manastableheader">Invoice</th>
+                                	<th style="width: 5%;" class="manastableheader">Status</th>
+                                	<th style="width: 5%;" class="manastableheader">Action</th>
+                                	<th style="text-align:center;width: 1%;" class="manastableheader"><i class="fa fa-trash text-danger"></i></th>
+                                	<th style="width: 5%;" class="manastableheader">Cancel Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <%int i=1; %>
+                              <s:iterator value="parentrefundrequestlist">
+              					<tr>
+              						<td><%=i%></td>
+              						<td><s:property value="abrivationid"/> </td>
+              						<td><s:property value="id" /></td>
+              						<td><s:property value="chargeType" /></td>
+              						<td><s:property value="requested_date" /></td>
+              						<td><s:property value="requested_userid" /></td>
+              						<%-- <td><s:property value="clientId" /></td> --%>
+              						<td><s:property value="client" /></td>
+              						<td><s:property value="charges" /></td>
+              						<td><s:property value="refundnote" /></td>
+              						<td><s:property value="approve_note" /></td>
+              						<td><s:property value="approve_userid" />
+              							<s:if test="approve_date!=''">
+              								(<s:property value="approve_date" />)
+              							</s:if>
+              						</td>
+              						<td>
+              							<s:if test="isfromadvance==0">
+              								From Advance
+              							</s:if>
+              							<s:else>
+              								From Invoice
+              							</s:else>
+              						</td>
+              						<td>
+              							
+              							<a href="#" onclick="openPopup('viewInvoiceCharges?invoiceid=<s:property value="manualinvoiceid" />&action=show&discount=0.0&payby=Client')"><s:property value="manualinvoiceid" /></a>
+              						</td>
+              						
+              							<s:if test="status==0">
+              					    		<td style="color:#ffa3a3;"><b>Request</b></td>
+              					    	</s:if>
+              					    	<s:elseif test="status==1">
+              					   			<td style="color:rgb(72, 204, 184);"><b>Approved</b></td>
+              					   		</s:elseif>
+              					   		<s:elseif test="status==2">
+              					   			<td style="color:#7fcc80"><b>Paid</b></td> 
+              					   		</s:elseif>
+              					   		
+              					   		<s:if test="status==0">
+              					    		 <%--  <td><a href="#" class="btn btn-primary"  onclick="openPopup('aproverefundAdditional?id=<s:property value="id" />')">Approve</a></td> --%>
+              					    	 <td>
+              					    	 	<% if(loginInfo.isRefund_dashboard()) {%> <a href="#" class="btn btn-primary" onclick="approverefund(<s:property value="id"/>)">Approve</a><%} %>
+              				    	 	</td>
+              					    	</s:if>
+              					    	<s:elseif test="status==1">
+              					   			<td>
+              					   				<%if(loginInfo.isRef_dis_pay() || loginInfo.isRefund_dashboard()){ %>
+              					   					<a href="#"  class="btn btn-primary" onclick="checkRefundPaidStaus(<s:property value="id" />,<s:property value="clientId" />)">Pay</a>
+              					   				<%} %>
+              					   				<%-- <a href="#"  class="btn btn-primary" onclick="openPopup('refundinvoiceAdditional?id=<s:property value="id" />&clientId=<s:property value="clientId" />')">Pay</a> --%>
+              					   			</td>
+              					   		</s:elseif>
+         
+              						<td style="text-align: center;vertical-align: middle;">
+              							<%if(loginInfo.getJobTitle().equals("Admin")){ %>
+              								<s:if test="isfromdisc==0">
+		              							<s:if test="status==0">
+		              							   <s:if test="Isdeleted!=1">
+		              								<a href="#" onclick="deleteRefundRequest(<s:property value="id"/>)"><i class="fa fa-trash text-danger"></i></a>
+		              							</s:if>
+	              							</s:if>
+	              						</s:if>	
+              							<%} %>
+              						</td>
+              						
+              						<td><s:property value="Deleteremark" /></td>
+              						
+              					</tr>
+              					<%i++; %>
+              				</s:iterator>
+                            </tbody>
+                        </table>
+                    </div>
+	</div>
+	
+</div>
+<!-- Approve Modal -->
+<div id="approvemodel" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Are You Sure To Approve?</h4>
+      </div>
+      <div class="modal-body">
+      		<s:hidden name="countdata" id="countdata"></s:hidden>
+      		<input type="hidden" id="approve_id">
+        	<textarea rows="3"  class="form-control" id="approve_reason" placeholder="Note" style="background-color: beige;"></textarea>
+      </div>
+      <div class="modal-footer">
+        <input type="button" class="btn btn-danger" onclick="aproverefundamountAdditional()"  value="Ok">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div id="deletemodel" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Are You Sure To Cancel?</h4>
+      </div>
+      <div class="modal-body">
+      		<input type="hidden" id="parent_id">
+        	<textarea rows="3"  class="form-control" id="delete_reason" placeholder="Cancel Reason" style="background-color: beige;"></textarea>
+      </div>
+      <div class="modal-footer">
+        <input type="button" class="btn btn-danger" onclick="deleteRefundRequest1()" data-dismiss="modal" value="Ok">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cart3" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">REFUND REQUEST NOTE</h4>
+			</div>
+			<div class="modal-body">
+				<div id="page_printer3">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+						<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center" style="border-bottom: 1px solid #ddd;" id="hospitaltitlediv3">
+
+							</div>
+							<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center">
+								<h4>
+									<b>REFUND REQUEST NOTE</b>
+								</h4>
+							</div>
+							<s:hidden name="parentid" id="parentid23"></s:hidden>
+							<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"
+								style="padding: 0px; margin-bottom: 15px; text-transform: uppercase;">
+								<div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+									<p style="margin: 0 0 2.5px;">
+										<b>Request Number : </b><span id="issueno3"></span>
+									</p>
+									<p style="margin: 0 0 2.5px;">
+										<b>Requested From : </b><span id="fromlocation3">Medical Store</span>
+									</p>
+									<p style="margin: 0 0 2.5px;">
+										<b>Indent Number : </b><span id="indentno3"></span>
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+									<p style="margin: 0 0 2.5px;">
+										<b>Issue Date : </b><span id="issuedate3">02-07-2017 18:45</span>
+									</p>
+									<p style="margin: 0 0 2.5px;">
+										<b> </b><span id="tolocation3">ESIC Pharmacy</span>
+									</p>
+									<p style="margin: 0 0 2.5px;">
+										<b>Request Date : </b><span id="requestdate3">02-07-17 19:46</span>
+									</p>
+									<p style="margin: 0 0 2.5px;">
+										<b>Request User : </b><span id="requestuser3">   </span>
+									</p>
+								</div>
+							</div>
+							<div></div>
+						</div>
+						<div>
+							<table class="table" id="mytable" style="width: 100%;">
+								<thead>
+									<tr>
+										<th style="width: 4%;">Sr.no</th>
+										<th style="width: 20%;">Name</th>
+										<th style="width: 27%;">Charge</th>
+									</tr>
+								</thead>
+								<tbody id="tbodyid3">
+
+								</tbody>
+							</table>
+						</div>
+						<div class="col-lg-12 col-md-12 col-xs-12"
+							style="padding: 0px; margin-top: 30px;">
+							<div class="col-lg-8 col-md-8 col-xs-6">
+								<p style="margin: 0px;" id="username3"></p>
+								<p style="margin: 0px;" id="userdatetime3"></p>
+								<p>Issued By</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-xs-6 text-right">
+								<p class="hidden" style="margin: 0px;">Ajay Air</p>
+								<p class="hidden" style="margin: 0px;">Ajay Air</p>
+								<p id="receivedbyid">Received By</p>
+								<div id="noteTextBox">
+									<s:textarea id="notes" cssClass="form-control" name="notes"
+										theme="simple" placeholder="Write Note"></s:textarea>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="modal-footer" id="btndiv">
+					
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="modal fade" style="background: rgba(255, 255, 255, 0.93);" id="dashboardloaderPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="">
+				<div class="modal-body text-center">
+					<img src="common/images/hourglass1.gif" class="img-responsive middlelogo" style="margin-left:auto;margin-right:auto;"></img>
+					
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<script src="common/chosen_v1.1.0/chosen.jquery.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"100%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+  </script>
+  
+<script>
+    function printDiv2(divID) {
+    //Get the HTML of div
+    var divElements = document.getElementById(divID).innerHTML;
+    //Get the HTML of whole page
+    var oldPage = document.body.innerHTML;
+
+    //Reset the page's HTML with div's HTML only
+    document.body.innerHTML =
+        "<html><head><title></title></head><body>" + divElements + "</body>";
+
+    //window.print();
+    //document.body.innerHTML = oldPage;
+
+    //Print Page
+    setTimeout(function () {
+        print_page();
+    }, 2000);
+
+    function print_page() {
+        window.print();
+    }
+
+    //Restore orignal HTML
+    setTimeout(function () {
+        restore_page();
+    }, 3000);
+
+    function restore_page() {
+        document.body.innerHTML = oldPage;
+    }
+}
+	</script>
+	
+	
+
+
+</body>
+</html>

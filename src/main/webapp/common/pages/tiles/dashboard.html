@@ -1,0 +1,778 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+      <link rel="icon" href="WebContent/common/img/favicon.ico">
+    <title>Advance Practice Management</title>
+
+      <link href="WebContent/common/fullcalendar-2.2.3/fullcalendar-2.2.3/lib/cupertino/jquery-ui.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+      <link href="WebContent/common/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     
+      <!--external css-->
+      <link href="WebContent/common/font-awesome/css/font-awesome.css" rel="stylesheet" />
+      <link href="WebContent/common/fullcalendar-2.2.3/fullcalendar-2.2.3/fullcalendar.min.css" rel="stylesheet" />
+      <link href="WebContent/common/gritter/css/jquery.gritter.css" rel="stylesheet" />
+      <link href="WebContent/common/smartmenus-0.9.7/css/sm-clean/sm-clean.css" rel="stylesheet" />
+      <link href="WebContent/common/smartmenus-0.9.7/css/sm-core-css.css" rel="stylesheet" />
+      <!--<link href="assets/js/ExpandingSearchBar/ExpandingSearchBar/css/default.css" rel="stylesheet" />
+      <link href="assets/js/ExpandingSearchBar/ExpandingSearchBar/css/component.css" rel="stylesheet" />-->
+
+      <!-- Custom styles for this template -->
+      <link href="WebContent/common/css/style.css" rel="stylesheet" />
+      <link href="WebContent/common/css/style-responsive.css" rel="stylesheet" />
+      <link href="WebContent/common/css/main.css" rel="stylesheet" />
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <style>
+          .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+              padding: 0px !important;
+          }     
+          .partition{
+              border-bottom:dotted 1px #808080;
+          }
+      </style>
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="bottom" data-original-title="Sidebar"></div>
+              </div>
+            <!--logo start-->
+            <a href="dashboard.html" class="logo"><img class="logoimg" src="WebContent/common/img/logo.png" /></a>
+            <!--logo end-->
+            <div class="top-menu">
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <a href="#" id="toggleFullScreen" class="logout tooltips" data-placement="bottom" data-original-title="Full Screen" onclick="toggleFullScreen();"><i class="glyphicon glyphicon-fullscreen"></i></a>
+                    </li>
+                </ul>
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout tooltips" data-placement="bottom" data-original-title="Lock Screen" href="lock_screen.html"><i class="fa fa-desktop"></i></a></li>
+            	</ul>
+                <ul id="main-menu" class="sm sm-clean nav pull-right top-menu">
+                    <li>
+                    <a class="logout" href="#">
+                        <i class="fa fa-user"></i> Henry
+                    </a>
+                        <ul class="smul">
+                            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a href="index.html"><i class="fa fa-unlock-alt"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <!-- #menu -->
+              <ul id="menu" class="bg-blue dker">
+                  <li class="nav-header">Menu</li>
+                  <li class="nav-divider"></li>
+                  <li class="">
+                      <a href="dashboard.html">
+                          <i class="fa fa-dashboard"></i><span class="link-title">&nbsp;Dashboard</span>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a href="javascript:;">
+                          <i class="fa fa-building "></i>
+                          <span class="link-title">Layouts</span>
+                          <span class="fa arrow"></span>
+                      </a>
+                      <ul class="collapse">
+                          <li>
+                              <a href="boxed.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Boxed Layout
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-header-boxed.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Boxed Layout &amp; Fixed Header
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-header-fixed-mini-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed Header and Fixed Mini Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-header-menu.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed Header &amp; Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-header-mini-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed Header &amp; Mini Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-header.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed Header
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-menu-boxed.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Boxed Layout &amp; Fixed Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-menu.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fixed-mini-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Fixed &amp; Mini Menu
+                              </a>
+                          </li>
+                          <li>
+                              <a href="fxhmoxed.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Boxed and Fixed Header &amp; Nav
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-header-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Header &amp; Sidebars
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-header.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Header
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-left-right-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Left &amp; Right Sidebar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-left-sidebar-main-search.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Left Sidebar &amp; Main Search
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-left-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Left Sidebar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-main-search.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Main Search
+                              </a>
+                          </li>
+                          <li>
+                              <a href="no-right-sidebar.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; No Right Sidebar
+                              </a>
+                          </li>
+                          <li>
+                              <a href="sm.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Mini Sidebar
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="">
+                      <a href="javascript:;">
+                          <i class="fa fa-tasks"></i>
+                          <span class="link-title">Components</span>
+                          <span class="fa arrow"></span>
+                      </a>
+                      <ul class="collapse">
+                          <li>
+                              <a href="bgcolor.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Bg Color
+                              </a>
+                          </li>
+                          <li>
+                              <a href="bgimage.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Bg Image
+                              </a>
+                          </li>
+                          <li>
+                              <a href="button.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Buttons
+                              </a>
+                          </li>
+                          <li>
+                              <a href="icon.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Icon
+                              </a>
+                          </li>
+                          <li>
+                              <a href="pricing.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Pricing Table
+                              </a>
+                          </li>
+                          <li>
+                              <a href="progress.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Progress
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="">
+                      <a href="javascript:;">
+                          <i class="fa fa-pencil"></i>
+                          <span class="link-title">
+                              Forms
+                          </span>
+                          <span class="fa arrow"></span>
+                      </a>
+                      <ul class="collapse">
+                          <li>
+                              <a href="form-general.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Form General
+                              </a>
+                          </li>
+                          <li>
+                              <a href="form-validation.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Form Validation
+                              </a>
+                          </li>
+                          <li>
+                              <a href="form-wizard.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Form Wizard
+                              </a>
+                          </li>
+                          <li>
+                              <a href="form-wysiwyg.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp; Form WYSIWYG
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="table.html">
+                          <i class="fa fa-table"></i>
+                          <span class="link-title">Tables</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="file.html">
+                          <i class="fa fa-file"></i>
+                          <span class="link-title">
+                              File Manager
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="typography.html">
+                          <i class="fa fa-font"></i>
+                          <span class="link-title">
+                              Typography
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="maps.html">
+                          <i class="fa fa-map-marker"></i><span class="link-title">
+                              Maps
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="chart.html">
+                          <i class="fa fa fa-bar-chart-o"></i>
+                          <span class="link-title">
+                              Charts
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="calendar.html">
+                          <i class="fa fa-calendar"></i>
+                          <span class="link-title">
+                              Calendar
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">
+                          <i class="fa fa-exclamation-triangle"></i>
+                          <span class="link-title">
+                              Error Pages
+                          </span>
+                          <span class="fa arrow"></span>
+                      </a>
+                      <ul class="collapse">
+                          <li>
+                              <a href="403.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;403
+                              </a>
+                          </li>
+                          <li>
+                              <a href="404.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;404
+                              </a>
+                          </li>
+                          <li>
+                              <a href="405.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;405
+                              </a>
+                          </li>
+                          <li>
+                              <a href="500.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;500
+                              </a>
+                          </li>
+                          <li>
+                              <a href="503.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;503
+                              </a>
+                          </li>
+                          <li>
+                              <a href="offline.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;offline
+                              </a>
+                          </li>
+                          <li>
+                              <a href="countdown.html">
+                                  <i class="fa fa-angle-right"></i>&nbsp;Under Construction
+                              </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="grid.html">
+                          <i class="fa fa-columns"></i>
+                          <span class="link-title">
+                              Grid
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="blank.html">
+                          <i class="fa fa-square-o"></i>
+                          <span class="link-title">
+                              Blank Page
+                          </span>
+                      </a>
+                  </li>
+                  <li class="nav-divider"></li>
+                  <li>
+                      <a href="login.html">
+                          <i class="fa fa-sign-in"></i>
+                          <span class="link-title">
+                              Login Page
+                          </span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="javascript:;">
+                          <i class="fa fa-code"></i>
+                          <span class="link-title">
+                              Unlimited Level Menu
+                          </span>
+                          <span class="fa arrow"></span>
+                      </a>
+                      <ul class="collapse">
+                          <li>
+                              <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
+                              <ul class="collapse">
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                                  <li>
+                                      <a href="javascript:;">Level 2  <span class="fa arrow"></span>  </a>
+                                      <ul class="collapse">
+                                          <li> <a href="javascript:;">Level 3</a>  </li>
+                                          <li> <a href="javascript:;">Level 3</a>  </li>
+                                          <li>
+                                              <a href="javascript:;">Level 3  <span class="fa arrow"></span>  </a>
+                                              <ul class="collapse">
+                                                  <li> <a href="javascript:;">Level 4</a>  </li>
+                                                  <li> <a href="javascript:;">Level 4</a>  </li>
+                                                  <li>
+                                                      <a href="javascript:;">Level 4  <span class="fa arrow"></span>  </a>
+                                                      <ul class="collapse">
+                                                          <li> <a href="javascript:;">Level 5</a>  </li>
+                                                          <li> <a href="javascript:;">Level 5</a>  </li>
+                                                          <li> <a href="javascript:;">Level 5</a>  </li>
+                                                      </ul>
+                                                  </li>
+                                              </ul>
+                                          </li>
+                                          <li> <a href="javascript:;">Level 4</a>  </li>
+                                      </ul>
+                                  </li>
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                              </ul>
+                          </li>
+                          <li> <a href="javascript:;">Level 1</a>  </li>
+                          <li>
+                              <a href="javascript:;">Level 1  <span class="fa arrow"></span>  </a>
+                              <ul class="collapse">
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                                  <li> <a href="javascript:;">Level 2</a>  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul><!-- /#menu -->
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+      
+      <!-- **********************************************************************************************************************************************************
+     MAIN CONTENT
+     *********************************************************************************************************************************************************** -->
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+              <h3 class="heading3"><i class="fa fa-angle-right"></i> Calendar</h3>
+              <div class="row mt">
+                  <div class="col-lg-12">
+                      <div class="panel">
+                          <div class="panel-body">
+                              <div class="row">
+                                  <div class="col-lg-2">
+                                      <div class="input-group ">
+                                          <span class="input-group-addon " id="basic-addon1"><i class="fa fa-calendar"></i></span>
+                                          <input type="text" class="form-control" placeholder="26/12/2014" aria-describedby="basic-addon1">
+                                      </div><!-- /input-group -->
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <div class="input-group ">
+                                          <span class="input-group-addon " id="basic-addon1"><i class="fa fa-map-marker"></i></span>
+                                          <select class="form-control">
+                                              <option value="0">Location</option>
+                                              <option value="0">All</option>
+                                              <option value="1">Birmingham</option>
+                                              <option value="4">Coventry</option>
+                                              <option value="2">Nuneaton</option>
+                                              <option value="5">Tamworth</option>
+                                              <option value="3">Warwick</option>
+                                          </select>
+                                      </div><!-- /input-group -->
+                                     
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <a href="#" class="btn btn-primary"><i class="fa fa-calendar"></i> Month</a>
+                                      <a href="#" class="btn btn-primary"><i class="fa fa-calendar"></i> Week</a>
+                                      <a href="#" class="btn btn-primary"><i class="fa fa-calendar"></i> Today</a>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <select class="form-control">
+                                          <option>Showing All Records</option>
+                                          <option value="0">5</option>
+                                          <option value="1">10</option>
+                                          <option value="4">15</option>
+                                          <option value="2">20</option>
+                                      </select>
+
+                                  </div>
+                                  <div class="col-lg-2">
+                                      <ul class="pagination pagination-sm" style="margin:0px !important;">
+                                          <li>
+                                              <a href="#" aria-label="Previous">
+                                                  <span aria-hidden="true">&laquo;</span>
+                                              </a>
+                                          </li>
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li>
+                                              <a href="#" aria-label="Next">
+                                                  <span aria-hidden="true">&raquo;</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <!--<div class="col-lg-4 ">
+                                      <div id="sb-search" class="sb-search">
+                                          <form>
+                                              <input class="sb-search-input" placeholder="search " type="text" value="" name="search" id="search">
+                                              <input class="sb-search-submit" type="submit" value="">
+                                              <span class="sb-icon-search"></span>
+                                          </form>
+                                      </div>
+                                  </div>-->
+                                 
+                                 
+                              </div>
+                          </div>
+                      </div><!-- /form-panel -->
+                  </div><!-- /col-lg-12 -->
+              </div>
+              <div class="row mt">
+                  <aside class="col-lg-12 mt">
+                      <section class="panel">
+                          <div class="panel-body">
+                              <div id="calendar" class="has-toolbar"></div>
+                          </div>
+                      </section>
+                  </aside>
+              </div>
+          </section>
+      </section><!-- /MAIN CONTENT -->
+      <!--main content end-->
+      <!--footer start-->
+      <footer class="site-footer">
+          <div class="text-center">
+              2014 - @cbstech
+              <a href="dashboard.html#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+      </footer>
+      <!--footer end-->
+  </section>
+
+      <!-- js placed at the end of the document so the pages load faster -->
+      <script src="WebContent/common/js/jquery.js"></script>
+      <script src="WebContent/common/js/jquery-ui-1.9.2.custom.min.js"></script>
+      <script src="WebContent/common/fullcalendar-2.2.3/fullcalendar-2.2.3/lib/moment.min.js"></script>
+      <script src="WebContent/common/fullcalendar-2.2.3/fullcalendar-2.2.3/fullcalendar.min.js"></script>
+      <script src="WebContent/common/bootstrap/js/bootstrap.min.js"></script>
+      <script class="include" type="text/javascript" src="WebContent/common/js/jquery.dcjqaccordion.2.7.js"></script>
+      <script src="WebContent/common/js/jquery.scrollTo.min.js"></script>
+      <script src="WebContent/common/js/jquery.nicescroll.js"></script>
+
+      <!--common script for all pages-->
+      <script src="WebContent/common/js/common-scripts.js"></script>
+      <script type="text/javascript" src="WebContent/common/gritter/js/jquery.gritter.js"></script>
+      <script src="WebContent/common/smartmenus-0.9.7/jquery.smartmenus.min.js"></script>
+      <script src="WebContent/common/js/zabuto_calendar.js"></script>
+
+      <!--<script src="assets/js/ExpandingSearchBar/ExpandingSearchBar/js/uisearch.js"></script>
+      <script src="assets/js/ExpandingSearchBar/ExpandingSearchBar/js/classie.js"></script>
+      <script src="assets/js/ExpandingSearchBar/ExpandingSearchBar/js/uisearch.js"></script>-->
+
+      <!--script for this page-->
+      <script type="text/javascript">
+          $(document).ready(function () {
+              var unique_id = $.gritter.add({
+                  // (string | mandatory) the heading of the notification
+                  title: 'Welcome to Advance Practice Management',
+                  // (string | mandatory) the text inside the notification
+                  text: 'Advance Practice Management is Online Practice Management for Medical Facility.',
+                  // (string | optional) the image to display on the left
+                  image: 'assets/img/ui-sam.jpg',
+                  // (bool | optional) if you want it to fade out on its own or just sit there
+                  sticky: true,
+                  // (int | optional) the time you want it to be alive for before fading out
+                  time: '',
+                  // (string | optional) the class name you want to apply to that specific message
+                  class_name: 'my-sticky-class'
+              });
+              return false;
+          });
+      </script>
+
+      <script>
+
+          $(document).ready(function () {
+              var currentLangCode = 'en';
+
+              // build the language selector's options
+              $.each($.fullCalendar.langs, function (langCode) {
+                  $('#lang-selector').append(
+                      $('<option/>')
+                          .attr('value', langCode)
+                          .prop('selected', langCode == currentLangCode)
+                          .text(langCode)
+                  );
+              });
+
+              // rerender the calendar when the selected option changes
+              $('#lang-selector').on('change', function () {
+                  if (this.value) {
+                      currentLangCode = this.value;
+                      $('#calendar').fullCalendar('destroy');
+                      renderCalendar();
+                  }
+              });
+
+              function renderCalendar() {
+                  $('#calendar').fullCalendar({
+                      header: {
+                          left: 'prev,next today',
+                          center: 'title',
+                          right: 'month,agendaWeek,agendaDay'
+                      },
+                      defaultDate: '2014-11-12',
+                      lang: currentLangCode,
+                      buttonIcons: false, // show the prev/next text
+                      weekNumbers: true,
+                      editable: true,
+                      eventLimit: true, // allow "more" link when too many events
+                      events: [
+                          {
+                              title: 'All Day Event',
+                              start: '2014-11-01'
+                          },
+                          {
+                              title: 'Long Event',
+                              start: '2014-11-07',
+                              end: '2014-11-10'
+                          },
+                          {
+                              id: 999,
+                              title: 'Repeating Event',
+                              start: '2014-11-09T16:00:00'
+                          },
+                          {
+                              id: 999,
+                              title: 'Repeating Event',
+                              start: '2014-11-16T16:00:00'
+                          },
+                          {
+                              title: 'Conference',
+                              start: '2014-11-11',
+                              end: '2014-11-13'
+                          },
+                          {
+                              title: 'Meeting',
+                              start: '2014-11-12T10:30:00',
+                              end: '2014-11-12T12:30:00'
+                          },
+                          {
+                              title: 'Lunch',
+                              start: '2014-11-12T12:00:00'
+                          },
+                          {
+                              title: 'Meeting',
+                              start: '2014-11-12T14:30:00'
+                          },
+                          {
+                              title: 'Happy Hour',
+                              start: '2014-11-12T17:30:00'
+                          },
+                          {
+                              title: 'Dinner',
+                              start: '2014-11-12T20:00:00'
+                          },
+                          {
+                              title: 'Birthday Party',
+                              start: '2014-11-13T07:00:00'
+                          },
+                          {
+                              title: 'Click for Google',
+                              url: 'http://google.com/',
+                              start: '2014-11-28'
+                          }
+                      ]
+                  });
+              }
+
+              renderCalendar();
+          });
+      </script>
+
+      <script type="application/javascript">
+          $(document).ready(function () {
+              $("#date-popover").popover({html: true, trigger: "manual"});
+              $("#date-popover").hide();
+              $("#date-popover").click(function (e) {
+                  $(this).hide();
+              });
+
+              $("#my-calendar").zabuto_calendar({
+                  action: function () {
+                      return myDateFunction(this.id, false);
+                  },
+                  action_nav: function () {
+                      return myNavFunction(this.id);
+                  },
+                  ajax: {
+                      url: "show_data.php?action=1",
+                      modal: true
+                  },
+                  legend: [
+                      {type: "text", label: "Special event", badge: "00"},
+                      {type: "block", label: "Regular event", }
+                  ]
+              });
+          });
+
+
+          function myNavFunction(id) {
+              $("#date-popover").hide();
+              var nav = $("#" + id).data("navigation");
+              var to = $("#" + id).data("to");
+              console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+          }
+      </script>
+
+  
+      <script>
+          $(document).ready(function () {
+              toggleFullScreen();
+          });
+          // mozfullscreenerror event handler
+          function errorHandler() {
+              alert('mozfullscreenerror');
+          }
+          document.documentElement.addEventListener('mozfullscreenerror', errorHandler, false);
+
+          // toggle full screen
+          function toggleFullScreen() {
+              if (!document.fullscreenElement &&    // alternative standard method
+                  !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+                  if (document.documentElement.requestFullscreen) {
+                      document.documentElement.requestFullscreen();
+                  } else if (document.documentElement.mozRequestFullScreen) {
+                      document.documentElement.mozRequestFullScreen();
+                  } else if (document.documentElement.webkitRequestFullscreen) {
+                      document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                  }
+              } else {
+                  if (document.cancelFullScreen) {
+                      document.cancelFullScreen();
+                  } else if (document.mozCancelFullScreen) {
+                      document.mozCancelFullScreen();
+                  } else if (document.webkitCancelFullScreen) {
+                      document.webkitCancelFullScreen();
+                  }
+              }
+          }
+
+          // keydown event handler
+          document.addEventListener('keydown', function (e) {
+              if (e.keyCode == 13 || e.keyCode == 70) { // F or Enter key
+                  toggleFullScreen();
+              }
+          }, false);
+      </script>
+
+      <script type="text/javascript">
+          $(function () {
+              $('#main-menu').smartmenus({
+                  subMenusSubOffsetX: 1,
+                  subMenusSubOffsetY: -8
+              });
+          });
+      </script>
+
+      <script>
+          new UISearch(document.getElementById('sb-search'));
+      </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+/* ============== END LEFT Styles ================= */
+#menu,
+#menu ul,
+#menu li,
+#menu a {
+  padding: 0;
+  margin: 0;
+}
+#menu,
+#menu ul {
+  list-style: none;
+  max-width: 100%;
+}
+#menu li,
+#menu a {
+ /* position: relative;
+  display: block;  */
+  margin-left: 2px;
+}
+#menu a,
+#menu a:hover,
+#menu a:focus,
+#menu a:active {
+  text-decoration: none;
+}
+#menu ul {
+ /*  background: rgba(0, 0, 0, 0.3); */
+ margin-left: 10px;
+}
+#menu > li > a {
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5) !important;
+  padding: 10px 0 10px 15px !important;
+}
+#menu > li.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+#menu > li:hover > a,
+#menu > li:focus > a {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+#menu > li ul {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  border-left-width: 0 !important;
+}
+#menu > li ul a {/* 
+  padding: 11px 0 11px 30px; */
+  font-size: 13px;
+}
+#menu > li ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+#menu.affix {
+  position: fixed ;
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+#menu.affix:hover {
+  overflow-y: scroll !important;
+}
+@media (min-width: 768px) {
+  body:not(.sidebar-left-mini) #menu li.active > ul,
+  #menu.affix li > ul {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+  body:not(.sidebar-left-mini) #menu:not(.affix) li.active > ul {
+    display: inherit !important;
+  }
+  #menu li > ul,
+  .sidebar-left-mini #menu li > ul {
+    position: absolute !important;
+    top: 0 !important;
+    left: 91% !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    min-width: 200px !important;
+    z-index: 9 !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+  }
+  #menu:not(.affix) li > ul,
+  .sidebar-left-mini #menu:not(.affix) li > ul {
+    display: inherit;
+    margin-left: 26px;
+    margin-top: -13px;
+  }
+  .sidebar-left-mini #menu > li > ul {
+    top: 100% !important;
+  }
+  #menu li > ul > li > ul {
+    top: 0 !important;
+  }
+  .side-right #menu li > ul {
+    left: auto !important;
+    right: 100% !important;
+  }
+  #menu:not(.affix) li:hover > ul {
+    display: inherit ;
+    visibility:visible;
+  
+  }
+  .sidebar-left-mini #menu.affix {
+    position: relative !important;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar-left-mini #menu > li > a .fa {
+    font-size: 18px !important;
+  }
+  .sidebar-left-mini #menu > li > a .fa.arrow {
+    display: none !important;
+  }
+  .sidebar-left-mini #menu > li > a .link-title {
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05)!important;
+    position: absolute !important;
+    left: 100% !important;
+    top: -1px !important;
+    z-index: 1 !important;
+    background: rgba(0, 0, 0, 0.85) !important;/* 
+    display: none; */
+    padding: 10px 30px !important;
+  }
+  .sidebar-left-mini #menu > li:hover > a > .link-title {
+    display: block !important;
+    min-width: 200px !important;
+  }
+  .sidebar-left-mini.side-right #menu > li > a .link-title {
+    border-right-width: 0 !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+    left: auto !important;
+    right: 100% !important;
+  }
+}
+
+
+

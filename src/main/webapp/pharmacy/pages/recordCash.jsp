@@ -1,0 +1,516 @@
+<%@page import="com.apm.common.web.common.helper.LoginHelper"%>
+<%@page import="com.apm.common.web.common.helper.LoginInfo"%>
+<%@page import="java.util.Date"%>
+<%@taglib uri="/struts-tags" prefix="s"%>
+<%@page import="com.apm.main.common.constants.Constants"%>
+
+<%LoginInfo loginfo = LoginHelper.getLoginInfo(request);%>
+
+<script type="text/javascript"
+	src="accounts/js/chargeAccountProcessing.js"></script>
+<script type="text/javascript" src="common/js/pagination.js"></script>
+<script type="text/javascript" src="thirdParties/js/nicEdit.js"></script>
+<script type="text/javascript" src="pharmacy/js/pharmacy.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+
+		$("#fromDate").datepicker({
+
+			dateFormat : 'dd/mm/yy',
+			yearRange: yearrange,
+			minDate : '30/12/1880',
+			changeMonth : true,
+			changeYear : true
+
+		});
+
+		$("#toDate").datepicker({
+
+			dateFormat : 'dd/mm/yy',
+			yearRange: yearrange,
+			minDate : '30/12/1880',
+			changeMonth : true,
+			changeYear : true
+		});
+	});
+	$(function() {
+		$("#clientSearchDiv").dialog({
+			autoOpen : false,
+			resizable : true,
+			height : 500,
+			width : 650,
+			modal : true,
+			buttons : {
+
+				Cancel : function() {
+					$(this).dialog("close");
+				}
+			}
+		});
+		$("#transactionPopup").dialog({
+			autoOpen : false,
+			resizable : true,
+			height : 500,
+			width : 650,
+			modal : true,
+			buttons : {
+
+				Cancel : function() {
+					$(this).dialog("close");
+				}
+			}
+		});
+
+		$("#sendEmailPopUp").dialog({
+			autoOpen : false,
+			resizable : true,
+			height : 480,
+			width : 560,
+			modal : true,
+			buttons : {
+				"Send" : function() {
+					//sendSaveEmail();
+					sendPdfMail();
+
+				},
+				Cancel : function() {
+					$(this).dialog("close");
+				}
+
+			}
+		});
+
+	});
+	
+	//document.getElementById('mask').style.display = 'none';
+
+	window.onload = function() {
+
+		var id = document.getElementById('hdnSelectedID').value;
+		$(document.getElementById(id)).css('background-color',
+				'rgb(243, 215, 242)');
+
+	}
+	
+	
+</script>
+
+<div class="">
+							<div class="">
+								<div class="row details">
+									<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+
+										<h4>Record Payment</h4>
+
+									</div>
+								</div>
+								<div class="row ">
+									<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+										<div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<s:hidden name = "message" id = "message"></s:hidden>
+	<s:if test="hasActionMessages()">
+	<script>
+		var msg = " " + document.getElementById('message').value;
+		showGrowl('', msg, 'success', 'fa fa-check');
+		</script>
+	</s:if>
+	</div>
+</div>
+
+
+
+
+<s:form action="recordpaymentPharmacy" id="category_form" theme="simple">
+	<s:hidden name="hdnSelectedID" id="hdnSelectedID" />
+	<div class="col-lg-12 col-md-12 topback2 ">
+		<div class="col-lg-2 col-md-2">
+			<label>Patient:</label>
+			
+			<div class="input-group ">
+                 
+                <s:textfield name="client" id="client"  readonly="true"
+				cssClass="form-control" onclick="showPopUp()" data-toggle="modal" data-target="#clientSearch" aria-describedby="basic-addon1"/>
+				<s:hidden name="clientId" id="clientId"></s:hidden>
+               </div>	
+			
+		</div>
+		<div class="col-lg-2 col-md-2 hidden">
+			<label>Show Payed By:</label>
+			<s:select name="payby"
+				list="#{'All':'All','Client':'Self','Third Party':'Third Party'}"
+				cssClass="form-control"></s:select>
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<label>Show Transaction:</label>
+			<s:select name="transactionType"
+				list="#{'All':'All','Pending Payment':'Pending Payment','Payments':'Payments'}"
+				cssClass="form-control"></s:select>
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<label>From Date:</label>
+			
+			<div class="input-group ">
+               
+               <s:textfield readonly="true" name="fromDate" id="fromDate"
+				cssClass="form-control" theme="simple" aria-describedby="basic-addon1"></s:textfield>
+             </div>	
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<label>To Date:</label>
+			<div class="input-group ">
+               
+               <s:textfield readonly="true" name="toDate" id="toDate"
+				cssClass="form-control" theme="simple" aria-describedby="basic-addon1"></s:textfield>
+            </div>	
+		</div>
+		<div class="col-lg-2 col-md-2">
+			<label> </label><br />
+			<s:submit value="Go" theme="simple" cssClass="btn btn-primary"></s:submit>
+		</div>
+	</div>
+	
+	
+	<s:if test="clientId!=0">
+	<div class="row">
+		<div class="col-lg-6 col-md-6" style="margin-top: 15px;">
+			
+
+				<b>Patient Details:</b>
+				<br> Account no:000 <s:property value="clientId" /><br>
+				<s:property value="initial" /><s:property value="firstname" /> <s:property value="lastname" /><br>
+				<s:property value="address" /><br>
+				<s:property value="postcode" /><br>
+				<s:property value="mobno" /><br>
+				<s:property value="email" />
+
+		</div>
+		<div class="col-lg-6 col-md-6 hidden" style="margin-top: 15px;">
+			<b>Third Party Details</b><br />
+			<s:property value="insuranceCompany" /><br>
+			<s:property value="thirdPartyAddress" /><br>
+			<s:property value="thirdPartyPostcode" /><br>
+			<s:property value="thirdPartyContacttno" /><br>
+			<s:property value="thirdPartyemail" />
+			
+		</div>
+	</div>
+	</s:if>
+	<br />
+
+	<div class="row">
+		<div class="col-lg-12">
+		<%-- 	<s:actionmessage cssClass="messageDiv" /> --%>
+			<div>
+				<table class="table-bordered table-hover table-condensed width-full">
+					<thead>
+						<tr>
+						
+							<th title="Sort by Date" class="text-center sortable <s:if test="#attr.pagination.sortColumn.equals('date')">sorted <s:property value="#attr.pagination.sortClass"/> </s:if>">
+							<a href="#" onclick="fnPagination(6,'date');" style="color:white;"> Date</a></th>
+							 <th> Transaction</th>
+                              <th> Payee</th>
+                              <th> Status</th>
+                              <th class="text-right"> Charges</th>
+                              <th class="text-right"> Payments</th>
+                              <th class="text-right">% Discount</th>
+                              <th class="text-right"> Balance</th>
+							<!-- <th><i class="fa fa-search-plus"></i> View</th>
+							<th>Modify</th> -->
+						</tr>
+					</thead>
+					<tbody>
+					
+					<%String bgcolor = "rgba(255, 191, 0, 0.56);"; %>
+					
+						<s:if test="chargeProcessingList.size!=0">
+							<s:iterator value="chargeProcessingList" status="rowstatus">
+							
+							<s:if test="balancex=='0.00'">
+								<% bgcolor = "rgba(89, 178, 16, 0.66);"; %>
+							</s:if>
+							<s:else>
+								<% bgcolor = "rgba(255, 191, 0, 0.56);"; %>
+							</s:else>
+							
+								<tr style="background-color: <%=bgcolor %>" id="<s:property  value="id" />">
+									<td><s:property value="date" /></td>
+									<s:url action="viewInvoiceCharges" id="viewInvoiceCharges">
+										<s:param name="invoiceid" value="%{id}"/>
+										<s:param name="action" value="%{'show'}"/>
+										<s:param name="discount" value="%{discount}"/>
+										<s:param name="payby" value="%{payby}"/>
+									</s:url>
+									<s:if test="deliverstatus==1">
+										<td><s:a href="%{viewInvoiceCharges}">Invoice <img src="common/images/Letter-P-blue-icon.png"> <br> (0000<s:property value="id" />)</s:a> <a
+											href="javascript: void(0);" 
+											onclick="showInnerDivPharmacy('hiddenDetailsDiv<s:property value="id"/>','<s:property value="id"/>');"><i
+												class="fa fa-arrow-down"></i></a>
+										</td>
+									</s:if>
+									<s:elseif test="deliverstatus==2">
+										<td><s:a href="%{viewInvoiceCharges}">Invoice <img src="common/images/Letter-E-blue-icon.png"> <br> (0000<s:property value="id" />)</s:a> <a
+											href="javascript: void(0);"
+											onclick="showInnerDivPharmacy('hiddenDetailsDiv<s:property value="id"/>','<s:property value="id"/>');"><i
+												class="fa fa-arrow-down"></i></a>
+										</td>
+									</s:elseif>
+									<s:else>
+										<td><s:a href="%{viewInvoiceCharges}">Invoice <br> (0000<s:property value="id" />)</s:a> <a
+										href="javascript: void(0);"
+										onclick="showInnerDivPharmacy('hiddenDetailsDiv<s:property value="id"/>','<s:property value="id"/>');"><i
+											class="fa fa-arrow-down"></i></a>
+										</td>
+									</s:else>
+									
+									<s:if test = "payby == 'Third Party'">
+									<td>TP (<s:property value="insuranceCompany" />)</td>
+									
+									</s:if>
+									<s:else>
+									<td><s:property value="payby" /></td>
+									</s:else>
+									
+									<td>
+									<s:if test="balance == 0">
+										Paid |
+									</s:if>
+
+									<s:else>
+										<s:url action="paymentpharmacyProcessingAccount"
+											id="paymentProcessingAccount">
+											<s:param name="payby" value="%{payby}" />
+											<s:param name="numberOfChages" value="%{numberOfChages}" />
+											<s:param name="creditCharge" value="%{creditCharge}" />
+											<s:param name="invoiceid" value="%{id}" />
+											<s:param name="debitamt" value="%{debitAmount}" />
+											<s:param name="balance" value="%{balance}" />
+											<s:param name="discount" value="%{discount}" />
+											<s:param name="clientId" value="%{clientId}" />
+
+										</s:url>
+										<s:a href="%{paymentProcessingAccount}">Record Payment </s:a>|
+
+									</s:else>
+									<s:if test="creditCharge > 0">
+									<a href="#" data-toggle="modal" data-target="#transactionPopup2"
+										onclick="showTransactionPopup('<s:property value ="id"/>','<s:property value ="clientId"/>','<s:property value="payby"/>')">View Payments 
+											</a>|
+									</s:if>
+									<s:if test="creditCharge==0">
+											<s:url action="modifyProcessingAccount"
+											id="modifyProcessingAccount">
+											<s:param name="payby" value="%{payby}" />
+											<s:param name="numberOfChages" value="%{numberOfChages}" />
+											<s:param name="creditCharge" value="%{creditCharge}" />
+											<s:param name="invoiceid" value="%{id}" />
+											<s:param name="debitamt" value="%{debitAmount}" />
+											<s:param name="balance" value="%{balance}" />
+											<s:param name="discount" value="%{discount}" />
+											<s:param name="clientId" value="%{clientId}" />
+
+										</s:url>
+										
+										<s:url action="resetProcessingAccount"
+											id="resetProcessingAccount">
+											<s:param name="clientId" value="%{clientId}" />
+											<s:param name="invoiceid" value="%{id}" />
+										</s:url>
+										
+										<s:a href="%{modifyProcessingAccount}">Modify</s:a> |
+										<s:a href="%{resetProcessingAccount}" onclick="return confirmedDelete()">Reset</s:a>
+									</s:if>
+									<s:else>
+										<label class = "text-danger">Can't Modify</label>
+									</s:else>
+									</td>
+									
+									<td class="text-right"><%=Constants.getCurrency(loginfo)%> <s:property value="debitAmountx" /></td>
+									<td class="text-right"><%=Constants.getCurrency(loginfo)%> <s:property value="creditCharge" /></td>
+									<td class="text-right"><s:property value="discountx" />%</td>
+									<td class="text-right"><%=Constants.getCurrency(loginfo)%> <s:property value="balancex" /></td>
+									
+								<tr id="hiddenDetailsDiv<s:property value="id"/>"
+									style="display: none" aria-hidden="true">
+									<td colspan="7" id="hiddenDetailsDiv1<s:property value="id"/>">
+									</td>
+								</tr>
+
+							</s:iterator>
+						</s:if>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</s:form>
+
+<br />
+
+
+
+<s:if test="chargeProcessingList!=null">
+	<s:form action="recordpaymentPharmacy" name="paginationForm" id="paginationForm" theme="simple">
+		<div class="col-lg-12 col-md-12" style="padding:0px;">
+			<div class="col-lg-4 col-md-4 text-left" style="padding:0px;">
+				Total:<b><s:property value="totalRecords" /></b>
+			</div>
+			<%@ include file="/common/pages/pagination.jsp"%>
+		</div>
+	</s:form>
+</s:if>
+
+
+<table width="50" cellpadding="0" cellspacing="0" align="center">
+	<col width="10%">
+	<col width="10%">
+	<col width="10%">
+
+	<tr>
+
+
+		<td></td>
+
+
+	</tr>
+
+
+</table>
+<%-- <div class="row">
+	<div class="col-lg-12 text-right">
+		<s:form action="printProcessingAccount" target="blank" theme="simple">
+			<s:hidden name="clientId" value="%{clientId}" />
+			<s:hidden name="client" value="%{client}" />
+			<s:hidden name="payby" value="%{payby}" />
+			<s:hidden name="fromDate" value="%{fromDate}" />
+			<s:hidden name="toDate" value="%{toDate}" />
+			<s:hidden name="transactionType" value="%{transactionType}" />
+			<input type="submit" class="btn btn-primary" value=" Print ">
+			<a class="btn btn-primary" data-toggle="modal"
+				data-target="#sendMail2"><i class="fa fa-envelope-o"></i> Send
+				Mail</a>
+		</s:form>
+
+	</div>
+</div> --%>
+<br><br>
+
+
+<!-- Modal -->
+<div class="modal fade" id="clientSearch" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Client Search</h4>
+			</div>
+			<div class="modal-body">
+				<%@ include file="/diarymanagement/pages/allPatientsList.jsp"%>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Modal Email-->
+<div class="modal fade" id="sendMail2" tabindex="-1" role="dialog"
+	aria-labelledby="lblsendEmailPopUp" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">Send Email</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="form-group">
+							<label>To:</label>
+							<s:textfield theme="simple" id="email" name="email"
+								cssClass="form-control showToolTip"
+								placeholder="Enter email address of receiver"
+								title="Enter Email Id" data-toggle="tooltip" />
+						</div>
+						<div class="form-group">
+							<label>Cc:</label>
+							<s:textfield theme="simple" id="ccEmail" name="ccEmail"
+								cssClass="form-control showToolTip" title="Enter Cc"
+								data-toggle="tooltip" placeholder="Enter Cc" />
+						</div>
+						<div class="form-group">
+							<label>Subject:</label> <input type="text" name="subject"
+								id="subject" class="form-control showToolTip"
+								data-toggle="tooltip" title="Enter Subject"
+								placeholder="Enter Subject">
+						</div>
+						<div class="form-group">
+							<label>Body:</label>
+							<textarea class="form-control showToolTip" data-toggle="tooltip"
+								title="Enter Body" name="emailBody" id="emailBody" style="width: 100%"
+								></textarea>
+						</div>
+						<div class="form-group">
+						
+							<s:property value="filename"/><a href="invoice/<s:property value="filename"/>" target="blank"><i
+								class="fa fa-file-pdf-o fa-2x text-danger"></i></a> &nbsp; <input type="checkbox"
+								name="ispdf" id="ispdf" checked="checked">
+						</div>
+						<div class="form-group">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="modal fade" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel2" aria-hidden="true"
+	id="transactionPopup2">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">Patient Transactions</h4>
+			</div>
+			<div class="modal-body" id="transactionList1"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+											
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+
+.animate-switch-container.forward.longStage  {
+  transition:all 0.5s;
+  height: 500px;
+}
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  transition-delay: 0.25s;
+}
+.fade.in{
+  opacity: 1;
+}
+
+.animate-switch-container {
+  position:relative;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  border: solid 1px #ddd;
+  box-shadow: 6px 6px 15px gray;
+  padding:10px;
+
+  
+}
+.animate-switch{
+  padding:10px;
+  width: 100%;
+}
+.animate-switch.ng-animate {
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
+  position:absolute;
+
+}
+/* hide leaving slide  */
+/* show */
+.animate-switch.ng-leave{  
+  left:0;
+}
+/* hide */
+.forward .animate-switch.ng-leave.ng-leave-active{ 
+  left:-100%;
+}
+.backward .animate-switch.ng-leave.ng-leave-active{ 
+  left: 100%;
+}
+/* show entering slide  */
+/* hide */
+.forward .animate-switch.ng-enter {
+  left:100%;
+}
+.backward .animate-switch.ng-enter {
+  left:-100%;
+}
+/* show */
+.animate-switch.ng-enter.ng-enter-active { 
+  left:0;
+}
+
+/*Error Tooltip */
+.err_tip {
+ 
+  color: #DA362A;
+}
+.err_tip:after, .err_tip:before {
+  
+}
+.err_tip:after {
+  border-color: rgba(218, 54, 42, 0);
+  border-top-color: #DA362A;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.err_tip:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 13px;
+  margin-left: -13px;
+}
+
+#blog{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

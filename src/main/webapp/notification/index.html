@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Notification</title>
+    <link href="notification/Content/bootstrap-3.3.1-dist/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+    <link href="notification/Content/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="notification/css/Notification.css" rel="stylesheet" />
+    <link href="notification/css/bootstrap-select.css" rel="stylesheet" />
+    
+
+    <script src="notification/js/jquery-2.1.1.min.js"></script>
+    <script src="notification/Content/bootstrap-3.3.1-dist/dist/js/bootstrap.min.js"></script>
+    <script src="notification/js/bootstrap-select.js"></script>>
+    
+   <style>
+       .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+           width: 220px;
+           float: right;
+       }
+   </style> 
+    
+  
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <div class="container-fluid">
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="panel panel-default">
+                                <table class="table table-responsive">
+                                    <thead class="tableheadback">
+                                        <tr>
+                                            <th class="thwid">TASK <small>(Send SMS or Email)</small></th>
+                                            <th class="text-center">USER</th>
+                                            <th class="text-center">PRACTITIONER</th>
+                                            <th class="text-center">ADMIN</th>
+                                            <th class="text-center">EMAIL</th>
+                                            <th class="text-center">SMS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <td class="backleftcor"><b>Appointment Confirmation To</b></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor"><b>Appointment Cancellation</b></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                <b>Appointment Reminder 1 </b>
+                                                <select id="reminder1" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                <b>Appointment Reminder 2 </b>
+                                                <select id="reminder2" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor"><b>Feedback For </b></td>
+                                            <td class="text-center clibac">-</td>
+                                            <td class="text-center clibac">-</td>
+                                            <td class="text-center clibac">-</td>
+                                            <td class="text-center">-</td>
+                                            <td class="text-center">-</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">Location
+                                                <select id="location" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="radio" name="group1" value="Location"></td>
+                                            <td class="text-center"><input type="radio" name="group2" value="Location"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                Practitioner
+                                                <select id="practi" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="radio" name="group1" value="Practitioner" checked></td>
+                                            <td class="text-center"><input type="radio" name="group2" value="Practitioner"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                Appointment Type
+                                                <select id="aponttype" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="radio" name="group1" value="Appointment"></td>
+                                            <td class="text-center"><input type="radio" name="group2" value="Appointment" checked></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                Condition
+                                                <select id="condition" class="selectpicker" multiple data-hide-disabled="true" data-size="5">
+                                                    <option>Apple</option>
+                                                    <option>Banana</option>
+                                                    <option>Orange</option>
+                                                    <option>Pineapple</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                    <option>Apple2</option>
+                                                    <option>Banana2</option>
+                                                    <option>Orange2</option>
+                                                    <option>Pineapple2</option>
+                                                </select>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="radio" name="group1" value="Condition"></td>
+                                            <td class="text-center"><input type="radio" name="group2" value="Condition"></td>
+
+                                        </tr>
+                                       
+                                      
+                                        <tr>
+                                            <td class="backleftcor">
+                                                <b>On Discharge</b>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="backleftcor">
+                                                <b>On Report Status</b>
+                                            </td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center clibac"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+                                            <td class="text-center"><input type="checkbox" value=""></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                          
+                        </div>
+                        <button class="btn btn-primary savebtn">Save</button>
+                    </div>
+                </div>
+                <!-- /.row -->
+              
+            </div>
+        <!-- /.container-fluid -->
+    </div>    
+
+    <script>
+        $(document).ready(function () {
+            var mySelect = $('#reminder1');
+            var mySelect = $('#reminder2');
+            var mySelect = $('#location');
+            var mySelect = $('#practi');
+            var mySelect = $('#aponttype');
+            var mySelect = $('#condition');
+        });
+
+    </script>
+   
+</body>
+</html>

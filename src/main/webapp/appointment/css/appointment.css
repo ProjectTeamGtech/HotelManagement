@@ -1,0 +1,74 @@
+
+/* 
+	set timer css
+*/
+
+ td.green
+ {
+   background-color: pink; 
+   padding: 0px; 
+   margin: 0px; 
+   height:100%;
+   text-align:center
+ }
+ div.yellow
+ {
+   position:relative; 
+   width: 100%; 
+   min-height:5px;
+  /* background-color:white;*/
+ }
+ 
+ 
+ .timer-table {
+	background:#FFFFFF;
+	color:#666666;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:62.5%;
+	border-left:1px solid #DFD8D4;
+	font-size:1em;
+	width:100%;
+	
+}
+
+.timer-table caption {
+	font-size:1.4em;
+	font-weight:bold;
+	padding:6px;
+	text-align:left;
+}
+.timer-table th {
+	background:transparent url(../imgs/table_header.gif) no-repeat scroll 0 0;
+	border-bottom:1px solid #DFD8D4;
+	border-right:1px solid #DFD8D4;
+	border-top:1px solid #DFD8D4;
+	padding:6px 12px 6px 12px;
+	text-align:left;
+	font-weight:bold;
+	font-size: small;
+	
+	
+	
+}
+
+
+.timer-table td {
+	border-bottom:1px solid #DFD8D4;
+	border-right:1px solid #DFD8D4;
+	table-layout:fixed;
+	
+	
+
+font-size: small;
+}
+.timer-table td.highlighted {
+	background:#FFB766 none repeat scroll 0 0;
+	color:#FFFFFF;
+}
+.timer-table th.fixed {
+	width:80px;
+}
+.timer-table td.fixed {
+	width:80px;
+
+}
